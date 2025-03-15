@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0.1rem;
+    box-sizing: border-box;
+  }
+
+
+body {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f8f8;
+}
+:root{
+    ---primary-color:#0077b6;
+    ---secunddary-color:#36454f;
+}
+
+.Nevada h2{
+   
+    display: flex;
+    justify-content: center; 
+    grid-column: 1 / -1;
+    align-items: center; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 10px;
+    color:var(---primary-color);
+    background: white;
+    box-shadow: 0 0 7px #333;
+}
+.Wheather li{
+    text-decoration: none;
+    
+}
+
+.Nevada {
+    
+    grid-template-columns: 2fr 2fr; 
+    gap: 20px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+   
+    padding: 20px;
+    
+   
+}
+
+.CardBusines-Riobamba img{
+    height: auto;
+    width: 100px; 
+    
+}
+
+.Wheather {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+   
+    background: white;
+    padding: 20px;
+    display: flex;
+    box-shadow: 0 0 7px #333;
+}
+
+.Wheather img {
+    height: 200px;
+    width: 200px;
+}
+
+.Weather p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(---primary-color);
+}
+
+
+.Adver {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 7px #333;
+    
+}
+
+
+.ForeRiobam {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+   
+}
+
+.ForeRiobam-item:last-child {
+    border-bottom: none;
+}
+
+
+.ForeRiobam img {
+    height: 40px;
+    width: 40px;
+   
+}
+
+
+.ForeRiobam p {
+    color: #000000;
+    margin: 0;
+    font-size: 1rem;
+  
+}
+
+
+@media (max-width: 500px) {
+    .Nevada {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+@media (min-width: 750px) {
+
+  
+ 
+    header {
+      
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background:var(---primary-color);
+        gap: 2rem;
+        text-align: center;
+       
+    }
+    body {
+        margin: 0 auto;
+        max-width: 1200px;
+      
+    }
+
+    header img {
+        width: 70px;
+        margin: 5px;
+       
+    }
+
+    header span {
+        
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+ 
+    nav {
+        padding: 10px;
+        background-color: #000000;
+       
+      
+    
+    }
+      nav button {
+        display: none;
+    }
+    nav ul {
+        justify-content: space-around;
+        list-style: none;
+        display: flex;
+       
+      
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        transition: transform 0.3s ease-in-out;
+        display: inline-block;
+      
+    }
+
+    nav ul li a:hover {
+     
+        transform: scale(1.2);
+      
+    }
+
+    nav ul li a.active {
+        color: white;
+        background-color: var(---primary-color);
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    h1, h4 {
+        text-align: center;
+        font-size: 3rem; 
+        background: var(---primary-color);
+        padding: 10px;
+        color: white;
+        width: 100%;
+        margin-bottom: 10px;
+       
+    }
+    
+    
+    
+    main {
+       
+        flex-direction: column;
+        background: white;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        box-shadow: 0 0 7px #333;
+    }
+
+    .Business {
+        
+        padding: 10px;
+        margin-bottom: 15px;
+      
+        background-color: #f8f8f8;
+        box-shadow: 0 0 7px #333;
+        width: 100%;
+
+    }
+ 
+    .Bottons {
+       
+        gap: 10px;
+        justify-content: center;
+        margin: 20px 0;
+        display: flex;
+    }
+
+    .Bottons button {
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        background: var(---primary-color);
+        cursor: pointer; 
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .Bottons button.active {
+        color: white;
+        font-weight: bold;
+        background-color: var(---secunddary-color);
+    }
+
+    .Bottons button:hover {
+        transform: scale(1.5);
+    }
+
+    
+   
+    #Adventace {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        transition: transform 0.2s ease-in-out;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        
+
+    }
+    .CardBusines-Riobamba {
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 7px #333;
+        background: white;
+    }
+    
+    .CardBusines-Riobamba:hover {
+        transform: scale(1.1);
+        background-color: rgb(211, 211, 211);
+
+    }
+   
+     #Adventace.list  {
+       
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        max-width: 1200px;
+        background-color: #f8f8f8;
+       
+    }
+    .CardBusines-Riobamba.list {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        padding: 10px;
+        
+    }
+
+
+    footer {
+       
+        padding: 15px;
+        background:var(---primary-color);
+        color: white;
+        text-align: center;
+       margin: 1rem;
+    }
+}
+
+
+@media (max-width: 760px) {
+   
+    #listView {
+        display: none;
+    }
+    body {
+        margin: 0 auto;
+        background-color: #f8f8f8;
+    }
+  
+    header {
+        
+        color: #fff;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 10px;
+        background:var(---primary-color);
+        text-align: center;
+   
+    }
+
+    header img {
+        margin: 5px;
+        width: 50px;
+        border-radius: 15px;
+    }
+
+    header span {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+   
+    nav {
+        
+      
+        position: relative;
+       background-color: #000000;
+        padding: 10px;
+    }
+
+  
+    #menuBtn {
+       
+        border: none;
+        font-size: 24px;
+        color: white;
+        background: none;
+        cursor: pointer;
+        display: block;
+        position: relative;
+    }
+
+ 
+    #menuBtn::before {
+        content: "☰";
+        font-size: 24px;
+    }
+
+    #menuBtn.open::before {
+        background-color: #005fa3;
+        content: "✖";
+        font-size: 24px;
+      
+
+    }
+
+
+    nav ul {
+        
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        display: none;
+        background: var(---secunddary-color);
+        border-radius: 8px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+
+   
+    nav ul.show {
+     
+        width: 99%;
+        position: static;
+        display: block;
+        padding: 10px 0;
+    }
+ 
+    nav ul li {
+       
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        display: block;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+ 
+    nav ul li a.active {
+        
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: var(---primary-color);
+        padding: 8px 12px;
+        text-decoration: none;
+    }
+ 
+    main {
+
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 0 7px #333;
+    }
+    h2 {
+       
+        padding: 10px;
+        background: var(---primary-color);
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    h1, h4 {
+        text-align: center;
+        background: var(---primary-color);
+        padding: 10px;
+        color: white;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 2rem;
+
+    }
+   
+    
+   
+    .Bottons {
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+    .Bottons button {
+        
+        padding: 10px 20px;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    .Bottons button.active {
+        font-weight: bold;
+        background-color: var(---secunddary-color);
+        color: #fff;
+        
+    }
+
+    }
+
+    .CardBusines-Riobamba img {
+        
+        max-height: 150px;
+        object-fit: contain;
+        width: 100%;
+        margin-bottom: 10px;
+       
+       
+    }
+ 
+     .CardBusines-Riobamba {
+    
+        padding: 20px;
+        box-shadow: 0 0 7px #333;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    footer {
+       
+        padding: 10px;
+        background: var(---primary-color);
+        color: white;
+        text-align: center;
+       
+    }
+    .CardBusines-Riobamba img {
+       
+        max-height: 150px;
+        object-fit: contain;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #Adventace {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+        padding: 5px;
+    }
+
+    
+
+    
+
