@@ -18,51 +18,60 @@
     <header>
         <div class="Profile">
             <img src="images/ProfileBYUI.jpeg" alt="">
+           <span>Jhonatan A.Yugsan</span>
+        </div>
         
-            <h1> Jhonatan A. Yugsan</h1>
-    </div>
-        <nav>
-            <ul class="navigation"> 
+    </header>  
+    <nav>
+        <button id="menuBtn" ></button>
+        <ul class="nav"> 
 
-                <li><a href="#" id="Home">Home</a></li>
-                <li><a href="chamber/directory.html" id="Chamber">Chamber</a></li>
-                <li><a href="https://github.com/Jhonatan-35" id="GitHuh">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/jhonatanyugsan/" id="LinkedIn">LinkedIn</a></li>
-               
-            </ul> 
-        </nav>  
-    </header>    
-    <h2>Home</h2> 
-    <div class="grid">
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="chamber/directory.html" id="Chamber">Chamber</a></li>
+            <li><a href="https://github.com/Jhonatan-35" id="GitHuh">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/jhonatanyugsan/" id="LinkedIn">LinkedIn</a></li>
+           
+        </ul> 
+    </nav>    
+   
+ 
     <main> 
-        <a id="menu" href="#" class="show"></a>
-        <div class="Clear">
-            <h3>Course Work</h3>
+        <h1>Home</h1> 
+        <section>
+            <h2>Course Work</h2>
             <ul class="box indent">
            
             <li><a href="place.html" target="_blank"></a></li>
             <li><a href="place.html" target="_blank"></a></li>
             <li><a href="place.html" target="_blank"></a></li>
-            </ul>
-            </div>
-        <section class="card">
-            <h3>Chimborazo -Ecuador</h3>
+        </ul>
+        </section>
+           
+            
+        <section >
+            <h2>Chimborazo -Ecuador</h2>
             <img src="images/Nevado-Chimborazo.jpg" alt="Nevado-Chimborazo" width="300" >
            <p>City-Riobamba</p>
             </section>
-       
-        </main>
-    </div>
-       <section class="Davo">
-        <h4>Web and Computer Programming Certificated</h4>
-        <div class=" enter">
-            <a href="">All</a>
-            <a href="">CSE</a>
-            <a href="">WDD</a>
-        </div>
-      
 
-       </section>
+            <section id="Card">
+                <h2>Web and computer Programming certificated</h2>
+                <div>
+                    <button id="showAll">All Courses</button>
+                    <button id="showCSE">WDD Courses</button>
+                    <button id="showWDD">CSE Courses</button>
+                </div>
+                <div id="CoursesByu">
+                    <div class="Course">CSE 110</div>
+                    <div class="Course">WDD 130</div>
+                    <div class="Course">CSS 111</div>
+                    <div class="Course">CSE 210</div>
+                    <div class="Course">WDD 131</div>
+                    <div class="Course-incompled">WDD 231</div>
+                <p id="credis">Total credits:18</p>
+               </section>
+            
+        </main>      
     <footer>
         <p>&copy; <span id="copyright-year"></span>🌴Jhonatan Ariel Yugsan 🌴 Ecuador</p>
         <p>This document was last modified:</p> 
