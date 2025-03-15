@@ -10,8 +10,8 @@ body {
     background-color: #f8f8f8;
 }
 :root{
-    ---primary-color:#0077b6;
-    ---secunddary-color:#36454f;
+    --primary-color:#0077b6;
+    --secunddary-color:#36454f;
 }
 
 .Nevada h2{
@@ -24,7 +24,7 @@ body {
     text-align: center;
     font-size: 1.8rem;
     padding: 10px;
-    color:var(---primary-color);
+    color:var(--primary-color);
     background: white;
     box-shadow: 0 0 7px #333;
 }
@@ -73,7 +73,7 @@ body {
 .Weather p {
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(---primary-color);
+    color: var(--primary-color);
 }
 
 
@@ -135,7 +135,7 @@ body {
         align-items: center;
         display: flex;
         justify-content: center;
-        background:var(---primary-color);
+        background:var(--primary-color);
         gap: 2rem;
         text-align: center;
        
@@ -197,7 +197,7 @@ body {
 
     nav ul li a.active {
         color: white;
-        background-color: var(---primary-color);
+        background-color: var(--primary-color);
         font-weight: bold;
         padding: 8px 12px;
         border-radius: 5px;
@@ -206,7 +206,7 @@ body {
     h1, h4 {
         text-align: center;
         font-size: 3rem; 
-        background: var(---primary-color);
+        background: var(--primary-color);
         padding: 10px;
         color: white;
         width: 100%;
@@ -250,7 +250,7 @@ body {
         border-radius: 5px;
         color: white;
         border: none;
-        background: var(---primary-color);
+        background: var(--primary-color);
         cursor: pointer; 
         transition: transform 0.2s ease-in-out;
     }
@@ -258,7 +258,7 @@ body {
     .Bottons button.active {
         color: white;
         font-weight: bold;
-        background-color: var(---secunddary-color);
+        background-color: var(--secunddary-color);
     }
 
     .Bottons button:hover {
@@ -317,7 +317,7 @@ body {
     footer {
        
         padding: 15px;
-        background:var(---primary-color);
+        background:var(--primary-color);
         color: white;
         text-align: center;
        margin: 1rem;
@@ -343,7 +343,7 @@ body {
         justify-content: center;
         gap: 1rem;
         padding: 10px;
-        background:var(---primary-color);
+        background:var(--primary-color);
         text-align: center;
    
     }
@@ -465,7 +465,7 @@ body {
         color: white;
         font-weight: bold;
         border-radius: 5px;
-        background-color: var(---primary-color);
+        background-color: var(--primary-color);
         padding: 8px 12px;
         text-decoration: none;
     }
@@ -490,7 +490,7 @@ body {
     h2 {
        
         padding: 10px;
-        background: var(---primary-color);
+        background: var(--primary-color);
         color: white;
         text-align: center;
         margin-bottom: 10px;
@@ -499,7 +499,7 @@ body {
     }
     h1, h4 {
         text-align: center;
-        background: var(---primary-color);
+        background: var(--primary-color);
         padding: 10px;
         color: white;
         margin-bottom: 10px;
@@ -527,7 +527,7 @@ body {
     }
     .Bottons button.active {
         font-weight: bold;
-        background-color: var(---secunddary-color);
+        background-color: var(--secunddary-color);
         color: #fff;
         
     }
@@ -559,7 +559,7 @@ body {
     footer {
        
         padding: 10px;
-        background: var(---primary-color);
+        background: var(--primary-color);
         color: white;
         text-align: center;
        
