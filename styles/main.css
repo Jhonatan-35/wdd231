@@ -3,30 +3,14 @@
   padding: 0.1rem;
   box-sizing: border-box;
 }
-.show li {
-  display: block;
+
+header{
+  display: flex;
 }
-#menu::before {
-  content: "X";
-}
-#menu.show::before {
-  content: "≡";
-}
-.navigation a:hover,
-.navigation a:active {
-color: white;
-background-color: black;
+header img{
+  width: 70px;
 }
 
-body{
-  font-size: 16px;
-  font-family: Roboto ,Arial ,sans-serif;
-}
-
-body{
-  display: block;
-  margin: 8px;
-}
 header, footer {
  
 max-width: 90%;
@@ -38,8 +22,9 @@ background-color: steelblue;
 
 }
 
-nav {
+nav li{
  padding: 0;
+ text-decoration: none;
 }
 
 nav {
@@ -81,46 +66,10 @@ h1{
 
 }
 
-
-main {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr )); 
-  grid-column: 2;
-  display: flex;
-  max-width: 1000px;
-  max-height: 940px;
-}
-
- 
- 
- .Profile{
-  display: flex;
-  
- }
-
- .Profile img{
-  max-width: 150px;
-  margin-left: 15%;
-  padding: 1rem;
- 
- }
-
 p{
   margin: 1rem; 
   padding:0rem;
  
-}
-
-.Davo{
-  border-radius: 10px;
-  font-size: large;
-  width: 60%; 
-  box-shadow: 0 0 7px #333;
-  max-height: 10%;
-  display: block;
-  margin: 1rem;
-  margin-left: 20%;
-  
-
 }
 
 footer  {
@@ -133,15 +82,7 @@ footer  {
 }
 
 
-.grid{
-margin-left: 5%;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(260px, 1fr )); 
-grid-gap: 25px;
 
-
-
-}
 
 .card {
   border-radius: 10px;
@@ -164,23 +105,33 @@ h2{
   margin-left: 15%;
  
 }
-h3{
-  background-color: #006d77;
-  font-size: large;
+button {
+  flex: 1 1 25%;
+  min-width: 180px;
+  padding: 15px;
   text-align: center;
-  border-radius: 10px;
-  padding:1rem;
-  color: #fff;
-  max-width: 900px;
- }
-h4{
-  background-color: #006d77;
-  font-size: large;
-  text-align: center;
-  border-radius: 10px;
-  padding:1rem;
-  color: #fff;
-  max-width: 900px;
+  background: #32383b;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #a2d4f6;
+  transform: scale(1.05);
+  color: black;
+}
+
+.Course {
+background: #151733;
+color: #fff;
+}
+
+.Course-incompled {
+background: #5a1218;
+color: #ffffff;
 }
 
 
@@ -227,6 +178,44 @@ li{
   
 
 }
+
+nav button::before {
+  content: "☰"; 
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav button.open::before {
+  content: "X"; 
+  font-size: 24px;
+  background-color: #005fa3;
+}
+
+nav ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.show {
+  display: block;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .navigation li{
   margin-left: 5%;
   text-decoration: none;
@@ -234,21 +223,36 @@ li{
 nav li{
   text-decoration: none;
 }
+nav button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
 
-@media only screen and (min-width: 40em) {
-  .navigation {
-    display: flex;
+nav button::before {
+  content: "☰"; 
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav button.open::before {
+  content: "X"; 
+  font-size: 24px;
+  background-color: #005fa3;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+      display: flex !important;
+      justify-content: space-around;
   }
-  .navigation li {
-    display: block; 
-    flex: 1 1 100%;
-    text-decoration: none;
-  }
-  .navigation a {
-    text-align: center;
-    text-decoration: none;
-  }
-  #menu {
-    display: none;
+
+  nav button {
+      display: none;
   }
 }
+
