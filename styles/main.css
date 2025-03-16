@@ -1,9 +1,17 @@
-* {
+*{
   margin: 0;
   padding: 0.1rem;
   box-sizing: border-box;
 }
+:root{
+  --primary-color:#0077b6;
+  --secunddary-color:#36454f;
+  --terceary-color:#5a1218;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 header{
   display: flex;
 }
@@ -18,55 +26,77 @@ margin: 0 auto;
 }
 header {
 max-width: 100%;
-background-color: steelblue;
+background-color:var(--primary-color);
 
 }
-
-nav li{
- padding: 0;
- text-decoration: none;
+header span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
 }
 
-nav {
-  background-color: rgb(11, 12, 12);
+main {
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 0 7px #333;
+ 
+}
+section {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-}
-#menu {
-  font-size: 1.5rem;
-  border: 0;
-  background: none;
-  color: #000;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  background: #f8f8f8;
+ 
+  text-align: center;
+  flex-direction: column;
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #333;
+ 
 }
 
+main section img {
+  display: block;
+  margin: 0 auto;
+  display: block;
+  margin-left: 15%;
+  width: 250px;
+  margin: 5px;
+  border-radius: 10px;
 
-nav a:hover {
-  text-decoration: underline;
-  color: white;
-  display: flex;
-  
-}
-nav a {
-  display: flex;
-  padding: 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;  
 }
 h1{
   display: flex;
+  margin-left: 3%;
   color: white;;
   text-align: center;
-  margin-left: 3%;
+  
+
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+
+  width: 80%;
 
 }
 
 p{
+  font-size: 20px;
   margin: 1rem; 
   padding:0rem;
  
@@ -76,20 +106,19 @@ footer  {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center ;
-  background-color:steelblue;
+  color: #fff;
+  background-color:var(--primary-color);
   
  
 }
 
-
-
-
 .card {
   border-radius: 10px;
+  margin: 1rem;
   font-size: large;
   max-width: 50%;
   box-shadow: 0 0 7px #333;
-  margin: 1rem;
+ 
  
   
 }
@@ -97,9 +126,128 @@ footer  {
 .card img{
   width: 200px;
   padding: 10px;
+ 
+}
+#CoursesByu div {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: 500;
 
+}
+#CoursesByu div:hover {
+  transform: scale(1.1);
+
+}
+
+.Course {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.noincompled {
+  background:var(--terceary-color);
+  color: #ffffff;
+}
+
+
+@media (max-width: 760px) {
+
+  nav {
+        
+      
+    position: relative;
+   background-color: #000000;
+    padding: 10px;
+}
+
+#menu {
+display: block;
+font-size: 1rem;
+font-weight: 700;
+text-decoration: none;
+padding: 0.5rem 0.75rem;
+background-color: black;
+color: #fff;
+}
+.show li {
+    display: block;
+}
+#menu::before {
+    content: "✖";
+    font-size: 24px;
+}
+#menu.show::before {
+    content: "☰";
+    text-decoration: none;
+}
+.navigation a:hover,
+.navigation a:active {
+color: white;
+background-color: black;
+}
+
+
+nav ul {
+    
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: none;
+    background: black;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+
+nav ul.show {
+ 
+    width: 99%;
+    position: static;
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul li {
+   
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    transition: transform 0.3s ;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
   
 }
+
+nav ul li a:hover {
+    
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+nav ul li a.active {
+    
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+
+}
+
 
 h2{
   margin-left: 15%;
@@ -110,27 +258,30 @@ button {
   min-width: 180px;
   padding: 15px;
   text-align: center;
-  background: #32383b;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
   border: none;
-  transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+  background: var(--secunddary-color);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s ;
+  cursor: pointer;
+
+  
+
 }
 
 button:hover {
-  background: #a2d4f6;
+  background: var(--secunddary-color);
   transform: scale(1.05);
   color: black;
 }
 
 .Course {
-background: #151733;
+background:var(--primary-color);
 color: #fff;
 }
 
 .Course-incompled {
-background: #5a1218;
+background:var(--terceary-color);
 color: #ffffff;
 }
 
@@ -138,7 +289,6 @@ color: #ffffff;
 .enter {
  display: flex;
   padding: 1rem;
- 
   align-items: center;
   justify-content: space-evenly;
   text-decoration: none;
@@ -161,7 +311,6 @@ padding: 2%;
   width: 90%; 
   max-height: 90%;
   margin: 1rem;
-  
   box-shadow: 0 0 7px #333;
 }
 
@@ -175,84 +324,6 @@ h4{
 li{
   padding: 0.5rem;
   margin-left: 10%;
-  
 
-}
-
-nav button::before {
-  content: "☰"; 
-  font-size: 24px;
-  transition: all 0.3s ease-in-out;
-}
-
-nav button.open::before {
-  content: "X"; 
-  font-size: 24px;
-  background-color: #005fa3;
-}
-
-nav ul {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul.show {
-  display: block;
-}
-
-nav ul li {
-  padding: 10px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.navigation li{
-  margin-left: 5%;
-  text-decoration: none;
-}
-nav li{
-  text-decoration: none;
-}
-nav button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  display: block;
-  position: relative;
-}
-
-nav button::before {
-  content: "☰"; 
-  font-size: 24px;
-  transition: all 0.3s ease-in-out;
-}
-
-nav button.open::before {
-  content: "X"; 
-  font-size: 24px;
-  background-color: #005fa3;
-}
-
-@media (min-width: 768px) {
-  nav ul {
-      display: flex !important;
-      justify-content: space-around;
-  }
-
-  nav button {
-      display: none;
-  }
 }
 
