@@ -7,6 +7,7 @@
   --primary-color:#0077b6;
   --secunddary-color:#36454f;
   --terceary-color:#5a1218;
+  --quater-color:#2b4b33;
 }
 body {
   font-family: Roboto ,Arial ,sans-serif;
@@ -102,11 +103,12 @@ p{
 }
 
 footer  {
-  margin-top: 15px;
+
   border-top: 1px solid #000;
   text-align: center ;
   color: #fff;
   background-color:var(--primary-color);
+  margin: 1rem;
   
  
 }
@@ -121,53 +123,93 @@ footer  {
  
   
 }
-
-.card img{
-  width: 200px;
-  padding: 10px;
- 
+main {
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #333;
 }
-#CoursesByu div {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
+
+
+
+section {
+  margin-bottom: 11px;
+}
+
+
+
+#courseNames div {
+  padding: 11px;
   font-weight: 500;
+  margin: 6px;
+  border-radius: 5px;
+
 
 }
-#CoursesByu div:hover {
-  transform: scale(1.1);
 
-}
-
-.Course {
-  background: var(--primary-color);
+.finished {
+  background:var(--quater-color);
   color: #fff;
 }
 
-.noincompled {
-  background:var(--terceary-color);
-  color: #ffffff;
+.not-completed {
+  background: var(--terceary-color);
+  color: #fff;
+}
+
+
+
+button {
+  padding: 10px;
+  background: var(--secunddary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+
+button:hover {
+  background: #005fa3;
 }
 
 
 @media (max-width: 760px) {
 
   nav {
-        
-      
-    position: relative;
-   background-color: #000000;
-    padding: 10px;
+          
+  position: relative;
+  background-color: black;
+  padding: 10px;
 }
 
+
+.not-finished {
+  color: white;
+  background: var(--terceary-color);
+}
+.finished {
+  color: white;
+  background:var(--quater-color);
+ 
+}
+#courseNames div:hover {
+  transform: scale(1.1);
+  
+  }
 #menu {
 display: block;
 font-size: 1rem;
 font-weight: 700;
+color: #fff;
 text-decoration: none;
 padding: 0.5rem 0.75rem;
 background-color: black;
-color: #fff;
+
 }
 .show li {
     display: block;
@@ -269,20 +311,12 @@ button {
 }
 
 button:hover {
-  background: var(--secunddary-color);
+  background:#023047;
   transform: scale(1.05);
-  color: black;
+ 
 }
 
-.Course {
-background:var(--primary-color);
-color: #fff;
-}
 
-.Course-incompled {
-background:var(--terceary-color);
-color: #ffffff;
-}
 
 
 .enter {
