@@ -223,7 +223,7 @@ footer {
         width: 100%;
 
     }
-    /* Botões de alternância */
+    /* BotÃµes de alternÃ¢ncia */
     .toggle-buttons {
         display: flex;
         gap: 10px;
@@ -336,7 +336,7 @@ footer {
     }
 
     /* Navigation */
-    /* Estilização para o menu */
+    /* EstilizaÃ§Ã£o para o menu */
     nav {
         background: #333;
         border-radius: 8px;
@@ -344,7 +344,7 @@ footer {
         padding: 10px;
     }
 
-    /* Estilização do botão */
+    /* EstilizaÃ§Ã£o do botÃ£o */
     #menuBtn {
         background: none;
         border: none;
@@ -355,14 +355,14 @@ footer {
         position: relative;
     }
 
-    /* Ícone de hambúrguer e 'X' */
+    /* Ãcone de hambÃºrguer e 'X' */
     #menuBtn::before {
-        content: "☰";
+        content: "â˜°";
         font-size: 24px;
     }
 
     #menuBtn.open::before {
-        content: "✖";
+        content: "âœ–";
         font-size: 24px;
         background-color: #005fa3;
 
@@ -389,7 +389,7 @@ footer {
         width: 100%;
         padding: 10px 0;
     }
-      /* Estilização dos itens do menu */
+      /* EstilizaÃ§Ã£o dos itens do menu */
     nav ul li {
         padding: 10px;
         text-align: center;
@@ -403,7 +403,7 @@ footer {
         padding: 5px;
     }
 
-    /* Estilização do link ativo */
+    /* EstilizaÃ§Ã£o do link ativo */
     nav ul li a.active {
         background-color: #005fa3;
         color: white;
@@ -481,7 +481,7 @@ footer {
         border-radius: 5px;
         margin-bottom: 10px;
     }
-     /* Estilizando os cartões como blocos */
+     /* Estilizando os cartÃµes como blocos */
      .business-card {
         background: white;
         padding: 20px;
