@@ -1,915 +1,548 @@
-*{
-    margin: 0;
-    padding: 0.1rem;
-    box-sizing: border-box;
-  }
-
-
 body {
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
-}
-:root{
-    --primary-color:#0077b6;
-    --secunddary-color:#36454f;
-}
-
-.Heros {
-    text-align: center;
-    padding:  20px;
-    color: white;
-    margin-bottom: 2rem;
-    max-width: 700px;
-    border-radius: 10px;
-    background: #f8f8f8;
-    box-shadow:0 0 7px #333;
   }
-
-  .Heros img {
-    margin: 1rem;
-    max-width: 630px;
-    border-radius: 10px;
-    margin-top: 15px;
-   
-  }
-
+  
+  /* weather */
   #weather-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 800px;
+      margin: 20px auto;
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
+  
+  .weather-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Divide em duas colunas */
+      gap: 20px;
+      width: 100%;
+      align-items: center;
+  }
+  
+  #current-weather {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #current-weather img {
+      width: 100px;
+      height: 100px;
+      image-rendering: crisp-edges;
+  }
+  
+  #current-weather p {
+      text-align: center;
+      font-size: 1.3rem;
+      color: #013a63;
+      padding: 10px;
+      border-radius: 8px;
+  }
+  
+  #weather-forecast {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .forecast-item {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+  
+  .forecast-item img {
+      width: 50px;
+      height: auto;
+  }
+  
+  .forecast-item p {
+      font-size: 1rem;
+      color: #333;
+      margin: 0;
+  }
+  
+  /* Footer */
+  footer {
     text-align: center;
-}
-
-.weather-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
-    width: 100%;
-    align-items: center;
-}
-
-#current-weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#current-weather img {
-    width: 100px;
-    height: 100px;
-    image-rendering: crisp-edges;
-}
-
-#current-weather p {
-    text-align: center;
-    font-size: 1.3rem;
-    color: #013a63;
-    padding: 10px;
+    padding: 15px;
+    background: #013a63;
+    color: white;
     border-radius: 8px;
-}
-
-#weather-forecast {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.forecast-item {
-    background: white;
-    padding: 10px;
-   
-   
+  }
+  
+  
+  @media (max-width: 600px) {
+      .weather-content {
+          grid-template-columns: 1fr; 
+      }
+  
+      #current-weather img {
+          width: 60px; 
+          height: 60px;
+      }
+  
+      #current-weather p {
+          font-size: 0.9rem; 
+      }
+  
+      .forecast-item {
+          padding: 6px; 
+          font-size: 0.8rem; 
+      }
+  
+      .forecast-item img {
+          width: 35px; 
+      }
+  }
+  
+  .slb {
     text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.forecast-item img {
-    width: 50px;
-    height: auto;
-}
-
-.forecast-item p {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-}
-  .Heros a{
-    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   }
-
-  .Heros h1 {
-    font-size: 2rem;
-  }
-
-  .Heros p {
-    font-size: 1.5rem;
-    color: #000;
+  .slb a {
+    color: #0000ee;
   }
   .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    width: 30%;
     background: #000;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition:transform 0.3s ;
-    
-  }
   
-  .cta-button:hover {
-    background: #000;
-    transform: scale(1.2);
-  }
-  
-  .events {
-    padding: 20px;
-    text-align: center;
   }
 
-  .event {
-    background: #f8f8f8;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-
-  .event h3 {
-    font-size: 1.5rem;
-    color: #000;
-  }
-
-  .event p {
-    font-size: 1.3rem;
-    color: #333;
-  }
-
-  .event img{
-    width: 250px;
-    margin-left: 15%;
-  }
-
-  .event a {
-    text-decoration: underline;
-    color: var(--primary-color);
-    font-weight: bold;
-  }
-
-.Nevada h2{
-   
-    display: flex;
-    justify-content: center; 
-    grid-column: 1 / -1;
-    align-items: center; 
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 10px;
-    color:var(--primary-color);
-    background: white;
-    box-shadow: 0 0 7px #333;
-}
-.Wheather li{
-    text-decoration: none;
-    
-}
-
-.Nevada {
-    
-    grid-template-columns: 2fr 2fr; 
-    gap: 20px;
-    align-items: center;
-    display: grid;
-    justify-content: center;
-    max-width: 800px;
-    margin: 20px auto;
-   
-    padding: 20px;
-    
-   
-}
-
-
-.business-Riobamba {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-
-  .business-Riobamba h2 {
-    grid-column: span 2;
-    text-align: center;
-    font-size: 1.8rem;
-    background-color: #013a63;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-  }
-
-  .Cardbusiness {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .Cardbusiness:hover {
-    transform: scale(1.05);
-  }
-
-  .Cardbusiness img {
-    width: auto;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .Cardbusiness h3 {
-    font-size: 1.2rem;
-    color: #000;
-    margin: 10px 0;
-  }
-
-  .Cardbusiness p {
-    font-size: 1rem;
-    color: #333;
-  }
-
-  .Cardbusiness a {
-    display: block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    color: #0000ee;
-    text-decoration: underline;
-  }
-
-
-.CardBusines-Riobamba img{
-    height: auto;
-    width: 100px; 
-    
-}
-
-.card img{
-    height:auto ;
-    width: 100px; 
-}
-
-.Wheather {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-   
-    background: white;
-    padding: 20px;
-    display: flex;
-    box-shadow: 0 0 7px #333;
-}
-
-.Wheather img {
-    height: 200px;
-    width: 200px;
-}
-
-.Weather p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-}
-
-
-.Adver {
-    flex-direction: column;
-    gap: 10px;
-    display: flex;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 7px #333;
-    
-}
-
-
-  h2 {
-       
-        padding: 10px;
-        background: var(--primary-color);
-        color: white;
-        text-align: center;
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 1.5rem;
-    }
-@media (max-width: 500px) {
-    .Nevada {
-        grid-template-columns: 1fr;
-    }
-
-
-
-.weather-content {
-    grid-template-columns: 1fr; 
-}
-
-#current-weather img {
-    width: 60px; 
-    height: 60px;
-}
-
-#current-weather p {
-    font-size: 0.9rem;
-}
-
-.forecast-item {
-    padding: 6px; 
-    font-size: 0.8rem; 
-}
-
-.forecast-item img {
-    width: 35px; 
-}
-}
-
-@media (min-width: 750px) {
-
-  
- 
-    header {
-      
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background:var(--primary-color);
-        gap: 2rem;
-        text-align: center;
-       
-    }
+  @media (min-width: 764px) {
     body {
-        margin: 0 auto;
-        max-width: 1200px;
-      
+      max-width: 1200px;
+      margin: 0 auto;
     }
-
+  
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      text-align: center;
+      background: #013a63;
+      border-radius: 8px;
+    }
+  
     header img {
-        width: 70px;
-        margin: 5px;
-       
+      width: 70px;
+      margin: 5px;
+      border-radius: 15px;
     }
-
+  
     header span {
-        
-        font-weight: 600;
-        font-size: 1.5rem;
-        color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
     }
-
+  
  
     nav {
-        padding: 10px;
-        background-color: #000000;
-       
-      
-    
+      background-color: #36454f;
+      border-radius: 8px;
+      padding: 10px;
     }
-      nav button {
-        display: none;
+    nav button {
+      display: none;
     }
     nav ul {
-        justify-content: space-around;
-        list-style: none;
-        display: flex;
-       
-      
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
     }
-
+  
     nav ul li a {
-        font-size: 20px;
-        text-decoration: none;
-        color: white;
-        transition: transform 0.3s ease-in-out;
-        display: inline-block;
-       
-      
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s ease-in-out;
     }
-
+  
     nav ul li a:hover {
-        
-        transform: scale(1.2);
-        transition: transform 0.3s ease-in-out;
-      
+      text-decoration: underline;
+      transform: scale(1.2);
     }
-
+  
     nav ul li a.active {
-        color: white;
-        background-color: var(--primary-color);
-        font-weight: bold;
-        padding: 8px 12px;
-        border-radius: 5px;
-        text-decoration: none;
+      background-color: #013a63;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 8px 12px;
+      text-decoration: none;
     }
-    h1, h4 {
-        text-align: center;
-        font-size: 2rem; 
-        background: var(--primary-color);
-        padding: 10px;
-        color: white;
-        width: 100%;
-        margin-bottom: 10px;
-       
+  
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      background: #f8f8f8;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     }
-    
+  
+    .hero img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+      color: #000;
+    }
   
     
-    main {
-       
-        flex-direction: column;
-        background: white;
-        display: flex;
-        align-items: center;
-        padding: 30px;
-        box-shadow: 0 0 7px #333;
+    .cta-button:hover {
+      background: #000;
+      transform: scale(1.2);
     }
+  
 
-    .Business {
-        
-        padding: 10px;
-        margin-bottom: 15px;
-        background-color: #f8f8f8;
-        box-shadow: 0 0 7px #333;
-        width: 100%;
-        
-
+    .events {
+      padding: 20px;
+      text-align: center;
     }
+  
+    .event {
+      background: #f8f8f8;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+  
+    .event h3 {
+      font-size: 1.5rem;
+      color: #000;
+    }
+  
+    .event p {
+      font-size: 1rem;
+      color: #333;
+    }
+  
+    .event a {
+      text-decoration: underline;
+      color: #0000ee;
+      font-weight: bold;
+    }
+  
+    .event a:hover {
+      text-decoration: underline;
+    }
+  
  
-    .Bottons {
-       
-        gap: 10px;
-        justify-content: center;
-        margin: 20px 0;
-        display: flex;
+    .business-spotlight {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
     }
-
-    .Bottons button {
-        padding: 10px;
-        border-radius: 5px;
-        color: white;
-        border: none;
-        background: var(--primary-color);
-        cursor: pointer; 
-        transition: transform 0.2s ease-in-out;
+  
+    .business-spotlight h2 {
+      grid-column: span 2;
+      text-align: center;
+      font-size: 1.8rem;
+      background-color: #013a63;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
     }
-
-    .Bottons button.active {
-        color: white;
-        font-weight: bold;
-        background-color: var(--secunddary-color);
+  
+    .spotlight {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
     }
-
-    .Bottons button:hover {
-        transform: scale(1.5);
+  
+    .spotlight:hover {
+      transform: scale(1.05);
     }
-
-    
-   
-    #Adventace {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        transition: transform 0.2s ease-in-out;
-        background-color: #f8f8f8;
-        border-radius: 10px;
-        
-
+  
+    .spotlight img {
+      width: auto;
+      height: auto;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
     }
-    .CardBusines-Riobamba {
-        padding: 15px;
-        text-align: center;
-        box-shadow: 0 0 7px #333;
-        background: white;
+  
+    .spotlight h3 {
+      font-size: 1.2rem;
+      color: #000;
+      margin: 10px 0;
     }
-    
-    .CardBusines-Riobamba:hover {
-        transform: scale(1.1);
-        background-color: rgb(211, 211, 211);
-
+  
+    .spotlight p {
+      font-size: 1rem;
+      color: #333;
     }
-    .card {
-        padding: 15px;
-        text-align: center;
-        box-shadow: 0 0 7px #333;
-        background: white;
+  
+    .spotlight a {
+      display: block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      color: #0000ee;
+      text-decoration: underline;
     }
-    
-    .card:hover{
-        transform: scale(1.1);
-        background-color: rgb(211, 211, 211);
-
+  
+ 
+    .cta {
+      text-align: center;
+      padding: 40px 20px;
+      background: #013a63;
+      color: white;
+      border-radius: 10px;
     }
-   
-     #Adventace.list  {
-       
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        display: flex;
-        padding: 20px;
-        max-width: 1200px;
-        background-color: #f8f8f8;
-       
+  
+    .cta p {
+      font-size: 1.2rem;
     }
-    .CardBusines-Riobamba.list {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-        padding: 10px;
-        
+    .hero {
+      padding: 40px 20px;
+  
+      max-width: 100%;
     }
-    .card.list {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-        padding: 10px;
-        
+  
+    h1,
+    h4 {
+      text-align: center;
+      font-size: 3rem; 
+      padding: 10px;
+      background: #013a63;
+      color: white;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      width: 100%;
     }
+  
     main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-      }
-    footer {
-       
-        padding: 15px;
-        background:var(--primary-color);
-        color: white;
-        text-align: center;
-        margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
-}
-
-
-@media (max-width: 763px) {
-
-
-
-
-    .Heros {
-        text-align: center;
-        padding:  20px;
-        color: white;
-     
-        max-width: 550px;
-        border-radius: 10px;
-        background: #f8f8f8;
-        box-shadow:0 0 7px #333;
-      }
+  
+    .directory-header {
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #f8f8f8;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+      width: 100%;
+    }
+  
     
-      .Heros img {
-        margin: 2rem;
-        max-width: 330px;
-        border-radius: 10px;
-        margin-top: 15px;
-      }
-    
-      .Heros h1 {
-        font-size: 1.5rem;
-      }
-    
-      .Heros p {
-        font-size: 1.2rem;
-        color: #000;
-      }
-      .Heros a{
-        font-size: 1rem;
-      }
+  }
+  
+
+  @media (max-width: 763px) {
+    body {
+      background-color: #f8f8f8;
+      margin: 0 auto;
+    }
     #listView {
-        display: none;
-    }
-    body {
-        margin: 0 auto;
-        background-color: #f8f8f8;
+      display: none;
     }
   
+
     header {
-        
-        color: #fff;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        padding: 10px;
-        background:var(--primary-color);
-        text-align: center;
-   
+      display: flex;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+      background: #013a63;
+      padding: 10px;
+      border-radius: 8px;
     }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-      }
-
-      .Cardbusiness img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 10px;
-        margin-top: 15px;
-      }
-    
-
-
-    header img {
-        margin: 5px;
-        width: 50px;
-        border-radius: 15px;
-    }
-
-    header span {
-        font-weight: 600;
-        font-size: 1.5rem;
-    }
-
-   
-    nav {
-        
-      
-        position: relative;
-       background-color: #000000;
-        padding: 10px;
-    }
-
   
-    #menuBtn {
-       
-        border: none;
-        font-size: 24px;
-        color: white;
-        background: none;
-        cursor: pointer;
-        display: block;
-        position: relative;
+    header img {
+      width: 50px;
+      margin: 5px;
+      border-radius: 15px;
     }
+  
+    header span {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  
+   
+  #menuBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: relative;
+  }
+  
 
- 
-    #menuBtn::before {
-        content: "☰";
-        font-size: 24px;
+  #menuBtn::before {
+    content: '☰';
+    font-size: 24px;
+  }
+  
+  #menuBtn.open::before {
+    content: '✖';
+    font-size: 24px;
+    background-color: #013a63;
+  }
+  
+    nav {
+      background: #333;
+      border-radius: 8px;
+      position: relative;
+      padding: 10px;
     }
-
-    #menuBtn.open::before {
-        background-color: #005fa3;
-        content: "✖";
-        font-size: 24px;
-      
-
-    }
-    #menu {
-	display: block;
-	font-size: 1rem;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-	background-color: black;
-	color: #fff;
-}
-    .show li {
-        display: block;
-    }
-    #menu::before {
-        content: "✖";
-        font-size: 24px;
-    }
-    #menu.show::before {
-        content: "☰";
-        text-decoration: none;
-    }
-    .navigation a:hover,
-    .navigation a:active {
-	color: white;
-	background-color: black;
-}
-
-
+  
+    
+  
+  
     nav ul {
-        
-        padding: 0;
-        list-style: none;
-        margin: 0;
-        display: none;
-        background: black;
-        border-radius: 8px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        top: 100%;
-        width: 100%;
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #444;
+      border-radius: 8px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
     }
-
-   
+  
+ 
     nav ul.show {
-     
-        width: 99%;
-        position: static;
-        display: block;
-        padding: 10px 0;
+      display: block;
+      position: static;
+      width: 100%;
+      padding: 10px 0;
     }
- 
+    
     nav ul li {
-       
-        text-align: center;
-        padding: 10px;
+      padding: 10px;
+      text-align: center;
     }
-
+  
     nav ul li a {
-        color: white;
-        display: block;
-        font-size: 18px;
-        text-decoration: none;
-        padding: 5px;
-        transition: transform 0.3s ease-in-out;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+      padding: 5px;
     }
-
- 
+  
     nav ul li a.active {
-        
-        color: white;
-        font-weight: bold;
-        border-radius: 5px;
-        background-color: var(--primary-color);
-        padding: 8px 12px;
-        text-decoration: none;
+      background-color: #013a63;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 8px 12px;
+      text-decoration: none;
     }
 
-    nav ul li a:hover {
-        
-        transform: scale(1.2);
-        transition: transform 0.3s ease-in-out;
-      
-    }
-
- 
     main {
-
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        background: white;
-        box-shadow: 0 0 7px #333;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
-    h2 {
-       
-        padding: 10px;
-        background: var(--primary-color);
-        color: white;
-        text-align: center;
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 1.5rem;
+    .hero img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 15px;
     }
-    h1, h4 {
-        text-align: center;
-        background: var(--primary-color);
-        padding: 10px;
-        color: white;
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 2rem;
-
+  
+    .spotlight img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 15px;
     }
-   
-    
-   
-    .Bottons {
-        display: flex;
-        margin-bottom: 10px;
-        justify-content: center;
-        gap: 10px;
-        
-    }
-
-    .Bottons button {
-        
-        padding: 10px 20px;
-        border: none;
-        font-size: 16px;
-        border-radius: 5px;
-    }
-    .Bottons button.active {
-        font-weight: bold;
-        background-color: var(--secunddary-color);
-        color: #fff;
-        
-    }
-
-
-   
-
-    }
-
-    .CardBusines-Riobamba img {
-        
-        max-height: 150px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-       
-       
-    }
- 
-     .CardBusines-Riobamba {
-    
-        padding: 20px;
-        box-shadow: 0 0 7px #333;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-    }
-    .card img {
-        
-        max-height: 150px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-       
-       
-    }
- 
-     .card {
-    
-        padding: 20px;
-        box-shadow: 0 0 7px #333;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-    }
-   
-    footer {
-       
-        padding: 10px;
-        background: var(--primary-color);
-        color: white;
-        text-align: center;
-        margin: 1.3rem;
-        font-size: 1.2rem;
-       
-    }
-    
-
-    .card img {
-       
-        max-height: 151px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #Adventace {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 15px;
-        padding: 5px;
-    }
-
-    
-
-    
+  }
+  
+  h1,
+  h4 {
+    text-align: center;
+    padding: 10px;
+    background: #013a63;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 2rem;
+  }
+  h2 {
+    text-align: center;
+    padding: 10px;
+    background: #013a63;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #013a63;
+    color: white;
+    border-radius: 8px;
+  }
+  
