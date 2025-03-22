@@ -69,7 +69,7 @@ function displayCard(businesses) {
       return;
   }
 
-  cardContainer.innerHTML = '<h4>Visit our Business Spotlights</h4>'; 
+  cardContainer.innerHTML = '<h2>Visit our Business Riobamba Spotlights</h2>'; 
 
   businesses.forEach((business) => {
       const card = document.createElement('div');
