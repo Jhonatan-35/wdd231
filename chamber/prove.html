@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home | Chamber Commerce Riobamba</title>
-    <meta name="description" content="Home Page Commerce Riobamba​​">
+    <title> Directory | Chamber Commerce Yugsan</title>
+    <meta name="description" content="Directory Commerce Riobamba​​">
     <meta name="author" content="Jhonatan  Yugsan ">
-    <meta property="og:title" content="Home Chamber Commerce Riobamba" >
+    <meta property="og:title" content="Chamber Commerce Riobamba- Directory" >
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/index.htlm" >
+    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/directory.html" >
     <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/chamber/images" >
     <link rel="icon" href="images/logochambera.png" type="images/logochambera" >
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="scripts/alter.js"></script>
-    
 </head>
 <body> 
     
@@ -29,8 +28,8 @@
         <a id="menu" href="#" class="show"></a>
         <ul class="navigation"> 
 
-            <li><a href="index.html" id="Home">Home</a></li>
-            <li><a href="" id="Chamber">Discover</a></li>
+            <li><a href="index.html" id="Home">Homepage</a></li>
+            <li><a href="prove.html" id="Chamber">Discover</a></li>
             <li><a href="directory.html" id="Directory">Directory</a></li>
             <li><a href="" id="Join">Join</a></li>
            
@@ -39,86 +38,77 @@
     </nav>  
 
     <main> 
-        <section class="Heros">
-            <h1>Welcome to the Riobamba Chamber of Commerce</h1>
-            <p> Come and be part of the best chamber of commerce in Ecuador</p>
-            <a href="#" class="cta-button">Join</a>
-        <img src="images/Chambercomerce.webp" alt="">
-       
-        </section>
-         <section class="events">
-            <h2>Upcoming Events</h2>
-            <div class="event">
-            <h3>Titan wholesale market Riobamba </h3>
-            <img src="images/apoint.webp" alt="">
-            <p>Every Monday, receive training on how to manage your business, starting at 8 a.m.</p>
-            <p>Receive free training on how to better manage finances for your companies and businesses. at 8 a.m</p>
-            <br>
-            <a href="https://maps.app.goo.gl/fxU3XQZ4Vf9xeSeW8">Our Event Location</a>
-            <br>
-            <a href="https://hotelzeus.com.ec/">Visit Hotel Zeus, the place where our event venues are held.</a>
-        </div>
-         </section>
-
-      <section class="business-spotlight">
-     
-        <div class="spotlight">
-        <img src="images/Hotelzeus.webp" alt="Hotel Zeus logo" loading="lazy">
-        <h3>Hotel Zeus</h3>
-        <p>Road 34 /23</p>
-        <p> (2345)88690</p>
-        <p>Level : Gold</p>
-        <a href="https://hotelzeus.com.ec/">https://hotelzeus.com.ec/</a>
-        </div>
-                
-        <div class="spotlight">
-        <img src="images/iberica.webp" alt="Sausages La Iberica logo" loading="lazy">
-        <h3>Sausages La Iberica </h3>
-        <p>Ave 54 Street 15</p>
-        <p> (2345)458690</p>
-        <p>Level: Gold</p>
-        <a href="https://www.laiberica.com/">https://www.laiberica.com/</a>
-        </div>
-      </div>
-    </section>
+        
     
-        <section id="weather-container">
-        <h2>Wheather-continer</h2>
-        <div class="weather-content">
-        <div id="current-weather">
-            <p>
-            <strong>Currenly</strong>
-            </p>
-            <p>36°F - Partly Sunny</p>
-            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
-            </div>
-            <div id="weather-forecast">
-                <div class="forecast-item">
-                    <p>
-                        <strong> Monday</strong>
-                     </p>
-                    <img src="https://openweathermap.org/img/wn/13d@2x.png" alt="">
-                    <p>36°F - Snowfall</p>
-                </div>
-                <div class="forecast-item">
-                    <p>
-                        <strong> Tuesday</strong>
-                     </p>
-                    <img src="https://openweathermap.org/img/wn/10n@2x.png" alt="">
-                    <p>36°F -Overcast clouds</p>
-                </div>
-                <div class="forecast-item">
-                    <p>
-                        <strong> Wednesday</strong>
-                     </p>
-                    <img src="https://openweathermap.org/img/wn/11d@2x.png" alt="">
-                    <p>36°F - Lightning</p>
-                </div>
-            </div>
+        <div class="directory-header">
+          <h1>Directory Business</h1>
+          <div class="toggle-buttons">
+            <button id="gridView" class="active">Grid View</button>
+            <button id="listView">List View</button>
+          </div>
         </div>
-
-        </section>
+  
+    
+      <div id="businessContainer" class="grid">
+        <div class="business-card grid">
+            <img src="images/Creperia.webp" alt="Creperia Mediodia logo" loading="lazy">
+            <h2>Creperia Mediodia</h2>
+            <p>Street 45 and lisboa</p>
+            <p> (2345)78690</p>
+            <a href="https://creperiaelmediodiaec.com/">https://creperiaelmediodiaec.com/</a>
+        </div>
+        <div class="business-card grid">
+            <img src="images/Hospital.webp" alt="hospital San juan logo" loading="lazy" >
+            <h2>hospital San juan</h2>
+            <p>Road 45 and E-34</p>
+            <p> (2365)78697</p>
+            <a href="https://hospitalsanjuan.ec/">https://hospitalsanjuan.ec/</a>
+            </div>
+            <div class="business-card grid">
+                <img src="images/Hotelzeus.webp" alt="Hotel Zeus logo" loading="lazy">
+                <h2>Hotel Zeus</h2>
+                <p>Road 34 /23</p>
+                <p> (2345)88690</p>
+                <a href="https://hotelzeus.com.ec/">https://hotelzeus.com.ec/</a>
+                </div>
+                <div class="business-card grid">
+                    <img src="images/images.webp" alt="Sacha Textil logo" loading="lazy">
+                    <h2>Sacha Textil</h2>
+                    <p>Street 45 and lisboa</p>
+                    <p> (2345)7458690</p>
+                    <a href="https://sachatextil.com/">https://sachatextil.com/</a>
+                    </div>
+                    <div class="business-card grid">
+                        <img src="images/iberica.webp" alt="Sausages La Iberica logo" loading="lazy">
+                        <h2>Sausages La Iberica </h2>
+                        <p>Ave 54 Street 15</p>
+                        <p> (2345)458690</p>
+                        <a href="https://www.laiberica.com/">https://www.laiberica.com/</a>
+                        </div>
+                        <div class="business-card grid">
+                            <img src="images/Fotalezsteak.webp" alt="La fortaleza steak and vine logo" loading="lazy">
+                            <h2>La fortaleza steak and vine</h2>
+                            <p>Street 43 road 34</p>
+                            <p> (6445)78660</p>
+                            <a href="https://la-fortaleza-steak-wine.reservio.com/">https://la-fortaleza-steak-wine.reservio.com/</a>
+                            </div>
+                            <div class="business-card grid">
+                                <img src="images/Continetal.webp" alt="Automotres Continental logo" loading="lazy">
+                                <h2>Automotres Continental</h2>
+                                <p>Road 34 </p>
+                                <p> (2345)78s0</p>
+                                <a href="https://www.automotorescontinental.com/">https://www.automotorescontinental.com/</a>
+                                </div>
+                                <div class="business-card grid">
+                                    <img src="images/HotelMolino.webp" alt="Hotel El Molino logo" loading="lazy">
+                                    <h2>Hotel El Molino</h2>
+                                    <p>Street 45 and lisboa</p>
+                                    <p> (2345)78690</p>
+                                    <a href="https://hotelelmolino.com.ec/">https://hotelelmolino.com.ec/</a>
+                                    </div>
+                    </div>
         </main>
+  
     <footer>
         <p>&copy; <span id="copyright-year"></span>🌴WDD 231 | Jhonatan Ariel Yugsan 🌴 Ecuador</p>
         <p>This document was last modified:</p> 
