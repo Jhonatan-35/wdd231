@@ -90,7 +90,7 @@ function displayCard(businesses) {
       phone.textContent = `${business.phone}`;
 
       const membership = document.createElement('p');
-      membership.textContent = `Membership Level: ${business.membership_level === 3 ? "Siver" : "Gold"}`;
+      membership.textContent = `Membership Level: ${business.membership_level === 3 ? "Silver" : "Gold"}`;
 
       const website = document.createElement('a');
       website.href = business.website;
