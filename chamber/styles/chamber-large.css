@@ -14,6 +14,161 @@ body {
     --secunddary-color:#36454f;
 }
 
+.Heros {
+    text-align: center;
+    padding:  20px;
+    color: white;
+     margin-bottom: 2rem;
+    max-width: 700px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    box-shadow:0 0 7px #333;
+  }
+
+  .Heros img {
+    margin: 1rem;
+    max-width: 630px;
+    border-radius: 10px;
+    margin-top: 15px;
+   
+  }
+
+  #weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weather-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#current-weather img {
+    width: 100px;
+    height: 100px;
+    image-rendering: crisp-edges;
+}
+
+#current-weather p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #013a63;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#weather-forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.forecast-item {
+    background: white;
+    padding: 10px;
+   
+   
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forecast-item img {
+    width: 50px;
+    height: auto;
+}
+
+.forecast-item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+  .Heros a{
+    font-size: 1.5rem;
+  }
+
+  .Heros h1 {
+    font-size: 1.rem;
+  }
+
+  .Heros p {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 30%;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition:transform 0.3s ease-in-out;
+    background :0.3s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    background: #000;
+    transform: scale(1.2);
+  }
+  
+  .events {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .event {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .event h3 {
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .event p {
+    font-size: 1.3rem;
+    color: #333;
+  }
+
+  .event img{
+    width: 250px;
+    margin-left: 15%;
+  }
+
+  .event a {
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
 .Nevada h2{
    
     display: flex;
@@ -48,10 +203,79 @@ body {
    
 }
 
+
+.business-Riobamba {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .business-Riobamba h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: #013a63;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .Cardbusiness {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .Cardbusiness:hover {
+    transform: scale(1.05);
+  }
+
+  .Cardbusiness img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .Cardbusiness h3 {
+    font-size: 1.2rem;
+    color: #000;
+    margin: 10px 0;
+  }
+
+  .Cardbusiness p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .Cardbusiness a {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: #0000ee;
+    text-decoration: underline;
+  }
+
+
 .CardBusines-Riobamba img{
     height: auto;
     width: 100px; 
     
+}
+
+.card img{
+    height:auto ;
+    width: 100px; 
 }
 
 .Wheather {
@@ -88,43 +312,45 @@ body {
 }
 
 
-.ForeRiobam {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-   
-}
-
-.ForeRiobam-item:last-child {
-    border-bottom: none;
-}
-
-
-.ForeRiobam img {
-    height: 40px;
-    width: 40px;
-   
-}
-
-
-.ForeRiobam p {
-    color: #000000;
-    margin: 0;
-    font-size: 1rem;
-  
-}
-
-
+  h2 {
+       
+        padding: 10px;
+        background: var(--primary-color);
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
 @media (max-width: 500px) {
     .Nevada {
         grid-template-columns: 1fr;
     }
+
+
+
+.weather-content {
+    grid-template-columns: 1fr; 
 }
 
+#current-weather img {
+    width: 60px; 
+    height: 60px;
+}
 
+#current-weather p {
+    font-size: 0.9rem;
+}
 
+.forecast-item {
+    padding: 6px; 
+    font-size: 0.8rem; 
+}
+
+.forecast-item img {
+    width: 35px; 
+}
+}
 
 @media (min-width: 750px) {
 
@@ -205,7 +431,7 @@ body {
     }
     h1, h4 {
         text-align: center;
-        font-size: 3rem; 
+        font-size: 2rem; 
         background: var(--primary-color);
         padding: 10px;
         color: white;
@@ -214,7 +440,7 @@ body {
        
     }
     
-    
+  
     
     main {
        
@@ -292,6 +518,18 @@ body {
         background-color: rgb(211, 211, 211);
 
     }
+    .card {
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 7px #333;
+        background: white;
+    }
+    
+    .card:hover{
+        transform: scale(1.1);
+        background-color: rgb(211, 211, 211);
+
+    }
    
      #Adventace.list  {
        
@@ -312,8 +550,23 @@ body {
         padding: 10px;
         
     }
-
-
+    .card.list {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        padding: 10px;
+        
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+      }
     footer {
        
         padding: 15px;
@@ -325,8 +578,40 @@ body {
 }
 
 
-@media (max-width: 760px) {
-   
+@media (max-width: 763px) {
+
+
+
+
+    .Heros {
+        text-align: center;
+        padding:  20px;
+        color: white;
+     
+        max-width: 550px;
+        border-radius: 10px;
+        background: #f8f8f8;
+        box-shadow:0 0 7px #333;
+      }
+    
+      .Heros img {
+        margin: 2rem;
+        max-width: 330px;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+    
+      .Heros h1 {
+        font-size: 1.5rem;
+      }
+    
+      .Heros p {
+        font-size: 1.2rem;
+        color: #000;
+      }
+      .Heros a{
+        font-size: 1rem;
+      }
     #listView {
         display: none;
     }
@@ -347,6 +632,25 @@ body {
         text-align: center;
    
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .Cardbusiness img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+    
+
 
     header img {
         margin: 5px;
@@ -532,6 +836,9 @@ body {
         
     }
 
+
+   
+
     }
 
     .CardBusines-Riobamba img {
@@ -555,6 +862,27 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .card img {
+        
+        max-height: 150px;
+        object-fit: contain;
+        width: 100%;
+        margin-bottom: 10px;
+       
+       
+    }
+ 
+     .card {
+    
+        padding: 20px;
+        box-shadow: 0 0 7px #333;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+    }
    
     footer {
        
@@ -562,9 +890,12 @@ body {
         background: var(--primary-color);
         color: white;
         text-align: center;
+        margin: 1.3rem;
        
     }
-    .CardBusines-Riobamba img {
+   
+
+    .card img {
        
         max-height: 150px;
         object-fit: contain;
@@ -581,4 +912,3 @@ body {
     
 
     
-
