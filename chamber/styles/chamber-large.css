@@ -327,7 +327,13 @@ body {
         grid-template-columns: 1fr;
     }
 
-
+    .Heros img {
+        
+        max-width: 210px;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding: 10px;
+      }
 
 .weather-content {
     grid-template-columns: 1fr; 
@@ -371,6 +377,15 @@ body {
         max-width: 1200px;
       
     }
+    .Heros img {
+        
+        max-width: 210px;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding: 10px;
+      }
+    
+    
 
     header img {
         width: 70px;
@@ -658,8 +673,8 @@ body {
       }
     
       .Heros img {
-        margin: 2rem;
-        max-width: 310px;
+        
+        max-width: 210px;
         border-radius: 10px;
         margin-top: 15px;
         padding: 10px;
