@@ -18,7 +18,7 @@ body {
     text-align: center;
     padding:  20px;
     color: white;
-     margin-bottom: 2rem;
+    margin-bottom: 2rem;
     max-width: 700px;
     border-radius: 10px;
     background: #f8f8f8;
@@ -456,10 +456,10 @@ body {
         
         padding: 10px;
         margin-bottom: 15px;
-      
         background-color: #f8f8f8;
         box-shadow: 0 0 7px #333;
         width: 100%;
+        
 
     }
  
