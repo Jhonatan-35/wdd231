@@ -160,7 +160,7 @@ body {
 
   .event img{
     width: 250px;
-    margin-left: 15%;
+   
   }
 
   .event a {
@@ -659,7 +659,7 @@ body {
     
       .Heros img {
         margin: 2rem;
-        max-width: 330px;
+        max-width: 310px;
         border-radius: 10px;
         margin-top: 15px;
       }
