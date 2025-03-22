@@ -327,7 +327,33 @@ body {
         grid-template-columns: 1fr;
     }
 
-  
+ 
+.Heros {
+    text-align: center;
+    padding:  20px;
+    color: white;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    box-shadow:0 0 7px #333;
+  }
+
+  .Heros img {
+    margin: 1rem;
+    max-width: 280px;
+    border-radius: 10px;
+    margin-top: 15px;
+   
+  } 
+    .Heros img {
+        
+        width: 100x;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 15px;
+
+      } 
 
 .weather-content {
     grid-template-columns: 1fr; 
@@ -373,7 +399,14 @@ body {
     }
   
     
-    
+    .Heros img {
+        
+        width: 100x;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 15px;
+
+      } 
 
     header img {
         width: 70px;
@@ -651,9 +684,9 @@ body {
 
     .Heros {
         text-align: center;
-        padding:  20px;
+        width: 100%;
+        padding:  20px 10px;
         color: white;
-     
         max-width: 550px;
         border-radius: 10px;
         background: #f8f8f8;
@@ -662,10 +695,11 @@ body {
     
       .Heros img {
         
-        max-width: 210px;
+        max-width: 100x;
         border-radius: 10px;
-        margin-top: 15px;
         padding: 10px;
+        margin-top: 15px;
+
       }
     
       .Heros h1 {
