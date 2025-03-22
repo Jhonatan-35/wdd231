@@ -1,100 +1,76 @@
-const url = 'data/members.json'; 
-const spotlightContainer = document.querySelector('.business-spotlight');
+const url = "data/members.json"; // Ajustado para caminho correto
+const businessContainer = document.getElementById("businessContainer");
+let businesses = [];
 
 async function getBusinesses() {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error('Failed to fetch data');
-    const data = await response.json();
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Failed to fetch data");
+        const data = await response.json();
+        businesses = data.members;
+        displayBusinesses("grid"); // Inicializa como grid
+    } catch (error) {
+        console.error("Error loading business data:", error);
+    }
+}
 
-    console.log("Todos os membros:", data.members); 
-
-    // filter leel"
-    const eligibleBusinesses = data.members.filter(business => 
-      business.membership_level === 3 || business.membership_level === 2
-    );
-
-    console.log("Membros qualificados:", eligibleBusinesses);
-
-    if (eligibleBusinesses.length === 0) {
-      console.warn("Nenhum membro Gold ou Silver disponível para spotlight!");
-      return;
+function displayBusinesses(view) {
+    // Force grid view on small screens
+    if (window.innerWidth <= 763) {
+        view = "grid"; // Ignora a escolha do usuário para telas pequenas
     }
 
-// random
-    const spotlightBusinesses = getRandomBusinesses(eligibleBusinesses, Math.floor(Math.random() * 1) + 2);
-    
-    console.log("Membros selecionados para spotlight:", spotlightBusinesses); 
+    businessContainer.innerHTML = "";
+    businessContainer.className = view;
 
-    displaySpotlights(spotlightBusinesses);
-  } catch (error) {
-    console.error('Erro ao carregar os dados:', error);
-  }
+    businesses.forEach(business => {
+        const card = document.createElement("div");
+        card.classList.add("business-card", view);
+
+        if (view === "grid") {
+            const img = document.createElement("img");
+            img.src = `images/${business.image}`;
+            img.alt = `${business.name} logo`;
+            img.loading = "lazy";
+            card.appendChild(img);
+        }
+        const name = document.createElement("h2");
+        name.textContent = business.name;
+
+        const address = document.createElement("p");
+        address.textContent = business.address;
+
+        const phone = document.createElement("p");
+        phone.textContent = business.phone;
+
+        const website = document.createElement("a");
+        website.href = business.website;
+        website.target = "_blank";
+        website.textContent = business.website;
+
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+
+        businessContainer.appendChild(card);
+    });
+
+    document.getElementById("gridView").classList.toggle("active", view === "grid");
+    document.getElementById("listView").classList.toggle("active", view === "list");
 }
 
-// unique
-function getRandomBusinesses(businesses, count) {
-  let selected = [];
-  let available = [...businesses];
+// Toggle button event listeners
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("gridView").addEventListener("click", () => displayBusinesses("grid"));
+    document.getElementById("listView").addEventListener("click", () => displayBusinesses("list"));
 
-  while (selected.length < count && available.length > 0) {
-    let randomIndex = Math.floor(Math.random() * available.length);
-    selected.push(...available.splice(randomIndex, 1));
-  }
-  return selected;
-}
+    getBusinesses();
+});
 
-//  spotlight
-function displaySpotlights(businesses) {
-  if (!businesses || businesses.length === 0) {
-      console.warn("No businesses found for spotlight.");
-      return;
-  }
-
-  if (!spotlightContainer) {
-      console.error("Error: .business-spotlight section was not found.");
-      return;
-  }
-
-  spotlightContainer.innerHTML = '<h2>Business Spotlights</h2>'; 
-
-  businesses.forEach((business) => {
-      const spotlight = document.createElement('div');
-      spotlight.classList.add('spotlight');
-
-      const img = document.createElement('img');
-      img.src = `images/${business.image}`;
-      img.alt = `${business.name} logo`;
-      img.loading = 'lazy';
-
-      const name = document.createElement('h3');
-      name.textContent = business.name;
-
-      const address = document.createElement('p');
-      address.textContent = `${business.address}`;
-
-      const phone = document.createElement('p');
-      phone.textContent = `${business.phone}`;
-
-      const membership = document.createElement('p');
-      membership.textContent = `Membership Level: ${business.membership_level === 3 ? "Gold" : "Silver"}`;
-
-      const website = document.createElement('a');
-      website.href = business.website;
-      website.target = '_blank';
-      website.textContent = website;
-
-      spotlight.appendChild(img);
-      spotlight.appendChild(name);
-      spotlight.appendChild(address);
-      spotlight.appendChild(phone);
-      spotlight.appendChild(membership);
-      spotlight.appendChild(website);
-
-      spotlightContainer.appendChild(spotlight);
-  });
-}
-
-
-getBusinesses();
-displaySpotlights();
+// Force grid view when resizing to small screens
+window.addEventListener("resize", () => {
+    if (window.innerWidth <= 763) {
+        displayBusinesses("grid");
+    }
+});
