@@ -38,7 +38,7 @@ function displayBusinesses(view) {
 
     businesses.forEach(business => {
         const card = document.createElement("div");
-        card.classList.add("businessriobamba-card", view);
+        card.classList.add("business-card", view);
 
         if (view === "grid") {
             const img = document.createElement("img");
