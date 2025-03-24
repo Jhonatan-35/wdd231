@@ -1,15 +1,4 @@
-document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
-let oLastModif = new Date(document.lastModified);
-let text = document.lastModified; document.getElementById("demo").innerHTML = text;
 
-const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('#menu');
-
-
-hambutton.addEventListener('click', () => {
-  mainnav.classList.toggle('show');
-  hambutton.classList.toggle('show');
-});
 
 const url = "data/members.json"; 
 const businesslist = document.getElementById("businesslist");
@@ -69,8 +58,8 @@ function displayBusinesses(view) {
         businesslist.appendChild(card);
     });
 
-    document.getElementById("gridView").classList.toggle("active", view === "grid");
-    document.getElementById("listView").classList.toggle("active", view === "list");
+    document.getElementById("gridView").classList.buttons("active", view === "grid");
+    document.getElementById("listView").classList.buttons("active", view === "list");
 }
 
 
