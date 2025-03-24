@@ -1,17 +1,29 @@
+document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+let oLastModif = new Date(document.lastModified);
+let text = document.lastModified; document.getElementById("demo").innerHTML = text;
+
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
+
+
+hambutton.addEventListener('click', () => {
+  mainnav.classList.toggle('show');
+  hambutton.classList.toggle('show');
+});
 
 const url = "data/members.json"; 
-const businessContainer = document.getElementById("businessContainer");
+const businesslist = document.getElementById("businesslist");
 let businesses = [];
 
 async function getBusinesses() {
     try {
         const response = await fetch(url);
-        if (!response.ok) throw new Error("Failed to fetch data");
+        if (!response.ok) throw new Error("Wrong error");
         const data = await response.json();
         businesses = data.members;
         displayBusinesses("grid"); 
     } catch (error) {
-        console.error("Error loading business data:", error);
+        console.error("wrong error:", error);
     }
 }
 
@@ -21,12 +33,12 @@ function displayBusinesses(view) {
         view = "grid"; 
     }
 
-    businessContainer.innerHTML = "";
-    businessContainer.className = view;
+    businesslist.innerHTML = "";
+    businesslist.className = view;
 
     businesses.forEach(business => {
         const card = document.createElement("div");
-        card.classList.add("business-card", view);
+        card.classList.add("businessriobamba-card", view);
 
         if (view === "grid") {
             const img = document.createElement("img");
@@ -49,12 +61,12 @@ function displayBusinesses(view) {
         website.target = "_blank";
         website.textContent = business.website;
 
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
+        list.appendChild(name);
+        list.appendChild(address);
+        list.appendChild(phone);
+        list.appendChild(website);
 
-        businessContainer.appendChild(card);
+        businesslist.appendChild(list);
     });
 
     document.getElementById("gridView").classList.toggle("active", view === "grid");
