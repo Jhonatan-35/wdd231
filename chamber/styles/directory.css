@@ -390,7 +390,7 @@ header span {
         border-radius: 5px;
         color: white;
         border: none;
-        background: var(--primary-color);
+       
         cursor: pointer; 
         transition: transform 0.2s ease-in-out;
         
