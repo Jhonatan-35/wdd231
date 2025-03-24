@@ -61,10 +61,10 @@ function displayBusinesses(view) {
         website.target = "_blank";
         website.textContent = business.website;
 
-        List.appendChild(name);
-        List.appendChild(address);
-        List.appendChild(phone);
-        List.appendChild(website);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
 
         businessContainer.appendChild(card);
     });
