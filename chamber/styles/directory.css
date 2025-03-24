@@ -664,7 +664,7 @@ header span {
     }
 
     #menuBtn.open::before {
-        background-color: #005fa3;
+      
         content: "✖";
         font-size: 24px;
       
