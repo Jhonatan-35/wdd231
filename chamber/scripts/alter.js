@@ -66,7 +66,7 @@ function displayBusinesses(view) {
         card.appendChild(phone);
         card.appendChild(website);
 
-        businessContainer.appendChild(card);
+        Businesslist.appendChild(card);
     });
 
     document.getElementById("gridView").classList.toggle("active", view === "grid");
