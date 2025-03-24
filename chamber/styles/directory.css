@@ -748,7 +748,7 @@ header span {
     }
 
     nav ul li a:hover {
-        
+     
         transform: scale(1.2);
         transition: transform 0.3s ease-in-out;
       
@@ -774,7 +774,7 @@ header span {
         width: 100%;
         font-size: 1.5rem;
     }
-    h1, h2 {
+    h1 {
         text-align: center;
         background: var(--primary-color);
         padding: 10px;
