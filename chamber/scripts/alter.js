@@ -11,103 +11,82 @@ hambutton.addEventListener('click', () => {
   hambutton.classList.toggle('show');
 });
 
-
-const url = 'data/members.json'; 
-const cardContainer = document.querySelector('.Business');
+const url = "data/members.json"; 
+const Businesslist= document.getElementById("Businesslist");
+let businesses = [];
 
 async function getBusinesses() {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error('Failed to fetch data');
-    const data = await response.json();
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Wrong failed Business");
+        const data = await response.json();
+        businesses = data.members;
+        displayBusinesses("grid"); 
+    } catch (error) {
+        console.error("Wrong failed Business:", error);
+    }
+}
 
-    console.log("All Members:", data.members); 
-
+function displayBusinesses(view) {
   
-    const eligibleBusinesses = data.members.filter(business => 
-      business.membership_level === 3 || business.membership_level === 2
-    );
-
-    console.log("Choices Members:", eligibleBusinesses);
-
-    if (eligibleBusinesses.length === 0) {
-      console.warn("Member elegible Silver or gold!");
-      return;
+    if (window.innerWidth <= 763) {
+        view = "grid"; 
     }
 
-    const cardBusinesses = getRandomBusinesses(eligibleBusinesses, Math.floor(Math.random() * 1) + 2);
-    
-    console.log("Member Achive Bussiness spotligh:", cardBusinesses); 
+    Businesslist.innerHTML = "";
+    Businesslist.className = view;
 
-    displayCard(cardBusinesses);
-  } catch (error) {
-    console.error('Wrong:', error);
-  }
+    businesses.forEach(business => {
+        const card = document.createElement("div");
+        card.classList.add("CardBusines-Riobamba", view);
+
+        if (view === "grid") {
+            const img = document.createElement("img");
+            img.src = `images/${business.image}`;
+            img.alt = `${business.name} logo`;
+            img.loading = "lazy";
+            list.appendChild(img);
+        }
+        const name = document.createElement("h2");
+        name.textContent = business.name;
+
+        const address = document.createElement("p");
+        address.textContent = business.address;
+
+        const phone = document.createElement("p");
+        phone.textContent = business.phone;
+
+        const website = document.createElement("a");
+        website.href = business.website;
+        website.target = "_blank";
+        website.textContent = business.website;
+
+        Riobamba.appendChild(name);
+        Riobamba.appendChild(address);
+        Riobamba.appendChild(phone);
+        Riobamba.appendChild(website);
+
+        list.appendChild(card);
+    });
+
+    document.getElementById("gridView").classList.toggle("active", view === "grid");
+    document.getElementById("listView").classList.toggle("active", view === "list");
 }
 
 
-function getRandomBusinesses(businesses, count) {
-  let selected = [];
-  let available = [...businesses];
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("gridView").addEventListener("click", () => displayBusinesses("grid"));
+    document.getElementById("listView").addEventListener("click", () => displayBusinesses("list"));
 
-  while (selected.length < count && available.length > 0) {
-    let randomIndex = Math.floor(Math.random() * available.length);
-    selected.push(...available.splice(randomIndex, 1));
-  }
-  return selected;
-}
+    getBusinesses();
+});
 
 
-function displayCard(businesses) {
-  if (!businesses || businesses.length === 0) {
-      console.warn("Business don't fount.");
-      return;
-  }
-
-  if (!cardContainer) {
-      console.error("Wrong: .business don't wrong.");
-      return;
-  }
-
-  cardContainer.innerHTML = '<h2>Visit our Business Riobamba Spotlights</h2>'; 
-
-  businesses.forEach((business) => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-
-      const img = document.createElement('img');
-      img.src = `images/${business.image}`;
-      img.alt = `${business.name} logo`;
-      img.loading = 'lazy';
-
-      const name = document.createElement('h3');
-      name.textContent = business.name;
-
-      const address = document.createElement('p');
-      address.textContent = `${business.address}`;
-
-      const phone = document.createElement('p');
-      phone.textContent = `${business.phone}`;
-
-      const membership = document.createElement('p');
-      membership.textContent = `Membership Level: ${business.membership_level === 3 ? "Siver" : "Gold"}`;
-
-      const website = document.createElement('a');
-      website.href = business.website;
-      website.target = '_blank';
-      website.textContent = website;
-
-      card.appendChild(img);
-      card.appendChild(name);
-      card.appendChild(address);
-      card.appendChild(phone);
-      card.appendChild(membership);
-      card.appendChild(website);
-
-      cardContainer.appendChild(card);
-  });
-}
+window.addEventListener("resize", () => {
+    if (window.innerWidth <= 763) {
+        displayBusinesses("grid");
+    }
+});
 
 
-getBusinesses();
-displayCard();
+      
