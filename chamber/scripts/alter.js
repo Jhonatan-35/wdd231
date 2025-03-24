@@ -12,7 +12,7 @@ hambutton.addEventListener('click', () => {
 });
 
 const url = "data/members.json"; 
-const Businesslist = document.getElementById("Businesslist");
+const businessContainer = document.getElementById("businessContainer");
 let businesses = [];
 
 async function getBusinesses() {
@@ -28,13 +28,13 @@ async function getBusinesses() {
 }
 
 function displayBusinesses(view) {
-
+ 
     if (window.innerWidth <= 763) {
         view = "grid"; 
     }
 
-    Businesslist.innerHTML = "";
-    Businesslist.className = view;
+    businessContainer.innerHTML = "";
+    businessContainer.className = view;
 
     businesses.forEach(business => {
         const card = document.createElement("div");
@@ -66,7 +66,7 @@ function displayBusinesses(view) {
         card.appendChild(phone);
         card.appendChild(website);
 
-        Businesslist.appendChild(card);
+        businessContainer.appendChild(card);
     });
 
     document.getElementById("gridView").classList.toggle("active", view === "grid");
@@ -81,8 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
     getBusinesses();
 });
 
+
 window.addEventListener("resize", () => {
     if (window.innerWidth <= 763) {
         displayBusinesses("grid");
     }
 });
+
+
+
