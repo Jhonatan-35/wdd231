@@ -61,12 +61,12 @@ function displayBusinesses(view) {
         website.target = "_blank";
         website.textContent = business.website;
 
-        list.appendChild(name);
-        list.appendChild(address);
-        list.appendChild(phone);
-        list.appendChild(website);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
 
-        businesslist.appendChild(list);
+        businesslist.appendChild(card);
     });
 
     document.getElementById("gridView").classList.toggle("active", view === "grid");
