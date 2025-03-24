@@ -804,7 +804,7 @@ header span {
     }
     .buttons button.active {
         font-weight: bold;
-      
+        background-color: var(--secunddary-color);
         color: #fff;
         
     }
