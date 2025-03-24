@@ -390,7 +390,7 @@ header span {
         border-radius: 5px;
         color: white;
         border: none;
-        background: var(--primary-color);
+        background: #0000ee;
         cursor: pointer; 
         transition: transform 0.2s ease-in-out;
         
@@ -399,7 +399,7 @@ header span {
     .buttons button.active {
         color: white;
         font-weight: bold;
-        background-color: var(--secunddary-color);
+        background-color:#0000ee;
     }
 
     .buttons button:hover {
