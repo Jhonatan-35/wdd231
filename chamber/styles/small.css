@@ -252,7 +252,7 @@ footer {
 
     
    
-    #Businesslist {
+    #businessContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
@@ -278,7 +278,7 @@ footer {
 
     }
    
-     #Businesslist.list {
+     #businessContainer.list {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -458,7 +458,7 @@ footer {
     }
 
 
-    .toggles-buttons button.active {
+    .buttons button.active {
         background-color: #a2d4f6;
         color: black;
         font-weight: bold;
@@ -466,7 +466,7 @@ footer {
     }
 
   
-    #Businesslist {
+    #businessContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 15px;
