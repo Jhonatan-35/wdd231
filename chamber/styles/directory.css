@@ -390,7 +390,7 @@ header span {
         border-radius: 5px;
         color: white;
         border: none;
-        background: #0000ee;
+        background: var(--primary-color);
         cursor: pointer; 
         transition: transform 0.2s ease-in-out;
         
@@ -399,7 +399,7 @@ header span {
     .buttons button.active {
         color: white;
         font-weight: bold;
-        background-color:#0000ee;
+        background-color:var(--secunddary-color);
     }
 
     .buttons button:hover {
@@ -497,7 +497,7 @@ header span {
         grid-column: span 2;
         text-align: center;
         font-size: 1.8rem;
-        background-color:#0000ee;
+        background-color:var(--primary-color);
         color: white;
         padding: 10px;
         border-radius: 8px;
