@@ -12,23 +12,23 @@ hambutton.addEventListener('click', () => {
 });
 
 const url = "data/members.json"; 
-const Businesslist= document.getElementById("Businesslist");
+const Businesslist = document.getElementById("Businesslist");
 let businesses = [];
 
 async function getBusinesses() {
     try {
         const response = await fetch(url);
-        if (!response.ok) throw new Error("Wrong failed Business");
+        if (!response.ok) throw new Error("Failed to fetch data");
         const data = await response.json();
         businesses = data.members;
         displayBusinesses("grid"); 
     } catch (error) {
-        console.error("Wrong failed Business:", error);
+        console.error("Error loading business data:", error);
     }
 }
 
 function displayBusinesses(view) {
-  
+
     if (window.innerWidth <= 763) {
         view = "grid"; 
     }
@@ -38,14 +38,14 @@ function displayBusinesses(view) {
 
     businesses.forEach(business => {
         const card = document.createElement("div");
-        card.classList.add("CardBusines-Riobamba", view);
+        card.classList.add("businessriobamba-card", view);
 
         if (view === "grid") {
             const img = document.createElement("img");
             img.src = `images/${business.image}`;
             img.alt = `${business.name} logo`;
             img.loading = "lazy";
-            list.appendChild(img);
+            card.appendChild(img);
         }
         const name = document.createElement("h2");
         name.textContent = business.name;
@@ -61,12 +61,12 @@ function displayBusinesses(view) {
         website.target = "_blank";
         website.textContent = business.website;
 
-        Riobamba.appendChild(name);
-        Riobamba.appendChild(address);
-        Riobamba.appendChild(phone);
-        Riobamba.appendChild(website);
+        List.appendChild(name);
+        List.appendChild(address);
+        List.appendChild(phone);
+        List.appendChild(website);
 
-        list.appendChild(card);
+        businessContainer.appendChild(card);
     });
 
     document.getElementById("gridView").classList.toggle("active", view === "grid");
@@ -81,12 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
     getBusinesses();
 });
 
-
 window.addEventListener("resize", () => {
     if (window.innerWidth <= 763) {
         displayBusinesses("grid");
     }
 });
-
-
-      
