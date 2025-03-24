@@ -62,6 +62,17 @@
       "image": "Continetal.webp",
       "membership_level": 3,
       "description": "Continental dealership one of the car dealerships that"
+
+    },
+
+    {
+      "name": "Hotel El Molino",
+      "address": "Road 34",
+      "phone": "(2545)6670",
+      "website": "https://hotelelmolino.com.ec/",
+      "image": "HotelMolino.webp",
+      "membership_level": 3,
+      "description": "Hotel el molino provide accomodation"
     }
   ]
 }
