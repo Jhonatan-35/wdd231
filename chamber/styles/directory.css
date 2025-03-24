@@ -173,7 +173,7 @@ header span {
   }
 
 
-.CardBusines-Riobamba img{
+.businessriobamba-card img{
     height: auto;
     width: 100px; 
     
@@ -365,7 +365,7 @@ header span {
 
     }
  
-    .Bottons {
+    .buttons {
        
         gap: 10px;
         justify-content: center;
@@ -385,7 +385,7 @@ header span {
 
     }
 
-    .Bottons button {
+    .buttons button {
         padding: 10px;
         border-radius: 5px;
         color: white;
@@ -396,19 +396,19 @@ header span {
         
     }
 
-    .Bottons button.active {
+    .buttons button.active {
         color: white;
         font-weight: bold;
         background-color: var(--secunddary-color);
     }
 
-    .Bottons button:hover {
+    .buttons button:hover {
         transform: scale(1.5);
     }
 
     
    
-    #Businesslist {
+    #businesslist {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
@@ -421,14 +421,14 @@ header span {
         
 
     }
-    .CardBusines-Riobamba {
+    .businessriobamba-card {
         padding: 15px;
         text-align: center;
         box-shadow: 0 0 7px #333;
         background: white;
     }
     
-    .CardBusines-Riobamba:hover {
+    .businessriobamba-card:hover {
         transform: scale(1.1);
         background-color: rgb(211, 211, 211);
 
@@ -446,7 +446,7 @@ header span {
 
     }
    
-     #Businesslist.list  {
+     #businesslist.list  {
        
         flex-direction: column;
         gap: 20px;
@@ -457,7 +457,7 @@ header span {
         background-color: #f8f8f8;
        
     }
-    .CardBusines-Riobamba.list {
+    .businessriobamba-card.list {
         display: flex;
         flex-direction: row;
         gap: 15px;
@@ -787,7 +787,7 @@ header span {
    
     
    
-    .Bottons {
+    .buttons {
         display: flex;
         margin-bottom: 10px;
         justify-content: center;
@@ -795,14 +795,14 @@ header span {
         
     }
 
-    .Bottons button {
+    .buttons button {
         
         padding: 10px 20px;
         border: none;
         font-size: 16px;
         border-radius: 5px;
     }
-    .Bottons button.active {
+    .buttons button.active {
         font-weight: bold;
         background-color: var(--secunddary-color);
         color: #fff;
@@ -814,7 +814,7 @@ header span {
 
     }
 
-    .CardBusines-Riobamba img {
+    .businessriobamba-card img {
         
         max-height: 150px;
         object-fit: contain;
@@ -824,7 +824,7 @@ header span {
        
     }
  
-     .CardBusines-Riobamba {
+     .businessriobamba-card {
     
         padding: 20px;
         box-shadow: 0 0 7px #333;
@@ -877,7 +877,7 @@ header span {
         width: 100%;
         margin-bottom: 10px;
     }
-    #Businesslist {
+    #businesslist {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 15px;
