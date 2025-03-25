@@ -326,7 +326,7 @@ h3{
     }
 
     nav ul li a.active {
-        color: white;
+        color: black;
      
         font-weight: bold;
         padding: 8px 12px;
