@@ -370,8 +370,7 @@ h3{
         background-color: #f8f8f8;
         box-shadow: 0 0 7px #333;
         color: #fff;
-        width: 70%;
-      
+        width: 80%;
         background-color: var(--primary-color);
         
 
@@ -383,7 +382,7 @@ h3{
         justify-content: center;
         margin: 20px 0;
         display: flex;
-        margin-left: 1%;
+        margin-left: 3%;
     }
 
     .Business  {
@@ -793,7 +792,10 @@ h3{
 
     }
    
-    
+    .Business h2{
+       color: #fff;
+
+    }
    
     .buttons {
         display: flex;
