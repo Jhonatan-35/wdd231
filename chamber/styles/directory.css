@@ -224,7 +224,10 @@ h3{
     background-color: var(--primary-color);
    
 }
+.Adver{
+    box-shadow: 0 0 7px #333;
 
+}
 
 .Adver h3 {
     flex-direction: column;
@@ -371,7 +374,7 @@ h3{
         background-color: #f8f8f8;
         box-shadow: 0 0 7px #333;
         color: #fff;
-        width: 90%;
+        width: 80%;
         background-color: var(--primary-color);
         
 
@@ -654,7 +657,7 @@ h3{
       
        position: relative;
        background-color: #000000;
-        padding: 10px;
+       padding: 10px;
     }
 
   
