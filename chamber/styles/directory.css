@@ -25,6 +25,11 @@ body {
 
 }
 
+
+.businessriobamba-card  h3{
+ background-color: var(--primary-color);
+}
+
   #weather-container {
     display: flex;
     flex-direction: column;
