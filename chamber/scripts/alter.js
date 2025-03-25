@@ -87,6 +87,3 @@ window.addEventListener("resize", () => {
         displayBusinesses("grid");
     }
 });
-
-
-
