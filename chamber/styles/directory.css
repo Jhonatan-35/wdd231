@@ -781,9 +781,8 @@ h3{
         box-shadow: 0 0 7px #333;
     }
  
-    h1 ,h2 {
+    h1  {
         text-align: center;
-       
         padding: 10px;
         color: black;
         margin-bottom: 10px;
