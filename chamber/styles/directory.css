@@ -211,11 +211,12 @@ h3{
 }
 
 
-.Adver {
+.Adver h3 {
     flex-direction: column;
     gap: 10px;
     display: flex;
-    background: white;
+    background:var(--primary-color);
+    color: #fff;
     padding: 20px;
     box-shadow: 0 0 7px #333;
     
