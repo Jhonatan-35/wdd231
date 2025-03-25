@@ -495,7 +495,7 @@ h3{
 
   
     
-      .Business h2 {
+      .Business  {
         grid-column: span 2;
         text-align: center;
         font-size: 1.8rem;
