@@ -65,7 +65,9 @@ header span {
     font-weight: 600;
     font-size: 1.5rem;
 }
-
+h3{
+    color: #000;
+}
 #current-weather {
     display: flex;
     flex-direction: column;
