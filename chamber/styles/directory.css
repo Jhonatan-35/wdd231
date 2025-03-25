@@ -221,7 +221,7 @@ header span {
   h2 {
        
         padding: 10px;
-        background: var(--primary-color);
+     
         color: white;
         text-align: center;
         margin-bottom: 10px;
@@ -333,7 +333,7 @@ header span {
     h1, h2 {
         text-align: center;
         font-size: 2rem; 
-        background: var(--primary-color);
+       
         padding: 10px;
         color: white;
         width: 100%;
@@ -390,7 +390,7 @@ header span {
         border-radius: 5px;
         color: white;
         border: none;
-        background: var(--primary-color);
+      
         cursor: pointer; 
         transition: transform 0.2s ease-in-out;
         
