@@ -17,6 +17,7 @@ body {
 .Business {
     border-radius: 10px;
     padding: 10px;
+    background-color: var(--primary-color);
     margin-bottom: 15px;
     background-color: #f8f8f8;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
