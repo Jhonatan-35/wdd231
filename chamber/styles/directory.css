@@ -24,7 +24,10 @@ body {
     width: 100%;
 
 }
-
+.Business h2{
+    background-color: var(--primary-color);
+    margin-left: 10%;
+}
 
 .businessriobamba-card  h3{
  background-color: var(--primary-color);
