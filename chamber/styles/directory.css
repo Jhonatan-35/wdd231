@@ -500,7 +500,7 @@ h3{
         text-align: center;
         font-size: 1.8rem;
       
-        color: white;
+        color: black;
         padding: 10px;
         border-radius: 8px;
       }
@@ -525,7 +525,7 @@ h3{
       }
     
       .businessriobamba-card h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #000;
         margin: 10px 0;
       }
