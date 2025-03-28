@@ -1,0 +1,621 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+}
+:root{
+    --primary-color:#0077b6;
+    --secunddary-color:#36454f;
+    --terciary-color:#023047;
+}
+.membership-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  align-items: stretch;
+}
+
+#membership-benefits,
+#membership-form {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (min-width: 768px) {
+  .membership-container {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  #membership-benefits {
+    width: 45%;
+  }
+
+  #membership-form {
+    width: 50%;
+  }
+
+
+  
+
+}
+
+
+
+#membership-benefits {
+    display: grid;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+
+
+.membership-levels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membership-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.membership-card:hover {
+    transform: scale(1.05);
+}
+
+.membership-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.membership-card .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+
+
+#membership-form {
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    border: 1px solid #000;
+    
+}
+
+#membership-form form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#membership-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--terciary-color);
+}
+
+#membership-form input,
+#membership-form select,
+#membership-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#membership-form textarea {
+    resize: vertical;
+}
+
+#membership-form button {
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition:  0.3s ease-in-out;
+}
+
+#membership-form button:hover {
+    background: darkgreen;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    animation: fadeInModal 0.3s ease-in-out;
+}
+.modal-content ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.modal-content ul li {
+    padding-left: 0; 
+}
+
+
+
+@keyframes fadeInModal {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #013a63;
+    transition: color 0.3s ease-in-out;
+}
+
+.close:hover {
+    color: red;
+}
+
+
+
+@media (max-width: 768px) {
+    .membership-levels {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership-card {
+        width: 90%;
+    }
+
+    #membership-form {
+        width: 90%;
+    }
+}
+
+.membership-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+footer {
+    padding: 0.5px;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.1rem;
+   
+}
+
+@media (min-width: 764px) {
+
+    body {
+        max-width: 1200px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1px auto;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
+        background: var(--primary-color);
+      
+    }
+
+    header img {
+        width: 70px;
+        margin: 5px;
+       
+    }
+
+    header span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+    }
+
+   
+    nav {
+        background-color: black;
+      
+        padding: 10px;
+    }
+      nav button {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+        transform: scale(1.2);
+    }
+
+    nav ul li a.active {
+        background-color: #005fa3;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: none;
+    }
+   
+    }
+     h2, h4 {
+       
+        font-size: 2rem; 
+        color: black;
+     
+    }
+    h1{
+        text-align: center;
+        font-size: 3rem; 
+        background-color: var(--primary-color);
+        color: #fff;
+        width: 90%;
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
+        animation: fadeIn 1s ease-in-out forwards;
+   
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background: white;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+
+
+@media (max-width: 763px) {
+    body {
+        background-color: #f8f8f8;
+        margin: 1px auto;
+    }
+
+   
+    header {
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        background: var(--primary-color);
+        padding: 10px;
+      
+    }
+
+    header img {
+        width: 50px;
+        margin: 5px;
+       
+    }
+
+    header span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+   
+    nav {
+        background: black;
+     
+        position: relative;
+        padding: 10px;
+    }
+
+  
+    #menuBtn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        position: relative;
+    }
+
+  
+    #menuBtn::before {
+        content: "☰";
+        font-size: 24px;
+    }
+
+    #menuBtn.open::before {
+        content: "✖";
+        font-size: 24px;
+        background-color: #005fa3;
+
+    }
+
+   
+  
+    #menuBtn {
+       
+        border: none;
+        font-size: 24px;
+        color: white;
+        background: none;
+        cursor: pointer;
+        display: block;
+        position: relative;
+    }
+
+ 
+    #menuBtn::before {
+        content: "☰";
+        font-size: 24px;
+    }
+
+    #menuBtn.open::before {
+        background-color: #005fa3;
+        content: "✖";
+        font-size: 24px;
+      
+
+    }
+    #menu {
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: black;
+	color: #fff;
+}
+    .show li {
+        display: block;
+    }
+    #menu::before {
+        content: "✖";
+        font-size: 24px;
+    }
+    #menu.show::before {
+        content: "☰";
+        text-decoration: none;
+    }
+    .navigation a:hover,
+    .navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+
+    nav ul {
+        
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        display: none;
+        background: black;
+        border-radius: 8px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+
+   
+    nav ul.show {
+     
+        width: 99%;
+        position: static;
+        display: block;
+        padding: 10px 0;
+    }
+ 
+    nav ul li {
+       
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        display: block;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 5px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+ 
+    nav ul li a.active {
+        
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        padding: 8px 12px;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in-out;
+      
+    }
+
+    nav ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background:black;
+        border-radius: 8px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: block;
+        position: static;
+        width: 100%;
+        padding: 10px 0;
+    }
+     
+    nav ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+    }
+
+  
+    nav ul li a.active {
+        background-color: #005fa3;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    h1, h4 {
+        text-align: center;
+        padding: 10px;
+        background: var(--primary-color);
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 2rem;
+
+    }
+    h2 {
+        text-align: center;
+        color: black;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+       
+    }
+    footer {
+        font-size: 1rem;
+    }
+    
+
+}
