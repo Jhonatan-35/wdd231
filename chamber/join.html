@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Join | Chamber Commerce Riobamba</title>
+    <meta name="description" content="join Page- Commerce Riobamba​​">
+    <meta name="author" content="Jhonatan  Yugsan ">
+    <meta property="og:title" content="Home Chamber Commerce Riobamba" >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/index.htlm" >
+    <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/chamber/images" >
+    <link rel="icon" href="images/logochambera.png" type="images/logochambera" >
+    <link rel="stylesheet" href="styles/united.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="scripts/unit.js"></script>
+    <script defer src="scripts/efecte.js"></script>
+</head>
+<body> 
+    
+    <header>
+        
+        <img  src="images/logochambera.png" alt="Chamber commerce">
+    
+        <span>Chamber Commerce Riobamba</span>         
+    </header>  
+    <nav>
+        <a id="menu" href="#" class="show"></a>
+        <ul class="navigation"> 
+
+            <li><a href="index.html" id="Home">Home</a></li>
+            <li><a href="" id="Chamber">Discover</a></li>
+            <li><a href="directory.html" id="Directory">Directory</a></li>
+            <li><a href="join.html" id="Join">Join</a></li>
+           
+        </ul> 
+        
+    </nav>  
+   
+    <main> 
+       
+        
+       
+      <h1>Join Us Chamber Commerce Riobamba</h1>
+    
+    
+        <div class="membership-container">
+          
+          
+          <section id="membership-form">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get">
+              <label for="name">First Name:
+                <input type="text" id="name" name="name" autocomplete="given-name" required>
+              </label>
+      
+              <label for="lname">Last Name:
+                <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+              </label>
+      
+              
+      
+              <label for="email">Email:
+                <input type="email" id="email" name="email"
+                      title="Enter a valid email address"
+                      autocomplete="email"
+                      placeholder="example :jhonatanyugsan@gmail.com"
+                      required>
+              </label>
+      
+              <label for="phone">Number Phone:
+                <input type="tel" id="phone" name="phone"
+                      title="Enter your mobile phone number"
+                      autocomplete="tel"
+                      placeholder="+593-98-485-9447"
+                      required>
+              </label>
+              <label for="organization-title">Business Title:
+                <input type="text" id="organization-title" name="organization-title" 
+                      title="Only letters, hyphens, and spaces (7 total)"
+                      autocomplete="organization-title"
+                      pattern="[A-Za-z\s-]{7,}"
+                      required>
+              </label>
+      
+              <label for="business">Business Name:
+                <input type="text" id="business" name="business"
+                      title="Enter the name of your business or organization"
+                      autocomplete="organization"
+                      required>
+              </label>
+      
+              <label for="membership">Select Membership Level:
+                <select id="membership" name="membership">
+                  <option value="non-profit">Non-Profit (Free)</option>
+                  <option value="bronze">Bronze ($15/month)</option>
+                  <option value="silver">Silver ($25/month)</option>
+                  <option value="gold">Gold ($50/month)</option>
+                </select>
+              </label>
+      
+              <label for="business-description">Business Description:
+                <textarea id="business-description" name="business-description"
+                          title="Provide a brief description of your business or organization"
+                          rows="4"
+                          required></textarea>
+              </label>
+              
+              <button type="submit">Apply Now</button>
+             
+          <input type="hidden" id="timestamp" name="timestamp">
+            </form>
+            
+          </section>
+        
+          <section id="membership-benefits">
+           
+            <h2>Why Join us Chamber Commerce Riobamba?</h2> 
+            <p>The Riobamba Chamber of Commerce offers you the opportunity to be part of our community and grow in the business world. And be part of the largest companies in Ecuador</p>
+      
+            <div class="membership-levels">
+          
+              <div class="membership-card">
+                <h3>Non-Profit</h3>
+                <p class="price">$0/month</p>
+                <a href="#" onclick="event.preventDefault(); openModal('modal-nonprofit')">More details</a>
+              </div>
+      
+              <div id="modal-nonprofit" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-nonprofit')">&times;</span>
+                    <h3>Non-Profit Membership Benefits</h3>
+                    <ul>
+                        <li>✔ Basic directory listing</li>
+                        <li>✔ Community engagement</li>
+                        <li>✔ Networking events</li>
+                    </ul>
+                </div>
+              </div>
+      
+           
+              <div class="membership-card">
+                <h3>Bronze</h3>
+                <p class="price">$15/month</p>
+                <a href="#" onclick="event.preventDefault(); openModal('modal-bronze')">More details</a>
+              </div>
+      
+              <div id="modal-bronze" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+                    <h3>Bronze Membership Benefits</h3>
+                    <ul>
+                        <li>✔ Basic directory listing</li>
+                        <li>✔ Training access</li>
+                        <li>✔ Business networking</li>
+                    </ul>
+                </div>
+              </div>
+      
+            
+              <div class="membership-card">
+                <h3>Silver</h3>
+                <p class="price">$25/month</p>
+                <a href="#" onclick="event.preventDefault(); openModal('modal-silver')">More details</a>
+              </div>
+      
+              <div id="modal-silver" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+                  <h3>Silver Membership Benefits</h3>
+                  <ul>
+                    <li>✔ Directory listing & featured spotlights</li>
+                    <li>✔ Social media promotions</li>
+                    <li>✔ Monthly networking luncheons</li>
+                  </ul>
+                </div>
+              </div>
+      
+         
+              <div class="membership-card">
+                <h3>Gold</h3>
+                <p class="price">$50/month</p>
+                <a href="#" onclick="event.preventDefault(); openModal('modal-gold')">More Details</a>
+              </div>
+      
+              <div id="modal-gold" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+                  <h3>Gold Membership Benefits</h3>
+                  <ul>
+                    <li> All Silver benefits</li>
+                    <li> Business sponsorship opportunities</li>
+                    <li> Exclusive advertising options</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          
+        </div>   
+        </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span>🌴WDD 231 | Jhonatan Ariel Yugsan 🌴 Ecuador</p>
+        <p>This document was last modified:</p> 
+        <p id="demo"></p>
+    </footer>
+    
+  </body>
+</html>
