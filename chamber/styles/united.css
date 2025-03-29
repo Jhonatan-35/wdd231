@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0.1rem;
+    box-sizing: border-box;
+  }
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
@@ -36,7 +40,7 @@ main p{
   }
 
   #benefits {
-    width: 45%;
+    width: 40%;
   }
 
   #form {
@@ -124,7 +128,7 @@ main p{
     background: #f8f8f8;
     padding: 30px;
     border-radius: 9px;
-    max-width: 500px;
+    max-width: 450px;
     margin: 0 auto 30px;
     border:1px solid rgba(0, 0, 0, 0.1);
 }
