@@ -6,7 +6,7 @@
     <title> Join | Chamber Commerce Riobamba</title>
     <meta name="description" content="join Page- Commerce Riobamba​​">
     <meta name="author" content="Jhonatan  Yugsan ">
-    <meta property="og:title" content="Home Chamber Commerce Riobamba" >
+    <meta property="og:title" content="Join Chamber Commerce Riobamba" >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/index.htlm" >
     <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/chamber/images" >
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="scripts/unit.js"></script>
-    <script defer src="scripts/efecte.js"></script>
+    
 </head>
 <body> 
     
@@ -43,25 +43,38 @@
         
        
       <h1>Join Us Chamber Commerce Riobamba</h1>
+      <p>Come and join our Chamber of Commerce.
+        Submit your application now.</p>
     
     
-        <div class="membership-container">
-          
-          
-          <section id="membership-form">
-            <h2>Membership Application</h2>
+        <div class="membership-application">
+         
+         
+          <section id="form">
+            <h2>Membership Form</h2>
             <form action="thankyou.html" method="get">
-              <label for="name">First Name:
+             
+            
+              <label for="name">First name:
                 <input type="text" id="name" name="name" autocomplete="given-name" required>
               </label>
       
-              <label for="lname">Last Name:
+              <label for="lname">Last name:
                 <input type="text" id="lname" name="lname" autocomplete="family-name" required>
               </label>
+              <label for="organization-title">Organizational title:
+                <input type="text" id="organization-title" name="organization-title" 
+                      title="Only letters, hyphens, and spaces (7 total)"
+                      autocomplete="organization-title"
+                      pattern="[A-Za-z\s-]{7,}"
+                      required>
+              </label>
+              <label>
+              Date birth:
+                 <input type="date" name="completed" required>
+              </label>
       
-              
-      
-              <label for="email">Email:
+              <label for="email">Email addres:
                 <input type="email" id="email" name="email"
                       title="Enter a valid email address"
                       autocomplete="email"
@@ -69,129 +82,127 @@
                       required>
               </label>
       
-              <label for="phone">Number Phone:
+              <label for="phone">Phone number:
                 <input type="tel" id="phone" name="phone"
                       title="Enter your mobile phone number"
                       autocomplete="tel"
                       placeholder="+593-98-485-9447"
                       required>
               </label>
-              <label for="organization-title">Business Title:
-                <input type="text" id="organization-title" name="organization-title" 
-                      title="Only letters, hyphens, and spaces (7 total)"
-                      autocomplete="organization-title"
-                      pattern="[A-Za-z\s-]{7,}"
-                      required>
-              </label>
+              
       
-              <label for="business">Business Name:
+              <label for="business">Organization name:
+             
+                
                 <input type="text" id="business" name="business"
                       title="Enter the name of your business or organization"
                       autocomplete="organization"
                       required>
               </label>
       
-              <label for="membership">Select Membership Level:
+              <label for="membership">Select membership level:
+                <span> (Choice Your option)</span>
                 <select id="membership" name="membership">
                   <option value="non-profit">Non-Profit (Free)</option>
-                  <option value="bronze">Bronze ($15/month)</option>
-                  <option value="silver">Silver ($25/month)</option>
-                  <option value="gold">Gold ($50/month)</option>
+                  <option value="bronze">Bronze ($10/monthly)</option>
+                  <option value="silver">Silver ($30/monthly)</option>
+                  <option value="gold">Gold ($75/monthly)</option>
                 </select>
               </label>
       
-              <label for="business-description">Business Description:
+              <label for="business-description">Business description:
                 <textarea id="business-description" name="business-description"
                           title="Provide a brief description of your business or organization"
                           rows="4"
                           required></textarea>
               </label>
               
-              <button type="submit">Apply Now</button>
+              <button type="submit">Submit Request</button>
              
           <input type="hidden" id="timestamp" name="timestamp">
+       
             </form>
-            
+         
           </section>
         
-          <section id="membership-benefits">
+          <section id="benefits">
            
-            <h2>Why Join us Chamber Commerce Riobamba?</h2> 
-            <p>The Riobamba Chamber of Commerce offers you the opportunity to be part of our community and grow in the business world. And be part of the largest companies in Ecuador</p>
-      
+            <h2>Membership Levels</h2> 
+            <p>Below we describe our membership levels with their respective benefits.</p>
+           
             <div class="membership-levels">
           
-              <div class="membership-card">
+              <div class="spenci-card">
                 <h3>Non-Profit</h3>
-                <p class="price">$0/month</p>
+                <p class="price">$0/free of charge</p>
                 <a href="#" onclick="event.preventDefault(); openModal('modal-nonprofit')">More details</a>
               </div>
       
               <div id="modal-nonprofit" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-nonprofit')">&times;</span>
-                    <h3>Non-Profit Membership Benefits</h3>
+                    <h3>Benefits at no cost</h3>
                     <ul>
-                        <li>✔ Basic directory listing</li>
-                        <li>✔ Community engagement</li>
-                        <li>✔ Networking events</li>
+                        <li> - Basic business training</li>
+                        <li> - Economic Observatories</li>
+                        <li> - basic foreign trade training</li>
                     </ul>
                 </div>
               </div>
       
            
-              <div class="membership-card">
+              <div class="spenci-card">
                 <h3>Bronze</h3>
-                <p class="price">$15/month</p>
+                <p class="price">$10/monthly</p>
                 <a href="#" onclick="event.preventDefault(); openModal('modal-bronze')">More details</a>
               </div>
       
               <div id="modal-bronze" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
-                    <h3>Bronze Membership Benefits</h3>
+                    <h3>Benefits of belonging to the Bronze Membership</h3>
                     <ul>
-                        <li>✔ Basic directory listing</li>
-                        <li>✔ Training access</li>
-                        <li>✔ Business networking</li>
+                        <li> - Union representation </li>
+                        <li> - Business training</li>
+                        <li> - Professional marketing courses</li>
                     </ul>
                 </div>
               </div>
       
             
-              <div class="membership-card">
+              <div class="spenci-card">
                 <h3>Silver</h3>
-                <p class="price">$25/month</p>
+                <p class="price">$30/monthly</p>
                 <a href="#" onclick="event.preventDefault(); openModal('modal-silver')">More details</a>
               </div>
       
               <div id="modal-silver" class="modal">
                 <div class="modal-content">
                   <span class="close" onclick="closeModal('modal-silver')">&times;</span>
-                  <h3>Silver Membership Benefits</h3>
+                  <h3>Benefits of belonging to the Silver Membership</h3>
                   <ul>
-                    <li>✔ Directory listing & featured spotlights</li>
-                    <li>✔ Social media promotions</li>
-                    <li>✔ Monthly networking luncheons</li>
+                    <li> - Protected partner</li>
+                    <li> - Sales Service</li>
+                    <li> - Corporate reforms</li>
                   </ul>
                 </div>
               </div>
       
          
-              <div class="membership-card">
+              <div class="spenci-card">
                 <h3>Gold</h3>
-                <p class="price">$50/month</p>
+                <p class="price">$75/monthly</p>
                 <a href="#" onclick="event.preventDefault(); openModal('modal-gold')">More Details</a>
               </div>
       
               <div id="modal-gold" class="modal">
                 <div class="modal-content">
                   <span class="close" onclick="closeModal('modal-gold')">&times;</span>
-                  <h3>Gold Membership Benefits</h3>
+                  <h3>Benefits of belonging to the Gold Membership</h3>
                   <ul>
-                    <li> All Silver benefits</li>
-                    <li> Business sponsorship opportunities</li>
-                    <li> Exclusive advertising options</li>
+                    <li> - Become a partner of our companies</li>
+                    <li> - Sell ​​your products in our online store</li>
+                    <li> - Project management programs</li>
                   </ul>
                 </div>
               </div>
@@ -206,6 +217,7 @@
         <p>This document was last modified:</p> 
         <p id="demo"></p>
     </footer>
+    
     
   </body>
 </html>
