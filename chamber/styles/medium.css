@@ -1,11 +1,11 @@
 @media only screen  and (min-width: 38rem) {
 }
-.businessriobamba-card{
+#PlacesLists{
     grid-template-areas: 
     "h3 h3"
     "img"
     "p p"
     "p p"
     "p"
-     "button button";
+     ;
 }
