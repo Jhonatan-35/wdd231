@@ -1,6 +1,6 @@
-const apiKey = " 1e5f9a2af76d27360ce58621f8cd549c "; 
-const lat = "-1.6657379890742887,"; 
-const lon = "-78.65613227132728"; 
+const apiKey = " 3334ec355939e9e318b8f17c1d9e35fa "; 
+const lat = "-1.7641606420177263, "; 
+const lon = "-78.608229398244"; 
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
@@ -19,7 +19,7 @@ async function getWeather() {
 
        
         document.getElementById("current-weather").innerHTML = `
-            <p><strong>Now</strong></p>
+            <p> <strong> Now </strong> </p>
             <p>${temperature}°F - ${weatherDescription}</p>
             <img src="https://openweathermap.org/img/wn/${weatherIcon}@4x.png" alt="Weather icon">
         `;
