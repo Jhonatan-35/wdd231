@@ -14,17 +14,6 @@ body {
     --secunddary-color:#36454f;
 }
 
-.Business {
-    border-radius: 10px;
-    padding: 10px;
-    background-color: var(--primary-color);
-    margin-bottom: 15px;
-    background-color: #f8f8f8;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-    width: 100%;
-
-}
-
 
 h1  {
     text-align: center;
@@ -35,10 +24,6 @@ h1  {
     width: 100%;
     font-size: 2rem;
 
-}
-.Business h2{
-    background-color: var(--primary-color);
-    margin-left: 10%;
 }
 
 .description h2{
@@ -52,35 +37,9 @@ h1  {
     font-size: 4rem;
     
 }
-  #weather-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-button{
-    background-color: #000;
-    font-size: 1.5rem;
-    border-radius: 10px;
-   
-}
-button a{
-    text-decoration: none;
-    color: #fff;
-}
-.weather-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
-    width: 100%;
-    align-items: center;
-}
+ 
+
+
 header {
         
     color: #fff;
@@ -106,109 +65,9 @@ h3{
     color: #000;
 
 }
-#current-weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#current-weather img {
-    width: 100px;
-    height: 100px;
-    image-rendering: crisp-edges;
-}
-
-#current-weather p {
-    text-align: center;
-    font-size: 1.3rem;
-    color: #013a63;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-#weather-forecast {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 
 
-.Nevada h2{
-   
-    display: flex;
-    justify-content: center; 
-    grid-column: 1 / -1;
-    align-items: center; 
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 10px;
-    background: white;
-    box-shadow: 0 0 7px #333;
-}
-.Wheather li{
-    text-decoration: none;
-    
-}
-
-.Nevada {
-    
-    grid-template-columns: 2fr 2fr; 
-    gap: 20px;
-    align-items: center;
-    display: grid;
-    justify-content: center;
-    max-width: 800px;
-    margin: 20px auto;
-   
-    padding: 20px;
-    
-   
-}
-
-
-
-  .Cardbusiness {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .Cardbusiness:hover {
-    transform: scale(1.05);
-  }
-
-  .Cardbusiness img {
-    width: auto;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-
-
-  .Cardbusiness p {
-    font-size: 1rem;
-    color: #333;
-  }
-
-  .Cardbusiness a {
-    display: block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    color: #0000ee;
-    text-decoration: underline;
-  }
-
-
-.businessriobamba-card img{
+.places-card img{
     height: auto;
     width: 100px; 
     
@@ -219,42 +78,6 @@ h3{
     width: 100px; 
 }
 
-.Wheather {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 20px;
-    display: flex;
-    box-shadow: 0 0 7px #333;
-}
-
-.Wheather img {
-    height: 200px;
-    width: 200px;
-}
-
-.Weather p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: var(--primary-color);
-   
-}
-.Adver{
-    box-shadow: 0 0 7px #333;
-
-}
-
-.Adver h3 {
-    flex-direction: column;
-    gap: 10px;
-    display: flex;
-    
-    color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 7px #333;
-    
-}
 
 #currendemographis, #upcomingevents {
     background: #f8f8f8;
@@ -297,17 +120,17 @@ h3{
     text-align: center;
   
 }
-.businessriobamba-card a{
+.places-card a{
     text-decoration: none;
     background: #000;
     color: #fff;
     border-radius: 10px;
     width:150px;
     padding: 10px;
-    margin: 2rem;
+    margin: 1rem;
 
 }
-.businessriobamba-card a:hover{
+.places-card a:hover{
     transition: color 0.3s ease-in-out;
     transform: scale(1.05);
    
@@ -337,10 +160,7 @@ h3{
         transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
       
     }
-    .Nevada {
-        grid-template-columns: 1fr;
-    }
-
+    
     #riold img{
         width: 80%;
         max-width: 600px;
@@ -350,27 +170,6 @@ h3{
     
     }
     
-.weather-content {
-    grid-template-columns: 1fr; 
-}
-
-#current-weather img {
-    width: 60px; 
-    height: 60px;
-}
-
-#current-weather p {
-    font-size: 0.9rem;
-}
-
-.forecast-item {
-    padding: 6px; 
-    font-size: 0.8rem; 
-}
-
-.forecast-item img {
-    width: 35px; 
-}
 }
 
 @media (min-width: 750px) {
@@ -483,7 +282,6 @@ h3{
         #upcomingevents a{
             background-color: #000000;
             text-align: center;
-          
     
         }
 
@@ -511,7 +309,6 @@ h3{
       
     }
   
-    
 
     header span {
         
@@ -524,8 +321,6 @@ h3{
     nav {
         padding: 10px;
         background-color: #000000;
-       
-      
     
     }
     nav button {
@@ -544,9 +339,7 @@ h3{
         text-decoration: none;
         color: white;
         transition: transform 0.3s ease-in-out;
-        display: inline-block;
-       
-      
+        display: inline-block; 
     }
 
     nav ul li a:hover {
@@ -595,63 +388,7 @@ h3{
         box-shadow: 0 0 7px #333;
     }
 
-    .Business h2 {
-        
-        padding: 10px;
-        margin-bottom: 15px;
-        background-color: #f8f8f8;
-        box-shadow: 0 0 7px #333;
-        color: #fff;
-        width: 80%;
-        background-color: var(--primary-color);
-        
-
-    }
- 
-    .buttons {
-       
-        gap: 10px;
-        justify-content: center;
-        margin: 20px 0;
-        display: flex;
-        margin-left: 3%;
-    }
-
-    .Business  {
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 15px;
-        color: #000;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-        width: 100%;
-       
-
-    }
-
-    .buttons button {
-        padding: 10px;
-        border-radius: 5px;
-        color:#fff;
-        border: none;
-        background-color: var(--primary-color);
-        cursor: pointer; 
-        transition: transform 0.2s ease-in-out;
-        
-    }
-
-    .buttons button.active {
-        color:#fff;
-        font-weight: bold;
-        background-color:var(--secunddary-color);
-    }
-
-    .buttons button:hover {
-        transform: scale(1.5);
-    }
-
-    
-   
-    #businesslist {
+    #PlacesLists {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
@@ -664,7 +401,7 @@ h3{
         
 
     }
-    .businessriobamba-card {
+    .places-card {
         padding: 15px;
         text-align: center;
         box-shadow: 0 0 7px #333;
@@ -685,7 +422,7 @@ h3{
 
     }
    
-     #businesslist.list  {
+     #PlacesLists.list  {
        
         flex-direction: column;
         gap: 20px;
@@ -696,7 +433,7 @@ h3{
         background-color: #f8f8f8;
        
     }
-    .businessriobamba-card.list {
+    .places-card.list {
         display: flex;
         flex-direction: row;
         gap: 15px;
@@ -730,17 +467,6 @@ h3{
         margin: 1rem;
     }
 
-  
-    
-      .Business  {
-        grid-column: span 2;
-        text-align: center;
-        font-size: 1.8rem;
-      
-        color: black;
-        padding: 10px;
-        border-radius: 8px;
-      }
       .card {
         background: white;
         padding: 15px;
@@ -761,7 +487,7 @@ h3{
         border-radius: 8px;
       }
     
-      .businessriobamba-card h3 {
+      .places-card h3 {
         font-size: 1rem;
         color: #000;
         margin: 10px 0;
@@ -784,40 +510,6 @@ h3{
 
 @media (max-width: 763px) {
 
-     
-  
-
-    .Heros {
-        text-align: center;
-        width: 100%;
-        padding:  20px 10px;
-        color: white;
-        max-width: 550px;
-        border-radius: 10px;
-        background: #f8f8f8;
-        box-shadow:0 0 7px #333;
-      }
-    
-      .Heros img {
-        
-        max-width: 300px;
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 15px;
-
-      }
-    
-      .Heros h1 {
-        font-size: 1.5rem;
-      }
-    
-      .Heros p {
-        font-size: 1.2rem;
-        color: #000;
-      }
-      .Heros a{
-        font-size: 1rem;
-      }
     #listView {
         display: none;
     }
@@ -849,13 +541,6 @@ h3{
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
       }
-
-      .Cardbusiness img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 10px;
-        margin-top: 15px;
-      }
     
       .card img {
         width: 100%;
@@ -878,7 +563,6 @@ h3{
    
     nav {
         
-      
        position: relative;
        background-color: #000000;
        padding: 10px;
@@ -895,7 +579,7 @@ h3{
         display: block;
         position: relative;
     }
-    .businessriobamba-card h3 {
+    .places-card h3 {
         font-size: 1rem;
         color: #000;
         margin: 10px 0;
@@ -939,7 +623,6 @@ h3{
 	color: white;
 	background-color: black;
 }
-
 
     nav ul {
         
@@ -1020,40 +703,9 @@ h3{
 
     }
    
-    .Business h2{
-       color: #fff;
-       margin-right: 5%;
-
-    }
-   
-    .buttons {
-        display: flex;
-        margin-bottom: 10px;
-        justify-content: center;
-        gap: 10px;
-        
     }
 
-    .buttons button {
-      
-        padding: 10px 20px;
-        border: none;
-        font-size: 16px;
-        border-radius: 5px;
-    }
-    .buttons button.active {
-        font-weight: bold;
-        background-color: var(--secunddary-color);
-        color: #fff;
-        
-    }
-
-
-   
-
-    }
-
-    .businessriobamba-card img {
+    .places-card img {
         
         max-height: 150px;
         object-fit: contain;
@@ -1063,7 +715,7 @@ h3{
        
     }
  
-     .businessriobamba-card {
+     .places-card {
     
         padding: 20px;
         box-shadow: 0 0 7px #333;
@@ -1116,7 +768,7 @@ h3{
         width: 100%;
         margin-bottom: 10px;
     }
-    #businesslist {
+    #PlacesLists {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 15px;
