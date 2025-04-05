@@ -1,3 +1,7 @@
+
+
+
+
 function openModal(id) {
     let modal = document.getElementById(id);
     if (modal) {

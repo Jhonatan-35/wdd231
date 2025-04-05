@@ -1,48 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Web Lab Start File">
-  <meta name="author" content="Paul Cheney">
-
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/large.css">
- 
-  <title>Web Lab Start File</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Join | Chamber Commerce Riobamba</title>
+    <meta name="description" content="join Page- Commerce Riobamba​​">
+    <meta name="author" content="Jhonatan  Yugsan ">
+    <meta property="og:title" content="Home Chamber Commerce Riobamba" >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/index.htlm" >
+    <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/chamber/images" >
+    <link rel="icon" href="images/logochambera.png" type="images/logochambera" >
+    <link rel="stylesheet" href="styles/thank.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="scripts/thanks.js"></script>
+  
 </head>
+<body> 
+    
+    <header>
+        
+        <img  src="images/logochambera.png" alt="Chamber commerce">
+    
+        <span>Chamber Commerce Riobamba</span>         
+    </header>  
+    <nav>
+        <a id="menu" href="#" class="show"></a>
+        <ul class="navigation"> 
 
-<body>
-  <header>
-    <span>Company Name Here</span>
-  </header>
+            <li><a href="index.html" id="Home">Home</a></li>
+            <li><a href="" id="Chamber">Discover</a></li>
+            <li><a href="directory.html" id="Directory">Directory</a></li>
+            <li><a href="join.html" id="Join">Join</a></li>
+           
+        </ul> 
+        
+    </nav>  
 
-  <nav>
-    <ul>
-      <li><a href="#">Menu Item</a></li>
-      <li><a href="#">Menu Item</a></li>
-      <li><a href="#">Menu Item</a></li>
-    </ul>
-  </nav>
+    <main> 
+       
+        <section id="confirmation">
+            <h2>Membership Confirmation</h2>
+            <p>Thank you, <span id="user-name"></span>, for submitting your application to join the Chamber of Commerce Riobamba!</p>
+            <p>Here is the information you submitted:</p>
+            
+            <div class="info-container">
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+                <p><strong>Application Date:</strong> <span id="timestamp"></span></p>
+            </div>
 
-  <main>
-    <h1>Page Title Here</h1>
-    <button id="openButton">More Information</button>
-     <dialog id="dialogBox">
-      <p>Hola Jhonatan  Yugsan</p>
-    <button id="closeButton">Close</button>
-     </dialog>
-
-
-
-
-  </main>
-
-  <footer>
-    <p>&copy; Web Labs</p>
-  </footer>
-
-  <script src="js/scripts.js"></script>
-</body>
+            <a href="index.html" class="btn">Return to Home</a>
+        </section>
+       
+             
+        </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span>🌴WDD 231 | Jhonatan Ariel Yugsan 🌴 Ecuador</p>
+        <p>This document was last modified:</p> 
+        <p id="demo"></p>
+    </footer>
+    
+  </body>
 </html>
