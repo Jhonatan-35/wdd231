@@ -70,6 +70,7 @@ h3{
 .places-card img{
     height: auto;
     width: 100px; 
+    transform: scale(1.05);
     
 }
 
@@ -115,6 +116,7 @@ h3{
     text-align: center;
 
 }
+
 #upcomingevents a{
     background-color: #000000;
     text-align: center;
@@ -173,6 +175,12 @@ h3{
 }
 
 @media (min-width: 750px) {
+
+    .places-card  :hover {
+        transform: scale(1.1);
+        background-color: rgb(211, 211, 211);
+    
+    }
 
     .description h2 {
         text-align: center;
@@ -406,6 +414,7 @@ h3{
         text-align: center;
         box-shadow: 0 0 7px #333;
         background: white;
+        
     }
     
    
@@ -711,6 +720,7 @@ h3{
         object-fit: contain;
         width: 100%;
         margin-bottom: 10px;
+        transform: scale(1.05);
        
        
     }
@@ -725,6 +735,7 @@ h3{
         background: white;
         flex-direction: column;
         align-items: center;
+        
     }
     .card img {
         
@@ -773,6 +784,7 @@ h3{
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 15px;
         padding: 5px;
+        
     }
 
     
