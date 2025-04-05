@@ -19,7 +19,7 @@ async function getBusinesses() {
         const response = await fetch(url);
         if (!response.ok) throw new Error("Wrong error");
         const data = await response.json();
-        businesses = data.members;
+        businesses = data.places;
         displayBusinesses("grid"); 
     } catch (error) {
         console.error("wrong error:", error);
