@@ -1,10 +1,10 @@
-const apiKey = "1e5f9a2af76d27360ce58621f8cd549c"; 
+const apiKey = " 1e5f9a2af76d27360ce58621f8cd549c "; 
 const lat = "-1.6657379890742887,"; 
 const lon = "-78.65613227132728"; 
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
-// Function to fetch current weather
+
 async function getWeather() {
     try {
         const response = await fetch(currentWeatherUrl);
@@ -12,12 +12,12 @@ async function getWeather() {
 
         const data = await response.json();
 
-        // Extracting current weather information
-        const temperature = Math.round(data.main.temp); // rounded
+       
+        const temperature = Math.round(data.main.temp); 
         const weatherDescription = data.weather[0].description;
         const weatherIcon = data.weather[0].icon;
 
-        // Updating the HTML
+       
         document.getElementById("current-weather").innerHTML = `
             <p><strong>Now</strong></p>
             <p>${temperature}°F - ${weatherDescription}</p>
@@ -28,7 +28,7 @@ async function getWeather() {
     }
 }
 
-// Function to fetch 3-day weather forecast
+
 async function getForecast() {
     try {
         const response = await fetch(forecastUrl);
@@ -38,7 +38,7 @@ async function getForecast() {
         const forecastContainer = document.getElementById("weather-forecast");
 
 
-        // variable Map to store 3 upcoming days
+   
         const forecastDays = new Map();
         
         for (let i = 0; i < data.list.length; i++) {
@@ -47,16 +47,16 @@ async function getForecast() {
 
             if (!forecastDays.has(date)) {
                 forecastDays.set(date, {
-                    temp: Math.round(dayData.main.temp), // Now displayed without decimals
+                    temp: Math.round(dayData.main.temp), 
                     icon: dayData.weather[0].icon,
                     description: dayData.weather[0].description
                 });
             }
 
-            if (forecastDays.size === 3) break; // Stops once we have 3 distinct days
+            if (forecastDays.size === 3) break; 
         }
 
-        // Adding the 3 selected days to the HTML
+       
         forecastDays.forEach((value, key) => {
             forecastContainer.innerHTML += `
                 <div class="forecast-item">
@@ -72,7 +72,7 @@ async function getForecast() {
     }
 }
 
-// Run functions when the page loads
+
 document.addEventListener("DOMContentLoaded", () => {
     getWeather();
     getForecast();
