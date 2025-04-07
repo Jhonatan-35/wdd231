@@ -7,10 +7,10 @@ async function getBusinesses() {
     if (!response.ok) throw new Error('Failed to fetch data');
     const data = await response.json();
 
-    console.log("All Members:", data.members); 
+    console.log("All Members:", data.places); 
 
   
-    const eligibleBusinesses = data.members.filter(business => 
+    const eligibleBusinesses = data.places.filter(business => 
       business.membership_level === 3 || business.membership_level === 2
     );
 
