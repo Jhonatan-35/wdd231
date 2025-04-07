@@ -1,0 +1,78 @@
+{
+    "places": [
+      {
+        "name": "The chorrera Chimborazo",
+        "address": "Street 45 and lisboa",
+        "phone": "(2345)78690",
+        "website": "https://creperiaelmediodiaec.com/",
+        "image": "chorrerachimborazo.webp",
+        "membership_level": 3,
+        "description": "The midday creperie offers a wide variety of sweets"
+      },
+      {
+        "name": "The lake Blue",
+        "address": "Road 45 and E-34",
+        "phone": "(2365)78697",
+        "website": "https://hospitalsanjuan.ec/",
+        "image": "lakeblues.webp",
+        "membership_level": 2,
+        "description": "San Juan Hospital, one of the private hospitals with extensive technology to offer to its clients"
+      },
+      {
+        "name": "Hotel Zeus",
+        "address": "Road 34 /23",
+        "phone": "(2345)88690",
+        "website": "https://hotelzeus.com.ec/",
+        "image":"lakegariguarazo.webp",
+        "membership_level": 3,
+        "description": "Locatel San Juan, one of the most expensive hotels in Ecuador"
+      },
+      {
+        "name": "The forest Polylepis",
+        "address": "Street 45 and lisboa",
+        "phone": "(234)7498690",
+        "website": "https://sachatextil.com/",
+        "image": "forestpolylepis.webp",
+        "membership_level": 1,
+        "description": "Sacha textile being one of the centers of textiles in would offer well import with more wide"
+      },
+      {
+        "name": " Hill puñay",
+        "address": "Ave 54 Street 15",
+        "phone": "(2345)458690",
+        "website": "https://www.laiberica.com/",
+        "image": "hillpuñay.webp",
+        "membership_level": 1,
+        "description": "The sausages in the Iberian region, known for their quality sausages, are from the city."
+      },
+      {
+        "name": "Chimborazo Shelter",
+        "address": "Street 43 road 34",
+        "phone": "(6445)78660",
+        "website": "https://la-fortaleza-steak-wine.reservio.com/",
+        "image": "refsafechimborazo.webp",
+        "membership_level": 2,
+        "description": "La Fortaleza meat and wine restaurant known for its excellent service"
+      },
+      {
+        "name": "The lake Blue",
+        "address": "Road 34",
+        "phone": "(2345)78670",
+        "website": "https://www.automotorescontinental.com/",
+        "image": "lakegariguarazo.webp",
+        "membership_level": 3,
+        "description": "Continental dealership one of the car dealerships that"
+  
+      },
+  
+      {
+        "name": "The lake Kariguarazo",
+        "address": "Road 34",
+        "phone": "(2545)6670",
+        "website": "https://hotelelmolino.com.ec/",
+        "image": "lakegariguarazo.webp",
+        "membership_level": 3,
+        "description": "Hotel el molino provide accomodation"
+      }
+    ]
+  }
