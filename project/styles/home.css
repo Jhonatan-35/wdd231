@@ -53,6 +53,13 @@ body {
     width: 100%;
     align-items: center;
 }
+.introduction a{
+    background: #000;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+
+}
 
 #current-weather {
     display: flex;
@@ -207,28 +214,13 @@ h1{
     margin: 20px auto;
     padding: 20px;
 }
-.business-Riobamba {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
 
-  .business-Riobamba h2 {
-    grid-column: span 2;
-    text-align: center;
-    font-size: 1.8rem;
-    background-color: #013a63;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-  }
+  .Business h2{
+    background: #fff;
+    color: #000;
+   }
 
+   
   .Cardbusiness {
     background: white;
     padding: 15px;
@@ -264,7 +256,7 @@ h1{
     display: block;
     margin-top: 10px;
     padding: 8px 12px;
-    color: #0000ee;
+  
     text-decoration: underline;
   }
 
@@ -328,8 +320,15 @@ h1{
     .Nevada {
         grid-template-columns: 1fr;
     }
-
- 
+    
+    .introduction a{
+        background: #000;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        margin-left: 25%;
+    
+    }
 .Heros {
     text-align: center;
     padding:  20px;
@@ -382,7 +381,7 @@ h1{
 
 @media (min-width: 750px) {
 
-  
+   
  
     header {
       
@@ -496,7 +495,7 @@ h1{
         margin-bottom: 15px;
         background-color: #f8f8f8;
       
-        width: 90%;
+        width: 70%;
         
 
     }
@@ -618,7 +617,7 @@ h1{
 
     .Business {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 20px;
         background-color: #f8f8f8;
@@ -633,11 +632,19 @@ h1{
         grid-column: span 2;
         text-align: center;
         font-size: 1.8rem;
-        background-color: var(--primary-color);
-        color: white;
+        background-color: #fff;
+        color:#000;
         padding: 10px;
         border-radius: 8px;
       }
+
+      .Business a{
+        background-color: var(--secunddary-color);
+        color: #000;
+        text-decoration: none;
+    
+       }
+     
       .card {
         background: white;
         padding: 15px;
@@ -670,19 +677,18 @@ h1{
       }
     
       .card a {
+        background-color: #000;
         display: block;
         margin-top: 10px;
         padding: 8px 12px;
-        color: #0000ee;
-        text-decoration: underline;
+        color: #fff;
+        border-radius: 10px;
+        
       }
 }
 
 
 @media (max-width: 763px) {
-
-
-
 
     .Heros {
         text-align: center;
@@ -900,6 +906,10 @@ h1{
         background: white;
         box-shadow: 0 0 7px #333;
     }
+    .Business h2{
+     background: #fff;
+    }
+
     h2 {
        
         padding: 10px;
