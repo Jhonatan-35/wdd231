@@ -2,7 +2,7 @@
     "places": [
       {
         "name": "The chorrera Chimborazo",
-        "address": "Km 25 Road Guaranda",
+        "address": "F579+PMH, San Juan",
         "phone": "(2345)78690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/riobamba/escalada/ruta-escalada-chorrera-a9fef4e98" ,
         "image": "chorrerachimborazo.webp",
@@ -11,7 +11,7 @@
       },
       {
         "name": "The lake Blue",
-        "address": "Road E-34 Chimborazo",
+        "address": "7HXF+52M, Cubillín",
         "phone": "(2365)78697",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/penipe/lagunas/laguna-azul-a764qg4ac",
         "image": "lakeblues.webp",
@@ -20,7 +20,7 @@
       },
       {
         "name": "The Volcan Altar",
-        "address": "Road 34 /23",
+        "address": "Located in Sangay National Park",
         "phone": "(2345)88690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/riobamba/volcanes/volcan-altar-adc5c8c8e",
         "image":"volcanoaltar.webp",
@@ -29,7 +29,7 @@
       },
       {
         "name": "The forest Polylepis",
-        "address": "Road 25 km Road Guaranda",
+        "address": "P269+C55",
         "phone": "(234)7498690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/riobamba/bosques/bosque-polylepis-chimborazo-ac3da40f4",
         "image": "forestpolylepis.webp",
@@ -38,7 +38,7 @@
       },
       {
         "name": " Hill Puñay",
-        "address": "Km 45 Road Guaranda",
+        "address": "M28H+WM, Llagos",
         "phone": "(2345)458690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/chunchi/cerros/cerro-punay-argyoxmrk",
         "image": "hillpuñay.webp",
@@ -47,7 +47,7 @@
       },
       {
         "name": "Chimborazo Shelter",
-        "address": "Km 34 Road Guano",
+        "address": "The foot of Chimborazo on its southwest slope.",
         "phone": "(6445)78660",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/refugios-cabanas/refugios-chimborazo-a88890d77",
         "image": "refsafechimborazo.webp",
@@ -56,7 +56,7 @@
       },
       {
         "name": "The lake Yellow",
-        "address": "Road 56 E-56",
+        "address": "Sangay National Park, 8HH7+5PW Campin",
         "phone": "(2345)78670",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/penipe/lagunas/laguna-amarilla-atu43kr72",
         "image": "lakeyellow.webp",
@@ -67,7 +67,7 @@
   
       {
         "name": "The lake carihuaraizo",
-        "address": "Road aside Chmborazo",
+        "address": "H6VW+RCG",
         "phone": "(2545)6670",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/volcanes/volcan-carihuairazo-ab38149d9",
         "image": "lakegariguarazo.webp",
