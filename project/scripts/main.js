@@ -87,8 +87,8 @@ function displayCard(businesses) {
       card.appendChild(name);
       card.appendChild(address);
       card.appendChild(phone);
-      card.appendChild(membership);
-      card.appendChild(port);
+      card.appendChild(sport);
+      card.appendChild(website);
 
       cardContainer.appendChild(card);
   });
