@@ -7,17 +7,17 @@ async function getBusinesses() {
     if (!response.ok) throw new Error('Failed to fetch data');
     const data = await response.json();
 
-    console.log("All Members:", data.places); 
+    console.log("All places:", data.places); 
 
   
     const eligibleBusinesses = data.places.filter(business => 
-      business.membership_level === 3 || business.membership_level === 2
+      business.sport === 3 || business.sport === 2
     );
 
-    console.log("Choices Members:", eligibleBusinesses);
+    console.log("Choices sports:", eligibleBusinesses);
 
     if (eligibleBusinesses.length === 0) {
-      console.warn("Member elegible Silver or gold!");
+      console.warn("Choice sport hike or camping!");
       return;
     }
 
@@ -75,8 +75,8 @@ function displayCard(businesses) {
       const phone = document.createElement('p');
       phone.textContent = `${business.phone}`;
 
-      const membership = document.createElement('p');
-      membership.textContent = `Membership Level: ${business.membership_level === 3 ? "Silver" : "Gold"}`;
+      const sport = document.createElement('p');
+      sport.textContent = `sport: ${business.sport === 3 ? "Hike" : "Camping"}`;
 
       const website = document.createElement('a');
       website.href = business.website;
@@ -88,7 +88,7 @@ function displayCard(businesses) {
       card.appendChild(address);
       card.appendChild(phone);
       card.appendChild(membership);
-      card.appendChild(website);
+      card.appendChild(port);
 
       cardContainer.appendChild(card);
   });
