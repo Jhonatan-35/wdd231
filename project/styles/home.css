@@ -6,7 +6,7 @@
 
 
 body {
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif ;
     background-color: #f8f8f8;
 }
 :root{
@@ -149,123 +149,18 @@ h1{
     transform: scale(1.2);
   }
   
-  .events {
-    padding: 20px;
-    text-align: center;
-  }
 
-  .event {
-    background: #f8f8f8;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-
-  .event h3 {
-    font-size: 1.5rem;
-    color: #000;
-  }
-
-  .event p {
-    font-size: 1.3rem;
-    color: #333;
-  }
-
-  .event img{
-    width: 250px;
-   
-  }
-
-  .event a {
-    text-decoration: underline;
-    color: var(--primary-color);
-    font-weight: bold;
-  }
-
-.Nevada h2{
-   
-    display: flex;
-    justify-content: center; 
-    grid-column: 1 / -1;
-    align-items: center; 
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 10px;
-    color:var(--primary-color);
-    background: white;
-    box-shadow: 0 0 7px #333;
-}
 .Wheather li{
     text-decoration: none;
     
 }
 
-.Nevada {
-    
-    grid-template-columns: 2fr 2fr; 
-    gap: 20px;
-    align-items: center;
-    display: grid;
-    justify-content: center;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
 
-  .Business h2{
+  .Placeschimborazo h2{
     background: #fff;
     color: #000;
    }
 
-   
-  .Cardbusiness {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .Cardbusiness:hover {
-    transform: scale(1.05);
-  }
-
-  .Cardbusiness img {
-    width: auto;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .Cardbusiness h3 {
-    font-size: 1.2rem;
-    color: #000;
-    margin: 10px 0;
-  }
-
-  .Cardbusiness p {
-    font-size: 1rem;
-    color: #333;
-  }
-
-  .Cardbusiness a {
-    display: block;
-    margin-top: 10px;
-    padding: 8px 12px;
-  
-    text-decoration: underline;
-  }
-
-
-.CardBusines-Riobamba img{
-    height: auto;
-    width: 100px; 
-    
-}
 
 .card img{
     height:auto ;
@@ -294,18 +189,6 @@ h1{
     color: var(--primary-color);
 }
 
-
-.Adver {
-    flex-direction: column;
-    gap: 10px;
-    display: flex;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 7px #333;
-    
-}
-
-
   h2 {
        
         padding: 10px;
@@ -317,10 +200,7 @@ h1{
         font-size: 1.5rem;
     }
 @media (max-width: 500px) {
-    .Nevada {
-        grid-template-columns: 1fr;
-    }
-    
+   
     .introduction a{
         background: #000;
         width: 200px;
@@ -480,8 +360,6 @@ h1{
        
     }
     
-  
-    
     main {
        
         flex-direction: column;
@@ -492,7 +370,7 @@ h1{
       
     }
 
-    .Business {
+    .Placeschimborazo {
         
         padding: 10px;
         margin-bottom: 15px;
@@ -533,33 +411,7 @@ h1{
         transform: scale(1.5);
     }
 
-    
-   
-    #Adventace {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        transition: transform 0.2s ease-in-out;
-        background-color: #f8f8f8;
-        border-radius: 10px;
-        
-
-    }
-    .CardBusines-Riobamba {
-        padding: 15px;
-        text-align: center;
-        box-shadow: 0 0 7px #333;
-        background: white;
-    }
-    
-    .CardBusines-Riobamba:hover {
-        transform: scale(1.1);
-        background-color: rgb(211, 211, 211);
-
-    }
+ 
     .card {
         padding: 15px;
         text-align: center;
@@ -572,26 +424,8 @@ h1{
         background-color: rgb(211, 211, 211);
 
     }
-   
-     #Adventace.list  {
-       
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        display: flex;
-        padding: 20px;
-        max-width: 1200px;
-        background-color: #f8f8f8;
-       
-    }
-    .CardBusines-Riobamba.list {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-        padding: 10px;
-        
-    }
+ 
+ }
     .card {
         display: flex;
         flex-direction: row;
@@ -618,7 +452,7 @@ h1{
         margin: 1rem;
     }
 
-    .Business {
+    .Placeschimborazo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -631,7 +465,7 @@ h1{
         margin-bottom: 30px;
       }
     
-      .Business h2 {
+      .Placeschimborazo h2 {
         grid-column: span 2;
         text-align: center;
         font-size: 1.8rem;
@@ -641,7 +475,7 @@ h1{
         border-radius: 8px;
       }
 
-      .Business a{
+      .Placeschimborazo a{
         background-color: var(--secunddary-color);
         color: #000;
         text-decoration: none;
@@ -688,7 +522,7 @@ h1{
         border-radius: 10px;
         
       }
-}
+    
 
 
 @media (max-width: 763px) {
@@ -724,9 +558,7 @@ h1{
       .Heros a{
         font-size: 1rem;
       }
-    #listView {
-        display: none;
-    }
+   
     body {
         margin: 0 auto;
         background-color: #f8f8f8;
@@ -756,12 +588,7 @@ h1{
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
       }
 
-      .Cardbusiness img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 10px;
-        margin-top: 15px;
-      }
+  
     
       .card img {
         width: 100%;
@@ -909,7 +736,7 @@ h1{
         background: white;
         box-shadow: 0 0 7px #333;
     }
-    .Business h2{
+    .Placeschimborazo h2{
      background: #fff;
     }
 
@@ -963,27 +790,7 @@ h1{
 
     }
 
-    .CardBusines-Riobamba img {
-        
-        max-height: 150px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-       
-       
-    }
  
-     .CardBusines-Riobamba {
-    
-        padding: 20px;
-        box-shadow: 0 0 7px #333;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-    }
     .card img {
         
         max-height: 150px;
@@ -1026,13 +833,7 @@ h1{
         width: 100%;
         margin-bottom: 10px;
     }
-    #Adventace {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 15px;
-        padding: 5px;
-    }
-
+ 
     
 
     
