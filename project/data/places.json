@@ -2,20 +2,18 @@
     "places": [
       {
         "name": "The chorrera Chimborazo",
-        "address": "Street 45 and lisboa",
+        "address": "Km 25 Road Guaranda",
         "phone": "(2345)78690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/riobamba/escalada/ruta-escalada-chorrera-a9fef4e98" ,
         "image": "chorrerachimborazo.webp",
-        "membership_level": 3,
         "description": "La Chorrera is a place to camp with your friends and be able to "
       },
       {
         "name": "The lake Blue",
-        "address": "Road 45 and E-34",
+        "address": "Road E-34 Chimborazo",
         "phone": "(2365)78697",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/penipe/lagunas/laguna-azul-a764qg4ac",
         "image": "lakeblues.webp",
-        "membership_level": 2,
         "description": "The Blue Lake, known for its crystal-clear transparency that makes it so attractive. "
       },
       {
@@ -24,54 +22,48 @@
         "phone": "(2345)88690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/riobamba/volcanes/volcan-altar-adc5c8c8e",
         "image":"volcanoaltar.webp",
-        "membership_level": 3,
         "description": "El Altar volcano, known for its splendid white snows that attract many tourists"
       },
       {
         "name": "The forest Polylepis",
-        "address": "Street 45 and lisboa",
+        "address": "Road 25 km Road Guaranda",
         "phone": "(234)7498690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/riobamba/bosques/bosque-polylepis-chimborazo-ac3da40f4",
         "image": "forestpolylepis.webp",
-        "membership_level": 1,
         "description": "The park is known for its paper tree attractions, which attract thousands of visitors each year."
       },
       {
         "name": " Hill Puñay",
-        "address": "Ave 54 Street 15",
+        "address": "Km 45 Road Guaranda",
         "phone": "(2345)458690",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/chunchi/cerros/cerro-punay-argyoxmrk",
         "image": "hillpuñay.webp",
-        "membership_level": 1,
         "description": "Puñay Hill, known for its splendid mountains and the great diversity of being able to receive spectacular sunrises"
       },
       {
         "name": "Chimborazo Shelter",
-        "address": "Street 43 road 34",
+        "address": "Km 34 Road Guano",
         "phone": "(6445)78660",
-        "website": "",
+        "website": "https://riobamba.com.ec/es-ec/chimborazo/refugios-cabanas/refugios-chimborazo-a88890d77",
         "image": "refsafechimborazo.webp",
-        "membership_level": 2,
         "description": "The Chimborazo refuge being one of the attractions for thousands of visitors and tourists since it is a quite sport"
       },
       {
         "name": "The lake Yellow",
-        "address": "Road 34",
+        "address": "Road 56 E-56",
         "phone": "(2345)78670",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/penipe/lagunas/laguna-amarilla-atu43kr72",
         "image": "lakeyellow.webp",
-        "membership_level": 3,
         "description": "The yellow lake known for its strange color of lagoon which makes it so attractive"
   
       },
   
       {
         "name": "The lake carihuaraizo",
-        "address": "Road 34",
+        "address": "Road aside Chmborazo",
         "phone": "(2545)6670",
         "website": "https://riobamba.com.ec/es-ec/chimborazo/volcanes/volcan-carihuairazo-ab38149d9",
         "image": "lakegariguarazo.webp",
-        "membership_level": 3,
         "description": "The lake carihuaraizo Erazo known for its proximity"
       }
     ]
