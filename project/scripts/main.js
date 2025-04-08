@@ -1,7 +1,7 @@
 const url = 'data/places.json'; 
-const cardContainer = document.querySelector('.Business');
+const cardContainer = document.querySelector('.Placeschimborazo');
 
-async function getBusinesses() {
+async function getPlaces() {
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Failed to fetch data');
@@ -10,31 +10,31 @@ async function getBusinesses() {
     console.log("All places:", data.places); 
 
   
-    const eligibleBusinesses = data.places.filter(business => 
-      business.sport === 3 || business.sport === 2
+    const eligiblePlaces = data.places.filter(places => 
+      places.sport === 3 || places.sport === 2
     );
 
-    console.log("Choices sports:", eligibleBusinesses);
+    console.log("Choices sports:", eligiblePlaces);
 
-    if (eligibleBusinesses.length === 0) {
+    if (eligiblePlaces.length === 0) {
       console.warn("Choice sport hike or camping!");
       return;
     }
 
-    const cardBusinesses = getRandomBusinesses(eligibleBusinesses, Math.floor(Math.random() * 1) + 2);
+    const cardPlaces = getRandomPlaces(eligiblePlaces, Math.floor(Math.random() * 1) + 2);
     
-    console.log("Member Achive Bussiness spotligh:", cardBusinesses); 
+    console.log("Choice Your Favorite  sport:", cardPlaces); 
 
-    displayCard(cardBusinesses);
+    displayCard(cardPlaces);
   } catch (error) {
     console.error('Wrong:', error);
   }
 }
 
 
-function getRandomBusinesses(businesses, count) {
+function getRandomPlaces(places, count) {
   let selected = [];
-  let available = [...businesses];
+  let available = [...places];
 
   while (selected.length < count && available.length > 0) {
     let randomIndex = Math.floor(Math.random() * available.length);
@@ -44,42 +44,42 @@ function getRandomBusinesses(businesses, count) {
 }
 
 
-function displayCard(businesses) {
-  if (!businesses || businesses.length === 0) {
-      console.warn("Business don't fount.");
+function displayCard(places) {
+  if (!places || places.length === 0) {
+      console.warn("Places don't fount.");
       return;
   }
 
   if (!cardContainer) {
-      console.error("Wrong: .business don't wrong.");
+      console.error("Error: .Places don't wrong.");
       return;
   }
 
   cardContainer.innerHTML = ''; 
 
-  businesses.forEach((business) => {
+  places.forEach((places) => {
       const card = document.createElement('div');
       card.classList.add('card');
 
       const img = document.createElement('img');
-      img.src = `images/${business.image}`;
-      img.alt = `${business.name} logo`;
+      img.src = `images/${places.image}`;
+      img.alt = `${places.name} logo`;
       img.loading = 'lazy';
 
       const name = document.createElement('h3');
-      name.textContent = business.name;
+      name.textContent = places.name;
 
       const address = document.createElement('p');
-      address.textContent = `${business.address}`;
+      address.textContent = `${places.address}`;
 
       const phone = document.createElement('p');
-      phone.textContent = `${business.phone}`;
+      phone.textContent = `${places.phone}`;
 
       const sport = document.createElement('p');
-      sport.textContent = `sport: ${business.sport === 3 ? "Hike" : "Camping"}`;
+      sport.textContent = `sport: ${places.sport === 3 ? "Hike" : "Camping"}`;
 
       const website = document.createElement('a');
-      website.href = business.website;
+      website.href = places.website;
       website.target = '_blank';
       website.textContent = website;
 
@@ -95,5 +95,5 @@ function displayCard(businesses) {
 }
 
 
-getBusinesses();
+getPlaces();
 displayCard();
