@@ -199,7 +199,11 @@ h1{
     }
 @media (max-width: 500px) {
   
-    
+    .discover h2{
+        background-color: #f8f8f8;
+        color: #000;
+    }
+ 
     .introduction a{
         background: #000;
         width: 200px;
@@ -786,8 +790,6 @@ h1{
         
     }
 
-
-   
 
     }
 
