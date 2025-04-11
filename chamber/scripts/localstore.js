@@ -1,10 +1,19 @@
-const visitsDisplay = document.querySelector('.timeBetween');
+const aside = document.getElementById("visitor-message");
+const lastVisit = localStorage.getItem("lastVisit");
+const currentTime = Date.now();
 
-let numVisits = Number(window.localStorage.getItem("timeBetween"));
+    if (!lastVisit) {
+    aside.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+    const diffTime = currentTime - Number(lastVisit);
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    if (diffDays < 1) {
+        aside.textContent = "Back so soon! Awesome!";
+    } else if (diffDays === 1) {
+        aside.textContent = "You last visited 1 day ago.";
+    } else {
+        aside.textContent = `You last visited ${diffDays} days ago.`;
+    }
+    }
 
-//This is where I believe I need to get the days between visits
-//Something like:
-
-const visitDifference = "pastvisit" - Date.now();
-
-localStorage.setItem("timeBetween", visitDifference);
+localStorage.setItem("lastVisit", currentTime);
