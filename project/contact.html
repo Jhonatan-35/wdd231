@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact |Chimborazo Mountaineering Club</title>
+    <meta name="description" content="Contact Page- Chimborazo Mountaineering Club​">
+    <meta name="author" content="Jhonatan  Yugsan ">
+    <meta property="og:title" content="Contact" >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/join.html" >
+    <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/chamber/images" >
+    <link rel="icon" href="images/logoproject.png" type="images/logochambera" >
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script defer src="scripts/contact.js"></script>
+    
+</head>
+<body> 
+  <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+    
+    <header>
+        
+        <img  src="images/logoproject.png" alt="Chamber commerce">
+    
+        <span>Chimborazo Mountaineering Club</span>         
+    </header>  
+    <nav>
+        <a id="menu" href="#" class="show"></a>
+        <ul class="navigation"> 
+
+          
+          <li><a href="index.html" id="Home">Home</a></li>
+          <li><a href="about.html" id="About">About Us</a></li>
+          <li><a href="contact.html" id="Contact">Contact Us</a></li>
+         
+        </ul> 
+        
+    </nav>  
+   
+    <main> 
+       
+        
+       
+      <h1>Thank you for getting in touch</h1>
+      <p>Then register on our form and make your reservation to choose the place you want to visit.</p>
+     
+    
+        <div class="register-tour">
+         
+         
+          <section id="form">
+            <h2>Register using the following form</h2>
+           
+            <form action="registration.html" method="get">
+            
+              <label for="name">First name:
+                <input type="text" id="name" name="name" autocomplete="given-name" required>
+              </label>
+      
+              <label for="lname">Last name:
+                <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+              </label>
+            
+             
+      
+              <label for="email">Email addres:
+                <input type="email" id="email" name="email"
+                      title="Enter a valid email address"
+                      autocomplete="email"
+                      placeholder="example :jhonatanyugsan@gmail.com"
+                      required>
+              </label>
+      
+              <label for="phone">Phone number:
+                <input type="tel" id="phone" name="phone"
+                      title="Enter your mobile phone number"
+                      autocomplete="tel"
+                      placeholder="+593-98-485-9447"
+                      required>
+              </label>
+              
+              <label for="place">Place name:
+                <input type="text" id="place" name="place"
+                      title="Enter name place"
+                      autocomplete="organization"
+                      required>
+              </label>
+      
+              
+      
+              <label for="tour">Select your adventure:
+                
+                <select id="tour" name="tour">
+                  <option value="Camping">Camping ($10/price)</option>
+                  <option value="Hike">Hike ($30/price)</option>
+                  <option value="Mountain climbing">Mountain climbing ($75/price)</option>
+                </select>
+              </label>
+      
+              <label for="place-describe">Describe the place:
+                <textarea id="place-describe" name="place-describe"
+                          title="Description place visit"
+                          rows="4"
+                          required></textarea>
+              </label>
+              
+              <button type="submit">Submit Request</button>
+             
+          <input type="hidden" id="timestamp" name="timestamp">
+       
+            </form>
+         
+          </section>
+        
+     
+        
+    
+          
+      <section id="adventures">
+           
+        <h2>Our Tours</h2> 
+        <p>Below we describe our adventure tours with their details</p>
+       
+        <div class="tours-option">
+    
+       
+          <div class="tour-card">
+            <h3>Camping</h3>
+            <img src="images/acampar.webp" alt=" Camping" loading="lazy">
+            <p class="price">$10/price</p>
+            <a href="#" onclick="event.preventDefault(); openModal('camping')">More details</a>
+          </div>
+  
+          <div id="camping" class="marvel">
+            <div class="marvel-content">
+                <span class="close" onclick="closeModal('camping')">&times;</span>
+                <h3>The services included for camping</h3>
+                <ul>
+                    <li> - Camping tent </li>
+                    <li> - Tourist Guide</li>
+                   
+                </ul>
+            </div>
+          </div>
+         
+        
+          <div class="tour-card">
+            <h3>Hike</h3>
+            <img src="images/raisechim.webp" alt="Hike Chimborazo" loading="lazy">
+            <p class="price">$30/price</p>
+            <a href="#" onclick="event.preventDefault(); openModal('Hike')">More details</a>
+          </div>
+  
+          <div id="Hike" class="marvel">
+            <div class="marvel-content">
+              <span class="close" onclick="closeModal('Hike')">&times;</span>
+              <h3>The services included for hiking</h3>
+              <ul>
+                <li> - hiking for 1 day</li>
+                <li> - Tourist Guide</li>
+                <li> - Lunch</li>
+              </ul>
+            </div>
+          </div>
+  
+     
+          <div class="tour-card">
+            <h3>Climbing</h3>
+            <img src="images/climbing.webp" alt="Climbing" loading="lazy">
+            <p class="price">$75/price</p>
+            <a href="#" onclick="event.preventDefault(); openModal('Climbing')">More Details</a>
+          </div>
+  
+          <div id="Climbing" class="marvel">
+            <div class="marvel-content">
+              <span class="close" onclick="closeModal('Climbing')">&times;</span>
+              <h3>The services included for climbing</h3>
+              <ul>
+                <li> - Climb and explore Chimborazo</li>
+                <li> - Get to know all the shelters</li>
+                <li> - Camping tent</li>
+                <li> - Tourist Guide</li>
+                <li> - Canned foods</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> 
+    <div class="location">
+    <h3>Our Location</h3>
+    </div>
+   
+    <div class="map-container">
+      <div class="mapBg"></div>
+      <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7975.860332933913!2d-78.60609318623051!3d-1.762775034419312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1720555062243!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+ 
+  
+ 
+  <div class="contactMethod">
+    <div class="method">
+        <i class="fa-solid fa-location-dot contactIcon"></i>
+        <article class="text">
+            <h2 class="sub-heading">Address:</h2>
+            <p class="para"> Licto road Riobamba</p>
+        </article>
+    </div>
+
+    <div class="method">
+        <i class="fa-solid fa-envelope contactIcon"></i>
+        <article class="text">
+            <h2 class="sub-heading">Email:</h2>
+            <p class="para">Email: mountainchimbor@gmail</p>
+        </article>
+    </div>
+
+    <div class="method">
+        <i class="fa-solid fa-phone contactIcon"></i>
+        <article class="text">
+            <h2 class="sub-heading">Phone:</h2>
+            <p class="para">+593 98 486 6323</p>
+        </article>
+    </div>
+    
+</div>
+        </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span>🌴WDD 231 | Jhonatan Ariel Yugsan 🌴 Ecuador</p>
+        <a href="https://www.facebook.com/">
+          <img src="images/facebooklogo.png" alt="Facebook">
+        </a>
+          <a href="https://twitter.com">
+          <img src="images/Twiterlogo.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="images/Instagramlogo.png" alt="Instagram">
+        </a>
+        <p>This document was last modified:</p> 
+        <p id="demo"></p>
+    </footer>
+    
+    
+  </body>
+</html>

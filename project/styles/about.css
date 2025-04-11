@@ -6,109 +6,179 @@
 
 
 body {
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif ;
     background-color: #f8f8f8;
 }
 :root{
-    --primary-color:#0077b6;
-    --secunddary-color:#36454f;
+    --primary-color:#004b23;
+    --secunddary-color:#A1CCA5;
 }
-
-.Heros {
+.btn-wsp{
+    position: fixed;
+    width: 58px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
     text-align: center;
-    padding:  20px;
-    color: white;
-    margin-bottom: 2rem;
-    max-width: 700px;
-    border-radius: 10px;
-    background: #f8f8f8;
-    box-shadow:0 0 7px #333;
+    overflow: hidden;
+    
+  }
+  
+  .fa-whatsapp{
+    font-size: 50px;
+  }
+  .btn-wsp:hover{
+    background-color:#28e76e ;
   }
 
-  .Heros img {
+  .conteneder{
+    background-color:#eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 1rem;
-    max-width: 630px;
+    transition: .03s;
     border-radius: 10px;
-    margin-top: 15px;
-   
+    width: 90%;
+    
+  }
+  .title-content h2{
+  width: 90%;
+  }
+  .conteneder h2{
+    margin-left: 3%;
+  }
+  .cont{
+  background-color:#eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  border-radius: 10px;
+  width: 150%;
+  transition: 2s;
+  max-width: 100%;
+  margin-left: 1%;
+  }
+  .cont img{
+    border-radius: 10px;
+    max-width: 30%;
+    margin: 1rem;
+    float: right;
   }
  
-  #weather-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 20px auto;
+  
+  .Sucess{
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  transition: 5s;
+  border-radius: 10px;
+  margin-left: 30%;
+  max-width: 80%;
+  }
+ 
+  .Sucess img{
+    border-radius: 10px;
+    float: right;
+    max-width: 40%;
+    margin: 1rem;
+    float: left;
+  }
+  
+    
+  .Account {
+    background-color: #eee;
+    margin: 1rem;
+    border-radius: 10px;
+   
+    margin-left: 30%;
+   
+  
+  }
+  .Account h2{
+    margin-left:0% ;
+  }
+  .Account img{
+    border-radius: 10px;
+    float: right;
+    max-width: 40%;
+  }
+
+  .discover h2{
+    background-color: #fff;
+    color: #000;
+  }
+  .Placeschimborazo a :hover{
+    transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out;
+   }
+   .card a:hover {
+    transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #Facts, #histoty {
     background: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 0 10px #333;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: black;
+    margin: 1rem;
 }
-
-.weather-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
-    width: 100%;
-    align-items: center;
+#Facts ul li, #histoty ul li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+    color: black;
 }
-
-#current-weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 20px;
+#Facts ul, #histoty ul {
+    list-style-type: none;
+    padding: 0;
+}
+#Facts a, #histoty a {
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#current-weather img {
-    width: 100px;
-    height: 100px;
-    image-rendering: crisp-edges;
-}
-
-#current-weather p {
-    text-align: center;
-    font-size: 1.3rem;
-    color: #013a63;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-#weather-forecast {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.forecast-item {
-    background: white;
-    padding: 10px;
    
-   
+}
+#Facts a:hover, #histoty a:hover {
+    text-decoration: underline;
+    
+}
+#Facts a{
+    background-color: #000000;
     text-align: center;
-    display: flex;
+
+}
+
+#Facts a{
+    background-color: #000000;
+    text-align: center;
+  
+}
+
+
+  
+.introduction a{
+    background: #000;
+    width: 200px;
+    text-align: center;
     align-items: center;
-    gap: 10px;
+
 }
 
-.forecast-item img {
-    width: 50px;
-    height: auto;
-}
 
-.forecast-item p {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-}
   .Heros a{
     font-size: 1.5rem;
   }
-
+h1{
+    transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out;
+    animation: 1s ease-in-out 0s 1 normal forwards running fadeIn;
+}
   .Heros h1 {
     font-size: 2rem;
   }
@@ -117,10 +187,14 @@ body {
     font-size: 1.5rem;
     color: #000;
   }
+  .introduction h2{
+    background-color: #fff;
+    color: #000;
+  }
   .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    width: 30%;
+    width: 35%;
     background: #000;
     color: white;
     text-decoration: none;
@@ -134,181 +208,16 @@ body {
     transform: scale(1.2);
   }
   
-  .events {
-    padding: 20px;
-    text-align: center;
-  }
 
-  .event {
-    background: #f8f8f8;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
 
-  .event h3 {
-    font-size: 1.5rem;
+  .Placeschimborazo h2{
+    background: #fff;
     color: #000;
-  }
-
-  .event p {
-    font-size: 1.3rem;
-    color: #333;
-  }
-
-  .event img{
-    width: 250px;
-   
-  }
-
-  .event a {
-    text-decoration: underline;
-    color: var(--primary-color);
-    font-weight: bold;
-  }
-
-.Nevada h2{
-   
-    display: flex;
-    justify-content: center; 
-    grid-column: 1 / -1;
-    align-items: center; 
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 10px;
-    color:var(--primary-color);
-    background: white;
-    box-shadow: 0 0 7px #333;
-}
-.Wheather li{
-    text-decoration: none;
-    
-}
-
-.Nevada {
-    
-    grid-template-columns: 2fr 2fr; 
-    gap: 20px;
-    align-items: center;
-    display: grid;
-    justify-content: center;
-    max-width: 800px;
-    margin: 20px auto;
-   
-    padding: 20px;
-    
-   
-}
-
-
-.business-Riobamba {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-
-  .business-Riobamba h2 {
-    grid-column: span 2;
-    text-align: center;
-    font-size: 1.8rem;
-    background-color: #013a63;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-  }
-
-  .Cardbusiness {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .Cardbusiness:hover {
-    transform: scale(1.05);
-  }
-
-  .Cardbusiness img {
-    width: auto;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .Cardbusiness h3 {
-    font-size: 1.2rem;
-    color: #000;
-    margin: 10px 0;
-  }
-
-  .Cardbusiness p {
-    font-size: 1rem;
-    color: #333;
-  }
-
-  .Cardbusiness a {
-    display: block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    color: #0000ee;
-    text-decoration: underline;
-  }
-
-
-.CardBusines-Riobamba img{
-    height: auto;
-    width: 100px; 
-    
-}
+   }
 
 .card img{
     height:auto ;
     width: 100px; 
-}
-
-.Wheather {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-   
-    background: white;
-    padding: 20px;
-    display: flex;
-    box-shadow: 0 0 7px #333;
-}
-
-.Wheather img {
-    height: 200px;
-    width: 200px;
-}
-
-.Weather p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-}
-
-
-.Adver {
-    flex-direction: column;
-    gap: 10px;
-    display: flex;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 7px #333;
-    
 }
 
 
@@ -322,18 +231,44 @@ body {
         width: 100%;
         font-size: 1.5rem;
     }
-@media (max-width: 500px) {
-    .Nevada {
-        grid-template-columns: 1fr;
-    }
 
+
+    
+@media (max-width: 500px) {
+
+    #Facts, #histoty {
+    
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      
+    }
+    #histoty a{
+        background-color:#000 ;
+    }
+    .card a {
+        background-color: #000;
+        display: block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        color: #fff;
+        border-radius: 10px;
+        text-decoration-line: none;
+        
+      }
  
+    .introduction a{
+        background: #000;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        margin-left: 25%;
+    
+    }
 .Heros {
     text-align: center;
     padding:  20px;
     color: white;
     margin-bottom: 2rem;
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 10px;
     background: #f8f8f8;
     box-shadow:0 0 7px #333;
@@ -355,31 +290,75 @@ body {
 
       } 
 
-.weather-content {
-    grid-template-columns: 1fr; 
-}
-
-#current-weather img {
-    width: 60px; 
-    height: 60px;
-}
-
-#current-weather p {
-    font-size: 0.9rem;
-}
-
-.forecast-item {
-    padding: 6px; 
-    font-size: 0.8rem; 
-}
-
-.forecast-item img {
-    width: 35px; 
-}
 }
 
 @media (min-width: 750px) {
-
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        }
+    
+        #Facts, #histoty {
+            background: #f8f8f8;
+            padding: 20px;
+            
+            box-shadow: 0 0 10px #333;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            color: black;
+        }
+    
+        #Facts:hover, #histoty:hover {
+            transform: scale(1.03); 
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        #Facts ul, #histoty ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        #Facts ul li, #histoty ul li {
+            font-size: 1.1rem;
+            padding: 5px 0;
+            color: black;
+        }
+    
+        #currendemographis h2, #histoty h2 {
+            
+            color:#fff; 
+            border-radius: 10px;
+        }
+    
+       
+        #Facts a, #histoty a {
+            display: inline-block;
+            color: #fff;
+            font-size: 25px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+            border-radius: 10px;
+           
+        }
+    
+     
+        #Facts a:hover, #histoty a:hover {
+            text-decoration: underline;
+            
+        }
+        #Facts a{
+            background-color: #000000;
+            text-align: center;
+    
+        }
+        #histoty a{
+            background-color: #000000;
+            text-align: center;
+    
+        }
   
  
     header {
@@ -424,7 +403,7 @@ body {
  
     nav {
         padding: 10px;
-        background-color: #000000;
+        background-color: #A1CCA5;
        
       
     
@@ -443,7 +422,7 @@ body {
     nav ul li a {
         font-size: 20px;
         text-decoration: none;
-        color: white;
+        color: #000;
         transition: transform 0.3s ease-in-out;
         display: inline-block;
        
@@ -485,16 +464,15 @@ body {
         display: flex;
         align-items: center;
         padding: 30px;
-        box-shadow: 0 0 7px #333;
+      
     }
 
-    .Business {
+    .Placeschimborazo {
         
         padding: 10px;
         margin-bottom: 15px;
         background-color: #f8f8f8;
-        box-shadow: 0 0 7px #333;
-        width: 70%;
+        width: 100%;
         
 
     }
@@ -529,33 +507,6 @@ body {
         transform: scale(1.5);
     }
 
-    
-   
-    #Adventace {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        transition: transform 0.2s ease-in-out;
-        background-color: #f8f8f8;
-        border-radius: 10px;
-        
-
-    }
-    .CardBusines-Riobamba {
-        padding: 15px;
-        text-align: center;
-        box-shadow: 0 0 7px #333;
-        background: white;
-    }
-    
-    .CardBusines-Riobamba:hover {
-        transform: scale(1.1);
-        background-color: rgb(211, 211, 211);
-
-    }
     .card {
         padding: 15px;
         text-align: center;
@@ -563,31 +514,6 @@ body {
         background: white;
     }
     
-    .card:hover{
-        transform: scale(1.1);
-        background-color: rgb(211, 211, 211);
-
-    }
-   
-     #Adventace.list  {
-       
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        display: flex;
-        padding: 20px;
-        max-width: 1200px;
-        background-color: #f8f8f8;
-       
-    }
-    .CardBusines-Riobamba.list {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-        padding: 10px;
-        
-    }
     .card {
         display: flex;
         flex-direction: row;
@@ -614,28 +540,37 @@ body {
         margin: 1rem;
     }
 
-    .Business {
+    .Placeschimborazo {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3,  1fr);
         gap: 20px;
         padding: 20px;
         background-color: #f8f8f8;
         text-align: center;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
+        margin-bottom: 2px;
       }
     
-      .Business h2 {
+      .Placeschimborazo h2 {
         grid-column: span 2;
         text-align: center;
         font-size: 1.8rem;
-        background-color: var(--primary-color);
-        color: white;
+        background-color: #fff;
+        color:#000;
         padding: 10px;
         border-radius: 8px;
       }
+
+      .Placeschimborazo a {
+        background-color: var(--secunddary-color);
+        color: #000;
+        text-decoration: none;
+        transform: scale(1.05);
+    
+       }
+     
+     
       .card {
         background: white;
         padding: 15px;
@@ -644,9 +579,7 @@ body {
         transition: transform 0.3s ease-in-out;
       }
     
-      .card:hover {
-        transform: scale(1.05);
-      }
+     
     
       .card img {
         width: auto;
@@ -668,16 +601,19 @@ body {
       }
     
       .card a {
+        background-color: #000;
         display: block;
         margin-top: 10px;
         padding: 8px 12px;
-        color: #0000ee;
-        text-decoration: underline;
+        color: #fff;
+        border-radius: 10px;
+        transform: scale(1.05);
+
       }
+      
 }
-
-
 @media (max-width: 763px) {
+
 
 
     .Heros {
@@ -742,14 +678,6 @@ body {
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
       }
-
-      .Cardbusiness img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 10px;
-        margin-top: 15px;
-      }
-    
       .card img {
         width: 100%;
         max-width: 600px;
@@ -771,7 +699,6 @@ body {
    
     nav {
         
-      
         position: relative;
        background-color: #000000;
         padding: 10px;
@@ -844,7 +771,6 @@ body {
         width: 100%;
     }
 
-   
     nav ul.show {
      
         width: 99%;
@@ -868,7 +794,6 @@ body {
         transition: transform 0.3s ease-in-out;
     }
 
- 
     nav ul li a.active {
         
         color: white;
@@ -896,16 +821,11 @@ body {
         background: white;
         box-shadow: 0 0 7px #333;
     }
-    h2 {
-       
-        padding: 10px;
-        background: var(--primary-color);
-        color: white;
-        text-align: center;
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 1.5rem;
+    .Placeschimborazo h2{
+     background: #fff;
     }
+
+ 
     h1, h4 {
         text-align: center;
         background: var(--primary-color);
@@ -940,55 +860,11 @@ body {
         color: #fff;
         
     }
-
-
    
-
     }
 
-    .CardBusines-Riobamba img {
-        
-        max-height: 150px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-       
-       
-    }
  
-     .CardBusines-Riobamba {
-    
-        padding: 20px;
-        box-shadow: 0 0 7px #333;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-    }
-    .card img {
-        
-        max-height: 150px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-       
-       
-    }
- 
-     .card {
-    
-        padding: 20px;
-        box-shadow: 0 0 7px #333;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem;
-    }
+   
    
     footer {
        
@@ -1002,20 +878,7 @@ body {
     }
     
 
-    .card img {
-       
-        max-height: 151px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #Adventace {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 15px;
-        padding: 5px;
-    }
-
+   
     
 
     

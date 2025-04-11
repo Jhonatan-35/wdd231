@@ -1,323 +1,131 @@
-*{
-    margin: 0;
-    padding: 0.2rem;
-    box-sizing: border-box;
-  }
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f8f8;
-}
-:root{
-    --primary-color:#0077b6;
-    --secunddary-color:#36454f;
-    --terciary-color:#023047;
-}
-.membership-application {
-  display: flex;
-  flex-direction: column; 
-  gap: 20px;
-  align-items: stretch;
-}
-
-#benefits,
-#form {
-  background: #f8f8f8;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-#form span{
-    color: blue;
-    font-size: 15px;
-}
-main p{
-    font-size: 1.3rem;
-}
-
-
-.benefits{
-    background: #f8f8f8;
-    padding: 30px;
-    border-radius: 9px;
-    max-width: 500px;
-    
-    border:1px solid rgba(0, 0, 0, 0.1);
-}
-h1{
-    margin: 1rem;
-}
-@media (min-width: 768px) {
-  .membership-application {
-    flex-direction: row; 
-    justify-content: space-between;
-  }
-
-  #benefits {
-    width: 40%;
-  }
-
-  #form {
-    width: 50%;
-  }
-
- .business span{
-    color: blue;
- }
+    font-family:Arial, Helvetica, sans-serif;
   
+  }
+  :root{
+    --primary-color:#004b23;
+    --secunddary-color:#A1CCA5;
+  }
 
-}
-
-.spenci-card a{
-    text-decoration: none;
+  
+  header {
     background: var(--primary-color);
-    color: #fff;
-    border-radius: 6px;
-    width: 40%;
-    margin: 2rem;
-    padding: 0.5rem;
-    transition: opacity 0.3s ease-in-out;
-}
-.spenci-card a:hover{
-    transition: opacity 0.3s ease-in-out;
-
-}
-
-#benefits {
-    display: grid;
-    text-align: center;
-    background: #f8f8f8;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    border:1px solid rgba(0, 0, 0, 0.1);
-}
-
-
-
-.membership-levels {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.spenci-card {
-    background: white;
+    color: white;
     padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 280px;
-   
-}
-
-.spenci-card:hover {
-    transform: scale(1.05);
-}
-
-.spenci-card h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.spenci-card p {
+  }
+  
+  
+  header img {
+    width: 80px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  #confirmation img{
+    margin-left: 5%;
+    font-size: 30px;
+  }
+  h1 {
     font-size: 2rem;
-    color: #333;
-    margin: 5px 0;
-}
-
-.spenci-card .price {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: black;
-    margin-top: 10px;
-}
-
-
-#form {
-    background: #f8f8f8;
-    padding: 30px;
-    border-radius: 9px;
-    max-width: 500px;
-    
-    border:1px solid rgba(0, 0, 0, 0.1);
-}
-
-#form form {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#form label {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-    color: var(--terciary-color);
-}
-
-#form input,
-#form select,
-#form textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 100%;
-}
-
-#form textarea {
-    resize: vertical;
-}
-
-#form button {
-    background: var(--primary-color);
-    color: white;
-    font-size: 1rem;
-    transition:  0.3s ease-in-out;
-    font-weight: bold;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-   
-}
-
-#form button:hover {
-    background: darkgreen;
-}
-
-.modal {
-    display: none; 
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    z-index: 1000;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-
-.modal.show {
-    display: flex;
-    opacity: 1;
-}
-
-
-.modal-content {
-    
+  }
+  
+  
+  #confirmation {
+    background: white;
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
-    background: white;
-    max-width: 400px;
-    text-align: center;
-    position: relative;
-    animation: fadeInModal 0.3s ease-in-out;
-}
-.modal-content ul {
-    list-style: none;
-    margin: 0;  
-    padding: 0; 
-   
-}
-
-.modal-content ul li {
-    padding-left: 0; 
-}
-
-
-
-@keyframes fadeInModal {
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 1.8rem;
-    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  h2 {
     color: black;
-    transition: color 0.3s ease-in-out;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .tour-information {
+    
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 7px #333;
+  }
+  
+  .tour-information p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #333;
+  }
+  footer img {
+    width: 35px;
 }
-
-
-
-
-
-@media (max-width: 768px) {
-    .membership-levels {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    #form {
-        width: 90%;
-    }
-    #form span{
-        color: blue;
-        font-size: 15px;
-    }
-}
-
-.spenci-card {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-
-footer {
-    padding: 0.5px;
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition:  0.3s ease-in-out;
+    align-items: center;
+  }
+  
+  main a{
+    align-items: center;
+    margin-left: 26%;
+   }
+  .btn:hover {
+    background: darkgreen;
+    transform: scale(1.05);
+  }
+  
+  footer {
     background: var(--primary-color);
     color: white;
     text-align: center;
-    margin: 1rem;
-    font-size: 1.1rem;
+    padding: 15px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .tour-information {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+
+  }
+  
+  
+  footer {
+    padding: 1px;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 15px;
    
-}
-
-@media (min-width: 764px) {
-
+  }
+  
+  @media (min-width: 764px) {
+  
     body {
         max-width: 1200px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
         margin: 1px auto;
     }
     
@@ -330,22 +138,22 @@ footer {
         background: var(--primary-color);
       
     }
-
+  
     header img {
         width: 70px;
         margin: 5px;
        
     }
-
+  
     header span {
         font-size: 1.5rem;
         font-weight: 600;
         color: white;
     }
-
+  
    
     nav {
-        background-color: black;
+        background-color:var(--secunddary-color);
       
         padding: 10px;
     }
@@ -357,20 +165,20 @@ footer {
         justify-content: space-around;
         list-style: none;
     }
-
+  
     nav ul li a {
         font-size: 20px;
-        color: white;
+        color: #000;
         text-decoration: none;
         display: inline-block;
         transition: transform 0.3s ease-in-out;
     }
-
+  
     nav ul li a:hover {
         text-decoration: underline;
         transform: scale(1.2);
     }
-
+  
     nav ul li a.active {
         background-color: #005fa3;
         color: white;
@@ -379,24 +187,19 @@ footer {
         padding: 8px 12px;
         text-decoration: none;
     }
-   
-    }
      h2, h4 {
-       
+        text-align: center;
         font-size: 2rem; 
         color: black;
-     
+        width: 80%;
     }
     h1{
         text-align: center;
-        font-size: 3rem; 
+        font-size: 2.8rem; 
         background-color: var(--primary-color);
         color: #fff;
         width: 90%;
-        border-radius: 10px;
-        transition: transform 0.2s ease-in-out;
-        animation: fadeIn 1s ease-in-out forwards;
-   
+        border-radius: 7px;
     }
     
     main {
@@ -407,16 +210,16 @@ footer {
         background: white;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
-
-
-
-
-@media (max-width: 763px) {
+  }
+  
+  
+  
+  @media (max-width: 763px) {
     body {
         background-color: #f8f8f8;
         margin: 1px auto;
     }
-
+  
    
     header {
         display: flex;
@@ -429,18 +232,18 @@ footer {
         padding: 10px;
       
     }
-
+  
     header img {
         width: 50px;
         margin: 5px;
        
     }
-
+  
     header span {
         font-size: 1.5rem;
         font-weight: 600;
     }
-
+  
    
     nav {
         background: black;
@@ -448,7 +251,7 @@ footer {
         position: relative;
         padding: 10px;
     }
-
+  
   
     #menuBtn {
         background: none;
@@ -459,20 +262,20 @@ footer {
         display: block;
         position: relative;
     }
-
+  
   
     #menuBtn::before {
         content: "☰";
         font-size: 24px;
     }
-
+  
     #menuBtn.open::before {
         content: "✖";
         font-size: 24px;
         background-color: #005fa3;
-
+  
     }
-
+  
    
   
     #menuBtn {
@@ -485,29 +288,29 @@ footer {
         display: block;
         position: relative;
     }
-
- 
+  
+  
     #menuBtn::before {
         content: "☰";
         font-size: 24px;
     }
-
+  
     #menuBtn.open::before {
         background-color: #005fa3;
         content: "✖";
         font-size: 24px;
       
-
+  
     }
     #menu {
-	display: block;
-	font-size: 1rem;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-	background-color:black;
-	color: #fff;
-}
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: black;
+  color: #fff;
+  }
     .show li {
         display: block;
     }
@@ -521,11 +324,11 @@ footer {
     }
     .navigation a:hover,
     .navigation a:active {
-	color: white;
-	background-color: black;
-}
-
-
+  color: white;
+  background-color: black;
+  }
+  
+  
     nav ul {
         
         padding: 0;
@@ -540,7 +343,7 @@ footer {
         top: 100%;
         width: 100%;
     }
-
+  
    
     nav ul.show {
      
@@ -549,13 +352,13 @@ footer {
         display: block;
         padding: 10px 0;
     }
- 
+  
     nav ul li {
        
         text-align: center;
         padding: 10px;
     }
-
+  
     nav ul li a {
         color: white;
         display: block;
@@ -564,8 +367,8 @@ footer {
         padding: 5px;
         transition: transform 0.3s ease-in-out;
     }
-
- 
+  
+  
     nav ul li a.active {
         
         color: white;
@@ -575,14 +378,14 @@ footer {
         padding: 8px 12px;
         text-decoration: none;
     }
-
+  
     nav ul li a:hover {
         
         transform: scale(1.2);
         transition: transform 0.3s ease-in-out;
       
     }
-
+  
     nav ul {
         display: none;
         list-style: none;
@@ -595,7 +398,7 @@ footer {
         left: 0;
         width: 100%;
     }
-
+  
     nav ul.show {
         display: block;
         position: static;
@@ -607,7 +410,7 @@ footer {
         padding: 10px;
         text-align: center;
     }
-
+  
     nav ul li a {
         color: white;
         text-decoration: none;
@@ -615,7 +418,7 @@ footer {
         display: block;
         padding: 5px;
     }
-
+  
   
     nav ul li a.active {
         background-color: #005fa3;
@@ -635,7 +438,7 @@ footer {
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
-
+  
     h1, h4 {
         text-align: center;
         padding: 10px;
@@ -645,10 +448,12 @@ footer {
         margin-bottom: 10px;
         width: 100%;
         font-size: 2rem;
-
+  
     }
     h2 {
         text-align: center;
+       
+        
         color: black;
         border-radius: 8px;
         margin-bottom: 10px;
@@ -656,8 +461,8 @@ footer {
        
     }
     footer {
-        font-size: 1rem;
+        font-size: 0.3rem;
     }
     
-
-}
+  
+  }

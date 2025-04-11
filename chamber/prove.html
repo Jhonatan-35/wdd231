@@ -1,53 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script defer src="scripts/clima.js"></script>
+    <title> Discover | Chamber Commerce Riobamba</title>
+    <meta name="description" content="Discover Page- Commerce Riobamba​​">
+    <meta name="author" content="Jhonatan  Yugsan ">
+    <meta property="og:title" content="Discover  Chamber Commerce Riobamba" >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/index.htlm" >
+    <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/chamber/images" >
+    <link rel="icon" href="images/logochambera.png" type="images/logochambera" >
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="scripts/discover.js"></script>
+    <aside id="visitor-message"></aside>
+    
 </head>
-<body>
-    <main>
-
-        <section id="weather-container">
-            <h2>Wheater </h2>
-            <div class="weather-content">
-            <div id="current-weather">
-                <p>
-                <strong>Now</strong>
-                </p>
-                <p>36°F - Partly Sunny</p>
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="whater-icon">
-                </div>
-                <div id="weather-forecast">
-                    <div class="forecast-item">
-                        <p>
-                            <strong> Saturday</strong>
-                         </p>
-                        <img src="https://openweathermap.org/img/wn/13d@2x.png" alt="whater-icon">
-                        <p>36°F - Snowfall</p>
-                    </div>
-                    <div class="forecast-item">
-                        <p>
-                            <strong>Sunday</strong>
-                         </p>
-                        <img src="https://openweathermap.org/img/wn/10n@2x.png" alt="">
-                        <p>36°F -Overcast clouds</p>
-                    </div>
-                    <div class="forecast-item">
-                        <p>
-                            <strong> Monday</strong>
-                         </p>
-                        <img src="https://openweathermap.org/img/wn/11d@2x.png" alt="">
-                        <p>36°F - Lightning</p>
-                    </div>
-                </div>
-            </div>
+<body> 
     
+    <header>
+        
+        <img  src="images/logochambera.png" alt="Chamber commerce">
+    
+        <span>Chamber Commerce Riobamba</span>         
+    </header>  
+    <nav>
+        <a id="menu" href="#" class="show"></a>
+        <ul class="navigation"> 
+
+            <li><a href="index.html" id="Home">Home</a></li>
+            <li><a href="discover.html" id="Discover">Discover</a></li>
+            <li><a href="directory.html" id="Directory">Directory</a></li>
+            <li><a href="join.html" id="Join">Join</a></li>
+           
+        </ul> 
+        
+    </nav>  
+
+    <main> 
+        <h1>Discover Riobamba</h1>
+        <section id="riold">
+            <h2>History of Riobamba</h2>
+            <p>
+                Riobamba known as the Sultana of the Andes was founded in 1534 by the conquistador Diego de Almagro which was known as the first city in Ecuador
+                 among the most important events in the city of Riobamba was the first city to establish its capital in Ecuador on April 21, 1822 a group of Riobamba 
+                 patriots led by General Jose Maria Vazquez de Noboa rebelled against Spanish rule its culture has impressed many by the majestic volcano of the Andes, 
+                 Chimborazo who is the largest in South America and the highest in the Andes its majestic city known for its traditions, its gastronomy and its exemplary 
+                 work effort Riobamba has many urban legends and stories of interesting places the Riobamba Cathedral and the Church of La Concepción are examples of colonial 
+                 architecture for that reason Riobamba is one of the first cities to visit by tourists
+            </p>
+            <img src="images/riobamba.webp" alt="history Riobamba"  loading="lazy">
             </section>
+            <div class="info-grid"> 
+                <section id="currendemographis">
+                    <h2>Current Demographics</h2>
+                    <ul>
+                        <li><strong>Inhabitants in the city:</strong>177,213 inhabitants</li>
+                        <li> <strong>  Population Density [2022]:</strong>3,052/km² </li>
+                        <li> <strong>Average annual income :</strong>$40.85</li>
+                        <li> <strong>Median house Value:</strong>USD $110,00 </li>
+                        
+                    </ul>
+                    <a href="https://www.citypopulation.de/en/ecuador/admin/chimborazo/0601__riobamba/">More information</a>
 
-    </main>
+                </section>
+                <section id="upcomingevents">
+                    <h2>Upcoming Events</h2>
+                    <ul>
+                      <li>
+                        <strong>Civic Parade for the Riobamba festivities</strong> April 18th, celebrations for the Battle of Tarqui
+                      </li>
+                      <li><strong>Expo Fair Quinta Macaji</strong> - Expofair from April 15 to 24</li>
+                      <li><strong>Parade of Joy</strong>  April 21st</li>
+                    </ul>
+                    <a href="https://riobamba.com.ec/es-ec/chimborazo/riobamba/fiestas-tradicionales/fiestas-riobamba-a2hlprukr" target="_blank"> More information</a>
+                  </section>
+               </div>
+               <div class="description">
+                <h2>Discover the best Places in the Riobamba</h2>
+               </div>
+
+               <section class=""> 
+               <div id="PlacesLists" class="grid">
+                
+                <div class="places-card grid ">
+                    <img src="images/catedral.webp" alt="Catedral the conception logo" loading="lazy">
+                    <h3>Catedral the conception</h3>
+                    
+                    <p> streets Orozco s/n y Colónse</p>
+                    <br>
+                    <p>The conception, known for its very old structure, was created in 1975 by a group of Catholic religious groups, which maintains a culture of one of the churches of civilizations.</p>
+                   
+                     <a href="https://riobamba.com.ec/es-ec/chimborazo/riobamba/iglesias-templos/iglesia-inmaculada-concepcion-a66a70a6c">learn more</a>
+                   
+
+                </div>
+                <div class="places-card grid ">
+                    <img src="images/parquesucre.webp"  alt=" Park maldonado logo" loading="lazy">
+                    <h3>Park Maldonado</h3>
+                    <p>89G2+WM8, 5 de Junio, Riobamba</p>
+                    <br>
+                    <p>Maldonado Park, one of the oldest parks in the city of Riobamba, was created in commemoration of one of the most prominent figures of the city of Riobamba, Pedro Vicente Maldonado, who stood out as a scientist, philosopher, mathematician, and physicist. He was also a defender of the political freedom of the city.</p>
+                  <a href="https://riobamba.com.ec/es-ec/chimborazo/riobamba/parques-plazas/parque-maldonado-a9ae6db5a">learn more</a> 
+                    
+                    </div>
+                    <div class="places-card grid ">
+                    <img src="images/ferrocarrilantigua.webp" alt="Train old logo" loading="lazy">
+                    <h3>Train old </h3>
+                    <p> avenue Daniel León Borja y Carabobo.</p>
+                    <br>
+                    <p>The old train that is located in the center of the city of Riobamba was commemorated in honor of one of the first steam trains that helped to move around in the decade of the 19th century, thus gaining a lot of prestige. It is a place where much history of the train that moved from the cities to the different parts of Ecuador and the cantons of Riobamba is remembered.</p>
+                     <a href="https://riobamba.com.ec/es-ec/chimborazo/riobamba/estaciones-tren/estacion-tren-riobamba-a7f6a96e8">learn more</a>
+                  
+                    
+                    </div>
+                    <div class="places-card grid ">
+                    <img src="images/chimborazo.webp" alt="Volcan Chimborazo  logo" loading="lazy">
+                    <h3>Volcan Chimborazo</h3>
+                    <p>kilómetro of the road Riobamba - Guaranda</p>
+                    <br>
+                    <p>The Chimborazo volcano being the highest in South America, which is also visited by too many tourists since its attractive mountain ranges attract people to practice different ice sports. 2000 years ago was the last eruption and since then it is considered a snow-capped mountain due to its attractive and splendid white ice that covers it. It is located 10 kilometers from the city of Riobamba.</p>
+                          
+                    <a href="https://riobamba.com.ec/es-ec/chimborazo/riobamba/volcanes/volcan-chimborazo-a07694d29">learn more</a>
+                
+                    </div>
+                    <div class="places-card grid">
+                    <img src="images/huellasdemamut.webp" alt="Dinosarius Tracks Museum logo" loading="lazy">
+                    <h3>Dinosarius Tracks Museum</h3>
+                    <p>Licto</p>
+                    <br>
+                    <p>The Dinosaur Museum, having one of the important stories of ancient civilizations, has become known that animals that have become extinct, such as mammoths and dinosaurs, apparently left their footprints in this place, as is the Chalán Museum, located 30 kilometers from the city of Riobamba, which can be visited by many people who want to know more about this history that leaves many unknowns for those archaeologists who have investigated for years.</p>
+                       
+                    <a href="https://eldiarioderiobamba.com/2019/12/05/quebrada-de-chalan-tras-las-huellas-de-los-dinosaurios/">learn more</a>
+                  
+                    </div>
+                    <div class="places-card grid">
+                    <img src="images/altarnevado.webp" alt="Volcan Altar logo" loading="lazy">
+                    <h3>Volcan Altar</h3>
+                    <p>Road Riobamba – Penipe – Comunidad The Candelaria;</p>
+                    <br>
+                    <p>El Altar Volcano is visited by more than 20,000 tourists a year from different countries due to its splendid history, which has brought many tourists to its attractive lagoons, which make it possible for tourists to visit more often.</p>
+                         
+                    <a href="https://riobamba.com.ec/es-ec/chimborazo/riobamba/volcanes/volcan-altar-adc5c8c8e">lean more</a>
+                   
+                    </div>
+                    <div class="places-card grid">
+                    <img src="images/guano.webp" alt="Old ity Guano logo" loading="lazy">
+                    <h3>Old city Guano</h3>
+                    <p>In front of  park, and Los Franciscanos. </p>
+                    <br>
+                    <p>The town of Iguaano being one of the oldest towns belonging to the city of Riobamba having a very attractive culture for its museums for its crafts was considered one of the great civilizations of the decade of 1890 having very important events by different historical philosophers and physicists and mathematicians a place that every year is visited by different tourists from around the world and also having an incredible gastronomy for tourists located three kilometers from the city of Riobamba</p>
+                               
+                    <a href="https://www.goraymi.com/es-ec/chimborazo/guano/museos/museo-municipal-guano-a3a7a4cf8">learn more</a>
+                     
+                    </div>
+                    <div class="places-card grid">
+                
+                    <img src="images/lagunazul.webp" alt="Lake blue logo" loading="lazy">
+                   
+                    <h3>Lake Blue</h3>
+                    <p>the rural parish of Riobamba called Quimiag,</p>
+                    <br>
+                    <p>The blue lagoon located between the El Altar volcano is attractive for its transparency and purity that is born from the El Altar volcano, being visited each year by more than 30,000 tourists from different countries and also attractive for photographs that makes tourists fall more in love with its attractive transparency of water and purity located 50 kilometers from the city of Riobamba</p>
+                               
+                    <a href="https://riobamba.com.ec/es-ec/chimborazo/penipe/lagunas/laguna-azul-a764qg4ac">learn more</a>
+                       
+                    </div>
+                    </div>
+                </section>
+                    
+
+        </main>
+    <footer>
+
+        <p>&copy; <span id="copyright-year"></span>🌴WDD 231 | Jhonatan Ariel Yugsan 🌴 Ecuador</p>
+        <p>This document was last modified:</p> 
+        <p id="demo"></p>
     
-</body>
+    </footer>
+    
+  </body>
 </html>

@@ -1,11 +1,22 @@
-@media only screen  and (min-width: 38rem) {
-}
-#PlacesLists{
-    grid-template-areas: 
-    "h3 h3"
-    "img"
-    "p p"
-    "p p"
-    "p"
-     ;
+@media (min-width: 641px) and (max-width: 1024px) {
+    body{
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+    }
+    .discover-grid {
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+
+    .places-card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+          "photo name"
+          "photo description"
+          "photo location";
+    } 
 }

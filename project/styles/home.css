@@ -13,46 +13,102 @@ body {
     --primary-color:#004b23;
     --secunddary-color:#A1CCA5;
 }
-
+.btn-wsp{
+    position: fixed;
+    width: 58px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    
+  }
+  .fa-whatsapp{
+    font-size: 50px;
+  }
+  .btn-wsp:hover{
+    background-color:#28e76e ;
+  }
 .Heros {
     text-align: center;
     padding:  20px;
     color: white;
     margin-bottom: 2rem;
-    max-width: 700px;
+    max-width: 900px;
     border-radius: 10px;
     background: #f8f8f8;
     box-shadow:0 0 7px #333;
   }
+  .discover h2{
+    background-color: #fff;
+    color: #000;
+  }
+  .Placeschimborazo a :hover{
+    transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out;
+   }
+   .card a:hover {
+    transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out;
+  }
 
   .Heros img {
     margin: 1rem;
-    max-width: 930px;
+    max-width: 630px;
     border-radius: 10px;
     margin-top: 15px;
    
   }
 
-  #weather-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 20px auto;
+
+  #Facts, #histoty {
     background: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #333;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: black;
+    margin: 1rem;
+}
+#Facts ul li, #histoty ul li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+    color: black;
+}
+#Facts ul, #histoty ul {
+    list-style-type: none;
+    padding: 0;
+}
+#Facts a, #histoty a {
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    border-radius: 10px;
+   
+}
+#Facts a:hover, #histoty a:hover {
+    text-decoration: underline;
+    
+}
+#Facts a{
+    background-color: #000000;
     text-align: center;
+
 }
 
-.weather-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
-    width: 100%;
-    align-items: center;
+#Facts a{
+    background-color: #000000;
+    text-align: center;
+  
 }
+
+
+  
 .introduction a{
     background: #000;
     width: 200px;
@@ -61,57 +117,7 @@ body {
 
 }
 
-#current-weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-#current-weather img {
-    width: 100px;
-    height: 100px;
-    image-rendering: crisp-edges;
-}
-
-#current-weather p {
-    text-align: center;
-    font-size: 1.3rem;
-    color: #013a63;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-#weather-forecast {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.forecast-item {
-    background: white;
-    padding: 10px;
-   
-   
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.forecast-item img {
-    width: 50px;
-    height: auto;
-}
-
-.forecast-item p {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-}
   .Heros a{
     font-size: 1.5rem;
   }
@@ -149,10 +155,6 @@ h1{
     transform: scale(1.2);
   }
   
-.Wheather li{
-    text-decoration: none;
-    
-}
 
 
   .Placeschimborazo h2{
@@ -165,27 +167,6 @@ h1{
     width: 100px; 
 }
 
-.Wheather {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-   
-    background: white;
-    padding: 20px;
-    display: flex;
-    box-shadow: 0 0 7px #333;
-}
-
-.Wheather img {
-    height: 200px;
-    width: 200px;
-}
-
-.Weather p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-}
 
   h2 {
        
@@ -197,12 +178,29 @@ h1{
         width: 100%;
         font-size: 1.5rem;
     }
+
+
+    
 @media (max-width: 500px) {
-  
-    .discover h2{
-        background-color: #f8f8f8;
-        color: #000;
+
+    #Facts, #histoty {
+    
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      
     }
+    #histoty a{
+        background-color:#000 ;
+    }
+    .card a {
+        background-color: #000;
+        display: block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        color: #fff;
+        border-radius: 10px;
+        text-decoration-line: none;
+        
+      }
  
     .introduction a{
         background: #000;
@@ -217,7 +215,7 @@ h1{
     padding:  20px;
     color: white;
     margin-bottom: 2rem;
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 10px;
     background: #f8f8f8;
     box-shadow:0 0 7px #333;
@@ -239,35 +237,76 @@ h1{
 
       } 
 
-.weather-content {
-    grid-template-columns: 1fr; 
-}
-
-#current-weather img {
-    width: 60px; 
-    height: 60px;
-}
-
-#current-weather p {
-    font-size: 0.9rem;
-}
-
-.forecast-item {
-    padding: 6px; 
-    font-size: 0.8rem; 
-}
-
-.forecast-item img {
-    width: 35px; 
-}
 }
 
 @media (min-width: 750px) {
-
-    .discover h2{
-        background-color: #f8f8f8;
-        color: #000;
-    }
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        }
+    
+        #Facts, #histoty {
+            background: #f8f8f8;
+            padding: 20px;
+            
+            box-shadow: 0 0 10px #333;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            color: black;
+        }
+    
+        #Facts:hover, #histoty:hover {
+            transform: scale(1.03); 
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        #Facts ul, #histoty ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        #Facts ul li, #histoty ul li {
+            font-size: 1.1rem;
+            padding: 5px 0;
+            color: black;
+        }
+    
+        #currendemographis h2, #histoty h2 {
+            
+            color:#fff; 
+            border-radius: 10px;
+        }
+    
+       
+        #Facts a, #histoty a {
+            display: inline-block;
+            color: #fff;
+            font-size: 25px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+            border-radius: 10px;
+           
+        }
+    
+     
+        #Facts a:hover, #histoty a:hover {
+            text-decoration: underline;
+            
+        }
+        #Facts a{
+            background-color: #000000;
+            text-align: center;
+    
+        }
+        #histoty a{
+            background-color: #000000;
+            text-align: center;
+    
+        }
+  
  
     header {
       
@@ -380,8 +419,7 @@ h1{
         padding: 10px;
         margin-bottom: 15px;
         background-color: #f8f8f8;
-      
-        width: 70%;
+        width: 100%;
         
 
     }
@@ -416,7 +454,6 @@ h1{
         transform: scale(1.5);
     }
 
- 
     .card {
         padding: 15px;
         text-align: center;
@@ -424,14 +461,6 @@ h1{
         background: white;
     }
     
-    .card:hover{
-        transform: scale(1.1);
-        background-color: rgb(211, 211, 211);
-
-    }
-   
-
-
     .card {
         display: flex;
         flex-direction: row;
@@ -460,15 +489,14 @@ h1{
 
     .Placeschimborazo {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3,  1fr);
         gap: 20px;
         padding: 20px;
         background-color: #f8f8f8;
         text-align: center;
         padding: 20px;
         border-radius: 10px;
-      
-        margin-bottom: 30px;
+        margin-bottom: 2px;
       }
     
       .Placeschimborazo h2 {
@@ -481,12 +509,14 @@ h1{
         border-radius: 8px;
       }
 
-      .Placeschimborazo a{
+      .Placeschimborazo a {
         background-color: var(--secunddary-color);
         color: #000;
         text-decoration: none;
+        transform: scale(1.05);
     
        }
+     
      
       .card {
         background: white;
@@ -496,9 +526,7 @@ h1{
         transition: transform 0.3s ease-in-out;
       }
     
-      .card:hover {
-        transform: scale(1.05);
-      }
+     
     
       .card img {
         width: auto;
@@ -526,12 +554,14 @@ h1{
         padding: 8px 12px;
         color: #fff;
         border-radius: 10px;
-        
+        transform: scale(1.05);
+
       }
+      
 }
-
-
 @media (max-width: 763px) {
+
+
 
     .Heros {
         text-align: center;
@@ -616,7 +646,6 @@ h1{
    
     nav {
         
-      
         position: relative;
        background-color: #000000;
         padding: 10px;
@@ -689,7 +718,6 @@ h1{
         width: 100%;
     }
 
-   
     nav ul.show {
      
         width: 99%;
@@ -713,7 +741,6 @@ h1{
         transition: transform 0.3s ease-in-out;
     }
 
- 
     nav ul li a.active {
         
         color: white;
@@ -746,7 +773,6 @@ h1{
     }
 
     h2 {
-       
         padding: 10px;
         background: var(--primary-color);
         color: white;
@@ -789,18 +815,15 @@ h1{
         color: #fff;
         
     }
-
-
+   
     }
 
- 
     .card img {
         
         max-height: 150px;
         object-fit: contain;
         width: 100%;
-        margin-bottom: 10px;
-       
+        margin-bottom: 10px;  
        
     }
  
@@ -814,7 +837,7 @@ h1{
         background: white;
         flex-direction: column;
         align-items: center;
-        margin: 2rem;
+        margin: 0.8rem;
     }
    
     footer {
@@ -836,7 +859,7 @@ h1{
         width: 100%;
         margin-bottom: 10px;
     }
-  
+    
     
 
     
