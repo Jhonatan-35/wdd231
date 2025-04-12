@@ -26,11 +26,45 @@ body {
     overflow: hidden;
     
   }
+  h4{
+    background-color: #fff;
+    color: #000;
+  }
   .fa-whatsapp{
     font-size: 50px;
   }
   .btn-wsp:hover{
     background-color:#28e76e ;
+  }
+  .card button{
+    background: #000;
+    color: #fff;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out
+  }
+
+  .card button :hover{
+    transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #dialogFile{
+    margin-left: 25%;
+    margin-top: 2rem;
+  }
+  dialog{
+    margin-left: 25%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border-color: #fff;
+    box-shadow: 0 0 10px #333;
+    width: 25%;
+  }
+  dialog p{
+    margin: 0.5rem;
   }
 .Heros {
     text-align: center;
@@ -188,6 +222,18 @@ h1{
         transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
       
     }
+
+    dialog{
+        margin-left: 25%;
+        margin-top: 2rem;
+        border-radius: 10px;
+        border-color: #fff;
+        box-shadow: 0 0 10px #333;
+        width: 25%;
+      }
+      dialog p{
+        margin: 1rem;
+      }
     #histoty a{
         background-color:#000 ;
     }
@@ -240,6 +286,19 @@ h1{
 }
 
 @media (min-width: 750px) {
+
+
+    dialog{
+        margin-left: 25%;
+        margin-top: 2rem;
+        border-radius: 10px;
+        border-color: #fff;
+        box-shadow: 0 0 10px #333;
+        width: 25%;
+      }
+      dialog p{
+        margin: 1rem;
+      }
     .info-grid {
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -561,7 +620,17 @@ h1{
 }
 @media (max-width: 763px) {
 
-
+    dialog{
+        margin-left: 25%;
+        margin-top: 2rem;
+        border-radius: 10px;
+        border-color: #fff;
+        box-shadow: 0 0 10px #333;
+        width: 55%;
+      }
+      dialog p{
+        margin: 0.5rem;
+      }
 
     .Heros {
         text-align: center;

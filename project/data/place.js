@@ -1,5 +1,5 @@
-{
-    "places": [
+
+    export const place = [
       {
         "name": "The chorrera Chimborazo",
         "address": "F579+PMH, San Juan",
@@ -75,4 +75,4 @@
         "description": "The lake carihuaraizo Erazo known for its proximity"
       }
     ]
-  }
+  

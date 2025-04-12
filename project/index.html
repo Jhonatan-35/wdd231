@@ -8,19 +8,15 @@
     <meta name="author" content="Jhonatan  Yugsan ">
     <meta property="og:title" content="Home Chimborazo Mountaineering Club​" >
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/chamber/index.htlm" >
-    <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/chamber/images" >
-    <link rel="icon" href="images/logoproject.png" type="images/logoproject" >
+    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/project/index.html" >
+    <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/project/images" >
+    <link rel="icon" href="images/logoproject.webp" type="images/logoproject" >
     <link rel="stylesheet" href="styles/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script defer src="scripts/home.js"></script>
-   
-   
-
-    
-    
+  
 </head>
 <body> 
    <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
@@ -29,7 +25,7 @@
     
     <header>
         
-        <img  src="images/logoproject.png" alt="Chamber commerce">
+        <img  src="images/logoproject.webp" alt="Logo club mountainig">
     
         <span>Chimborazo  Mountaineering Club</span>         
     </header>  
@@ -60,60 +56,94 @@
         <div class="card">
         <img src="images/chorrerachimborazo.webp" alt=" The Chorrera Chimborazo" loading="lazy">
         <h3>The chorrera Chimborazo</h3>
-        <p>F579+PMH, San Juan</p>
-        <p> (2345)88690</p>
-        <p>sport : Hike</p>
-        <a href="https://riobamba.com.ec/es-ec/chimborazo/riobamba/escalada/ruta-escalada-chorrera-a9fef4e98">More information</a>
+         <button id="openButton">more information</button>
+         <dialog  id="dialogBox">
+          <p><strong>Location:</strong>F579+PMH, San Juan</p>
+          <p><strong>Altitude:</strong> 3.550 m.s.n.m</p>
+          <p><strong>Phone number:</strong>(2345)88690</p>
+          <p><strong>Sports:</strong> hike ,climbing</p>
+           <p><strong>Information:</strong>Considered one of the best climbing areas in Ecuador, located at 3,550 meters above sea level, it has more than 100 equipped rock climbing routes, ranging in difficulty from V+ to 8c+; its walls are 2 km long and range in height from 20 to 100 meters.</p>
+          <img src="images/chorrerachimborazo.webp" alt=" The Chorrera Chimborazo" loading="lazy">
+          <button id="closeButton">close</button>
+        </dialog>
         </div>
                 
         <div class="card">
         <img src="images/lakeblues.webp" alt=" The lake Blue" loading="lazy">
-        <h3>The lake Blue </h3>
-        <p>7HXF+52M, Cubillín</p>
-        <p> (2345)458690</p>
-        <p>sport: Camping</p>
-        <a href="https://riobamba.com.ec/es-ec/chimborazo/penipe/lagunas/laguna-azul-a764qg4ac">More information</a>
+        <h3>The lake Blue </h3> 
+        <button id="openInfo">more information</button>
+        <dialog  id="dialogInfo">
+          <p><strong>Location:</strong>7HXF+52M, Cubillín</p>
+          <p><strong>Altitude:</strong> 4.189 m.s.n.m.</p>
+          <p> <strong>Phone number:</strong>(2345)458690</p>
+          <p> <strong>Sports:</strong> camping ,hike</p>
+          <p><strong>Information:</strong>This lagoon is considered the most beautiful in the El Altar Volcano lake complex in Chimborazo Province, Ecuador, due to its diverse and spectacular waterfalls, emanating from melting glaciers, its large caldera-shaped volcanic rock, and its azure waters. It is located at an altitude of 4,189 meters above sea level.</p>
+          <img src="images/lakeblues.webp" alt=" The lake Blue" loading="lazy">
+          <button id="closeInfo">close</button>
+        </dialog>
         </div>
 
         <div class="card">
         <img src="images/lakeyellow.webp" alt=" The lake Blue" loading="lazy">
         <h3>The lake Yellow </h3>
-        <p>Sangay National Park, 8HH7+5PW Campin</p>
-        <p> (2345)458690</p>
-        <p>sport: Climbing</p>
-        <a href ="https://riobamba.com.ec/es-ec/chimborazo/penipe/lagunas/laguna-amarilla-atu43kr72">More information</a>
+        <button id="openInfor">More information</button>
+        <dialog  id="dialogInfor">
+        <p> <strong>Location:</strong> Sangay National Park, 8HH7+5PW Campin</p>
+        <p><strong>Altitude:</strong>  4.150 m s.n.m</p>
+        <p> <Strong>Phone number:</Strong> (2345)458690</p>
+        <p> <strong>Sports:</strong> climbing, hike</p>
+        <p> <strong>Information:</strong>It is one of the lagoons in the Altar Nevado lake system. It is located within the peak's crater at 4,150 m above sea level. It is formed by the melting of the snow and its mineral color, hence its name "Yellow Lagoon." The formation is approximately 220 to 250 m wide by 600 m long.</p>
+        <img src="images/lakeyellow.webp" alt=" The lake Blue" loading="lazy">
+        <button id="closeInfor">close</button>
+      </dialog>
         </div>
         
         <div class="card">
         <img src="images/hillpuñay.webp" alt=" The lake Blue" loading="lazy">
         <h3>Hill Puñay </h3>
-        <p>M28H+WM, Llagos</p>
-        <p> (2345)458690</p>
-        <p>sport: Hike</p>
-        <a href="https://riobamba.com.ec/es-ec/chimborazo/chunchi/cerros/cerro-punay-argyoxmrk">More information</a>
+        <button id="openIn">more information</button>
+        <dialog  id="dialogIn">
+          <p> <strong>Location:</strong>M28H+WM, Llagos</p>
+          <p><strong>Altitude:</strong> 2.139 msnm.</p>
+          <p><strong>Phone number:</strong> (2345)458690</p>
+          <p><Strong>Sports:</Strong> hike, camping</p>
+          <p><Strong>Information:</Strong>Puñay is the mountain that rises alone in the middle of the great Piñancay valley. It boasts brilliant sunsets, accompanied by rays that pierce the vast coastal plain. The residents of Chunchi claim that on clear nights, they can see the lights of Guayaquil glisten from the top of this mountain. </p>
+          <img src="images/hillpuñay.webp" alt=" The lake Blue" loading="lazy">
+          <button id="closeIn">close</button>
+        </dialog>
         </div>
         
     
         <div class="card">
             <img src="images/lakegariguarazo.webp" alt=" The lake Blue" loading="lazy">
             <h3>The lake carihuaraizo </h3>
-            <p>H6VW+RCG</p>
-            <p> (2345)458690</p>
-            <p>sport: Camping</p>
-            <a href="https://riobamba.com.ec/es-ec/chimborazo/volcanes/volcan-carihuairazo-ab38149d9">More information</a>
+            <button id="openMore">more information</button>
+            <dialog  id="dialogMore">
+              <p><strong>Location:</strong>H6VW+RCG</p>
+              <p><strong>Altitude:</strong> 4.179 msnm.</p>
+              <p> <strong>Phone number:</strong>(2345)458690</p>
+              <p><strong>Sports:</strong> camping, hike</p>
+              <p><Strong>Information:</Strong> Carihuairazo is one of the most easily accessible and acclimatizing mountains for mountaineers seeking to summit the country's most challenging peaks. It is located just 10 km from Nevado Chimborazo</p>
+              <img src="images/lakegariguarazo.webp" alt=" The lake Blue" loading="lazy">
+           
+              <button id="closeMore">close</button>
+            </dialog>
             </div>
-        
-            
         <div class="card">
             <img src="images/refsafechimborazo.webp" alt=" The lake Blue" loading="lazy">
             <h3>Chimborazo Shelter </h3>
-            <p>The foot of Chimborazo on its southwest slope.</p>
-            <p> (2345)458690</p>
-            <p>sport: Climbing</p>
-            <a href="https://riobamba.com.ec/es-ec/chimborazo/refugios-cabanas/refugios-chimborazo-a88890d77">More information</a>
+            <button id="openFile">more information</button>
+            <dialog  id="dialogFile">
+            <p><strong>Location:</strong>The foot of Chimborazo on its southwest slope.</p>
+            <p><strong>Altitude:</strong> 4.179 msnm.</p>
+            <p> <strong>Phone number:</strong>(2345)458690</p>
+            <p><strong>Sports:</strong> climbing , camping</p>
+            <p><Strong>Information:</Strong>At the Chimborazo refuge, you can engage in activities such as photography, environmental interpretation, landscape observation (flora and fauna - condors - vicuñas), handicraft sales, and food service. The Andean condor is a bird of great value to Ecuador and can be seen on the National Emblem and the Flag of Ecuador.</p>
+            <img src="images/refsafechimborazo.webp" alt=" The lake Blue" loading="lazy">
+            <button id="closeFile">close</button>
+          </dialog>
             </div>
-            
-           
+             
        
       </section>
 
@@ -150,6 +180,10 @@
                     <a href="about.html" target="_blank"> More information</a>
                   </section>
                   </div>
+                  <div class="source">
+                  <h4>Sources of information</h4>
+                  <p><strong>Turist Riobamba:</strong>https://riobamba.com.ec/</p>
+                </div>
 
         </main>
     <footer>
@@ -167,6 +201,6 @@
         <p id="demo"></p>
         
     </footer>
-    
+    <script src="scripts/page.js" type="module"></script>
   </body>
 </html>
