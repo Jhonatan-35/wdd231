@@ -1,4 +1,4 @@
-const aside = document.getElementById("visitor-message");
+const aside = document.getElementById ("currenly-visited");
 const lastVisit = localStorage.getItem("lastVisit");
 const currentTime = Date.now();
 
